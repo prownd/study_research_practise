@@ -1,0 +1,30 @@
+adlist.h含义
+A double linked list  
+a double list 缩写
+
+
+sds含义
+Simple Dynamic Strings  library for c
+simple dynamic strings缩写
+
+ae.h
+ A simple event-driven programming library
+a  event   的缩写
+
+
+
+anet 
+anet.c -- Basic TCP socket stuff made a bit less boring
+a   tcp socket net
+a net缩写
+
+dict
+dictionary 
+字典
+
+
+picol
+pico lisp Interpreters
+小的  lisp 解释器
+http://oldblog.antirez.com/post/picol.html
+

@@ -1,0 +1,17 @@
+
+intset是redis的集合(set)类型的一个encoding方式之一，如果set类型只有整数，并且元素较少的话，redis会采用intset作为该类型的实现。
+
+
+
+ziplist是一个直接在字节级别操作的双向列表实现，主要是为了节省空间的使用，比如减少了指针，使用浮动的长度大小。增加和删除元素都是O(1)。但同时最大的问题是每次增加元素，删除元素都需要重新重新分配内存，因此实际上，实际时间复杂度是与列表大小相关。
+主要应用在小列表上和排序列表上。redis在存储上会具有非常多的小列表或小集合,小字典，所以在实现上用了非常节省内存的zip_方式
+
+
+
+zipmap
+淘宝核心系统团队博客的《Redis zipmap内存布局分析》对zipmap内存进行了详细的图解分析。
+zipmap的首部长度zmlen过短导致的性能问题
+zipmap由于在首部的zmlen只使用一个字节，而如果超出一个字节的长度，zipmap必须搜索整个zipmap来确定长度，这产生了很大的性能问题。在github的issue中(https://github.com/antirez/redis/issues/188)，有人提出了这个问题，Redis的作者也同意了观点，但是如果改变zipmap的实现，会导致Redis之前版本的rdb文件无法读取，所以为了避免兼容性，Redis 2.6会使用ziplist代替zipmap，并且在(https://github.com/antirez/redis/pull/285)请求中，也证明了ziplist实现hash比zipmap相差无几。因此，Redis 2.6到Redis 3都不会有zipmap的调用，而Redis 3作者是否会增加zmlen到2个字节并且让small hash换回使用zipmap仍然是个疑问。
+
+
+

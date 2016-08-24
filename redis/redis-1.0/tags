@@ -1,0 +1,1562 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+.codeblock 	doc/style.css	/^.codeblock {$/;"	c
+::redis::__dispatch__	client-libraries/tcl/redis.tcl	/^proc ::redis::__dispatch__ {id method args} {$/;"	p
+::redis::__method__channel	client-libraries/tcl/redis.tcl	/^proc ::redis::__method__channel {id fd} {$/;"	p
+::redis::__method__close	client-libraries/tcl/redis.tcl	/^proc ::redis::__method__close {id fd} {$/;"	p
+::redis::redis_bulk_read	client-libraries/tcl/redis.tcl	/^proc ::redis::redis_bulk_read {fd} {$/;"	p
+::redis::redis_multi_bulk_read	client-libraries/tcl/redis.tcl	/^proc ::redis::redis_multi_bulk_read fd {$/;"	p
+::redis::redis_read_line	client-libraries/tcl/redis.tcl	/^proc ::redis::redis_read_line fd {$/;"	p
+::redis::redis_read_reply	client-libraries/tcl/redis.tcl	/^proc ::redis::redis_read_reply fd {$/;"	p
+::redis::redis_readnl	client-libraries/tcl/redis.tcl	/^proc ::redis::redis_readnl {fd len} {$/;"	p
+::redis::redis_write	client-libraries/tcl/redis.tcl	/^proc ::redis::redis_write {fd buf} {$/;"	p
+::redis::redis_writenl	client-libraries/tcl/redis.tcl	/^proc ::redis::redis_writenl {fd buf} {$/;"	p
+==	client-libraries/ruby/spec/redis_spec.rb	/^  def ==(other)$/;"	f	class:Foo
+A case study: Design and implementation of a simple Twitter clone using only the Redis key-value store as database and PHP	doc/TwitterAlikeExample.html	/^                    <h1><a name="A case study: Design and implementation of a simple Twitter clone using only the Redis key-value store as database and PHP">A case study: Design and implementation of a simple Twitter clone using only the Redis key-value store as database and PHP<\/a><\/h1>In this article I'll explain the design and the implementation of a <a href="http:\/\/retwis.antirez.com" target="_blank">simple clone of Twitter<\/a> written using PHP and <a href="http:\/\/code.google.com\/p\/redis\/" target="_blank">Redis<\/a> as only database. The programming community uses to look at key-value stores like special databases that can't be used as drop in replacement for a relational database for the development of web applications. This article will try to prove the contrary.<br\/><br\/>Our Twitter clone, <a href="http:\/\/retwis.antirez.com" target="_blank">called Retwis<\/a>, is structurally simple, has very good performances, and can be distributed among N web servers and M Redis servers with very little efforts. You can find the source code <a href="http:\/\/code.google.com\/p\/redis\/downloads\/list" target="_blank">here<\/a>.<br\/><br\/>We use PHP for the example since it can be read by everybody. The same (or... much better) results can be obtained using Ruby, Python, Erlang, and so on.<br\/><br\/><b>News! <a href="http:\/\/retwisrb.danlucraft.com\/" target="_blank">Retwis-rb<\/a> is a port of Retwis to Ruby and Sinatra written by Daniel Lucraft!<\/b> With full source code included of course, the git repository is linked at the end of the Retwis-RB page. The rest of this article targets PHP, but Ruby programmers can also check the other source code, it conceptually very similar.<h1><a name="Key-value stores basics">Key-value stores basics<\/a><\/h1>$/;"	a
+AE_ALL_EVENTS	ae.h	82;"	d
+AE_DONT_WAIT	ae.h	83;"	d
+AE_ERR	ae.h	74;"	d
+AE_EXCEPTION	ae.h	78;"	d
+AE_FILE_EVENTS	ae.h	80;"	d
+AE_NOMORE	ae.h	85;"	d
+AE_NOTUSED	ae.h	88;"	d
+AE_OK	ae.h	73;"	d
+AE_READABLE	ae.h	76;"	d
+AE_TIME_EVENTS	ae.h	81;"	d
+AE_WRITABLE	ae.h	77;"	d
+AL_START_HEAD	adlist.h	90;"	d
+AL_START_TAIL	adlist.h	91;"	d
+ANET_CONNECT_NONBLOCK	anet.c	127;"	d	file:
+ANET_CONNECT_NONBLOCK	client-libraries/cpp/anet.c	127;"	d	file:
+ANET_CONNECT_NONE	anet.c	126;"	d	file:
+ANET_CONNECT_NONE	client-libraries/cpp/anet.c	126;"	d	file:
+ANET_ERR	anet.h	35;"	d
+ANET_ERR	client-libraries/cpp/anet.h	35;"	d
+ANET_ERR_LEN	anet.h	36;"	d
+ANET_ERR_LEN	client-libraries/cpp/anet.h	36;"	d
+ANET_H	anet.h	32;"	d
+ANET_H	client-libraries/cpp/anet.h	32;"	d
+ANET_OK	anet.h	34;"	d
+ANET_OK	client-libraries/cpp/anet.h	34;"	d
+APP_FILES	client-libraries/erlang/support/include.mk	/^APP_FILES := $(wildcard *.app)$/;"	m
+ASSERT_EQUAL	client-libraries/cpp/test_client.cpp	7;"	d	file:
+ASSERT_GT	client-libraries/cpp/test_client.cpp	9;"	d	file:
+ASSERT_NOT_EQUAL	client-libraries/cpp/test_client.cpp	8;"	d	file:
+AUTH _password_	doc/AuthCommand.html	/^                    <h1><a name="AUTH _password_">AUTH _password_<\/a><\/h1><blockquote>Request for authentication in a password protected Redis server.A Redis server can be instructed to require a password before to allow clientsto issue commands. This is done using the <i>requirepass<\/i> directive in theRedis configuration file.<\/blockquote>$/;"	a
+AUTOLOAD	client-libraries/perl/lib/Redis.pm	/^sub AUTOLOAD {$/;"	s
+AVOID_ERRNO	lzfP.h	100;"	d
+Atomic operations	doc/TwitterAlikeExample.html	/^<\/pre><h2><a name="Atomic operations">Atomic operations<\/a><\/h2>$/;"	a
+Authentication	doc/TwitterAlikeExample.html	/^<h2><a name="Authentication">Authentication<\/a><\/h2>$/;"	a
+BENCHOBJ	Makefile	/^BENCHOBJ = ae.o anet.o benchmark.o sds.o adlist.o zmalloc.o$/;"	m
+BENCHPRGNAME	Makefile	/^BENCHPRGNAME = redis-benchmark$/;"	m
+BGSAVE	doc/BgsaveCommand.html	/^                    <h1><a name="BGSAVE">BGSAVE<\/a><\/h1>$/;"	a
+BUFSIZE	client-libraries/python/redis.py	/^BUFSIZE = 4096$/;"	v
+Beyond key-value databases	doc/README.html	/^since from time to time Redis writes a dump of the dataset on disk asynchronously. The dump is loaded every time the server is restarted.<br\/><br\/>Redis can be configured to save the dataset after a given number of seconds elapzed and changes to the data set. For example you can tell Redis to save after 1000 changes and at least 60 seconds sinde the same save. You can specify a number of this combinatins.<br\/><br\/>Because data is written asynchronously, If a system crash occurs the last few queries can get lost (that is acceptable in many applications). Redis supports master-slave replication from the early days in order to make this a non issue if your application is of the kind where even few lost records are not acceptable.<h1><a name="Beyond key-value databases">Beyond key-value databases<\/a><\/h1>In most key-value databases keys and values are simple strings. In Redis keys are just strings too, but the associated values can be Strings, Lists and Sets, and there are commands to perform complex atomic operations against this data types, so you can think at Redis as a data structures server.<br\/><br\/>For example you can append elements to a list stored at the key &quot;mylist&quot; using the LPUSH or RPUSH operation in O(1). Later you'll be able to get a range of elements with LRANGE or trim the list with LTRIM. Sets are very flexible too, it is possible to add and remove elements from Sets (unsorted collections of strings), and then ask for server-side intersection, union, difference of Sets.<br\/><br\/>All this features, the support for sorting Lists and Sets, allow to use Redis as the sole DB for your scalable application without the need of any relational database. <a href="TwitterAlikeExample.html">We wrote a simple Twitter clone in PHP + Redis<\/a> to show a real world example, the link points to an article explaining the design and internals in very simple words.<h1><a name="What are the differences between Redis and Memcached?">What are the differences between Redis and Memcached?<\/a><\/h1>In the following ways:<br\/><br\/><ul><li> Memcached is not persistent, it just holds everything in memory without saving since its main goal is to be used as a cache. Redis instead can be used as the main DB for the application. We <a href="TwitterAlikeExample.html">wrote a simple Twitter clone<\/a> using only Redis as database.<\/li><\/ul>$/;"	a
+Beyond key-value stores	doc/TwitterAlikeExample.html	/^<h2><a name="Beyond key-value stores">Beyond key-value stores<\/a><\/h2>$/;"	a
+Bulk commands	doc/ProtocolSpecification.html	/^simply by spaces.<h2><a name="Bulk commands">Bulk commands<\/a><\/h2>A bulk command is exactly like an inline command, but the last argument$/;"	a
+Bulk replies	doc/ProtocolSpecification.html	/^<h2><a name="Bulk replies">Bulk replies<\/a><\/h2>The server may reply to an inline or bulk command with a bulk reply. See$/;"	a
+Bulk reply	doc/ReplyTypes.html	/^At protocol level integer replies are single line replies in form of a decimal singed number prefixed by a <b>:<\/b> character. For example <b>:10<\/b> is an integer reply. Redis commands returning <i>true<\/i> or <i>false<\/i> will use an integer reply with 0 or 1 as values where 0 is false and 1 is true.<br\/><br\/>Integer replies are usually passed by client libraries as integer values.<h1><a name="Bulk reply">Bulk reply<\/a><\/h1>$/;"	a
+CC	client-libraries/cpp/Makefile	/^CC = g++$/;"	m
+CCOPT	Makefile	/^CCOPT= $(CFLAGS)$/;"	m
+CFLAGS	Makefile	/^CFLAGS?= -std=c99 -pedantic -O2 -Wall -W$/;"	m
+CFLAGS	client-libraries/cpp/Makefile	/^CFLAGS?= -pedantic -O0 -W -DDEBUG -g$/;"	m
+CHECK_INPUT	lzfP.h	121;"	d
+CLEAR	client-libraries/perl/lib/Redis/Hash.pm	/^sub CLEAR {$/;"	s
+CLEAR	client-libraries/perl/lib/Redis/List.pm	/^sub CLEAR {$/;"	s
+CLIENTOBJS	client-libraries/cpp/Makefile	/^CLIENTOBJS = anet.o redisclient.o $/;"	m
+CLIENT_CONNECTING	benchmark.c	52;"	d	file:
+CLIENT_READREPLY	benchmark.c	54;"	d	file:
+CLIENT_SENDQUERY	benchmark.c	53;"	d	file:
+CLIOBJ	Makefile	/^CLIOBJ = anet.o sds.o adlist.o redis-cli.o zmalloc.o$/;"	m
+CLIPRGNAME	Makefile	/^CLIPRGNAME = redis-cli$/;"	m
+Commands operating on lists	doc/CommandReference.html	/^<h2><a name="Commands operating on lists">Commands operating on lists<\/a><\/h2><ul><li> <a href="RpushCommand.html">RPUSH<\/a> <i>key<\/i> <i>value<\/i> <code name="code" class="python">Append an element to the tail of the List value at key<\/code><\/li><li> <a href="RpushCommand.html">LPUSH<\/a> <i>key<\/i> <i>value<\/i> <code name="code" class="python">Append an element to the head of the List value at key<\/code><\/li><li> <a href="LlenCommand.html">LLEN<\/a> <i>key<\/i> <code name="code" class="python">Return the length of the List value at key<\/code><\/li><li> <a href="LrangeCommand.html">LRANGE<\/a> <i>key<\/i> <i>start<\/i> <i>end<\/i> <code name="code" class="python">Return a range of elements from the List at key<\/code><\/li><li> <a href="LtrimCommand.html">LTRIM<\/a> <i>key<\/i> <i>start<\/i> <i>end<\/i> <code name="code" class="python">Trim the list at key to the specified range of elements<\/code><\/li><li> <a href="LindexCommand.html">LINDEX<\/a> <i>key<\/i> <i>index<\/i> <code name="code" class="python">Return the element at index position from the List at key<\/code><\/li><li> <a href="LsetCommand.html">LSET<\/a> <i>key<\/i> <i>index<\/i> <i>value<\/i> <code name="code" class="python">Set a new value as the element at index position of the List at key<\/code><\/li><li> <a href="LremCommand.html">LREM<\/a> <i>key<\/i> <i>count<\/i> <i>value<\/i> <code name="code" class="python">Remove the first-N, last-N, or all the elements matching value from the List at key<\/code><\/li><li> <a href="LpopCommand.html">LPOP<\/a> <i>key<\/i> <code name="code" class="python">Return and remove (atomically) the first element of the List at key<\/code><\/li><li> <a href="LpopCommand.html">RPOP<\/a> <i>key<\/i> <code name="code" class="python">Return and remove (atomically) the last element of the List at key<\/code><\/li><\/ul>$/;"	a
+Commands operating on sets	doc/CommandReference.html	/^<h2><a name="Commands operating on sets">Commands operating on sets<\/a><\/h2><ul><li> <a href="SaddCommand.html">SADD<\/a> <i>key<\/i> <i>member<\/i> <code name="code" class="python">Add the specified member to the Set value at key<\/code><\/li><li> <a href="SremCommand.html">SREM<\/a> <i>key<\/i> <i>member<\/i> <code name="code" class="python">Remove the specified member from the Set value at key<\/code><\/li><li> <a href="SpopCommand.html">SPOP<\/a> <i>key<\/i> <code name="code" class="python">Remove and return (pop) a random element from the Set value at key<\/code><\/li><li> <a href="SmoveCommand.html">SMOVE<\/a> <i>srckey<\/i> <i>dstkey<\/i> <i>member<\/i> <code name="code" class="python">Move the specified member from one Set to another atomically<\/code><\/li><li> <a href="ScardCommand.html">SCARD<\/a> <i>key<\/i> <code name="code" class="python">Return the number of elements (the cardinality) of the Set at key<\/code><\/li><li> <a href="SismemberCommand.html">SISMEMBER<\/a> <i>key<\/i> <i>member<\/i> <code name="code" class="python">Test if the specified value is a member of the Set at key<\/code><\/li><li> <a href="SinterCommand.html">SINTER<\/a> <i>key1<\/i> <i>key2<\/i> ... <i>keyN<\/i> <code name="code" class="python">Return the intersection between the Sets stored at key1, key2, ..., keyN<\/code><\/li><li> <a href="SinterstoreCommand.html">SINTERSTORE<\/a> <i>dstkey<\/i> <i>key1<\/i> <i>key2<\/i> ... <i>keyN<\/i> <code name="code" class="python">Compute the intersection between the Sets stored at key1, key2, ..., keyN, and store the resulting Set at dstkey<\/code><\/li><li> <a href="SunionCommand.html">SUNION<\/a> <i>key1<\/i> <i>key2<\/i> ... <i>keyN<\/i> <code name="code" class="python">Return the union between the Sets stored at key1, key2, ..., keyN<\/code><\/li><li> <a href="SunionstoreCommand.html">SUNIONSTORE<\/a> <i>dstkey<\/i> <i>key1<\/i> <i>key2<\/i> ... <i>keyN<\/i> <code name="code" class="python">Compute the union between the Sets stored at key1, key2, ..., keyN, and store the resulting Set at dstkey<\/code><\/li><li> <a href="SdiffCommand.html">SDIFF<\/a> <i>key1<\/i> <i>key2<\/i> ... <i>keyN<\/i> <code name="code" class="python">Return the difference between the Set stored at key1 and all the Sets key2, ..., keyN<\/code><\/li><li> <a href="SdiffstoreCommand.html">SDIFFSTORE<\/a> <i>dstkey<\/i> <i>key1<\/i> <i>key2<\/i> ... <i>keyN<\/i> <code name="code" class="python">Compute the difference between the Set key1 and all the Sets key2, ..., keyN, and store the resulting Set at dstkey<\/code><\/li><li> <a href="SmembersCommand.html">SMEMBERS<\/a> <i>key<\/i> <code name="code" class="python">Return all the members of the Set value at key<\/code><\/li><\/ul>$/;"	a
+Commands operating on string values	doc/CommandReference.html	/^<h2><a name="Commands operating on string values">Commands operating on string values<\/a><\/h2><ul><li> <a href="SetCommand.html">SET<\/a> <i>key<\/i> <i>value<\/i> <code name="code" class="python">set a key to a string value<\/code><\/li><li> <a href="GetCommand.html">GET<\/a> <i>key<\/i> <code name="code" class="python">return the string value of the key<\/code><\/li><li> <a href="GetsetCommand.html">GETSET<\/a> <i>key<\/i> <i>value<\/i> <code name="code" class="python">set a key to a string returning the old value of the key<\/code><\/li><li> <a href="MgetCommand.html">MGET<\/a> <i>key1<\/i> <i>key2<\/i> ... <i>keyN<\/i> <code name="code" class="python">multi-get, return the strings values of the keys<\/code><\/li><li> <a href="SetnxCommand.html">SETNX<\/a> <i>key<\/i> <i>value<\/i> <code name="code" class="python">set a key to a string value if the key does not exist<\/code><\/li><li> <a href="IncrCommand.html">INCR<\/a> <i>key<\/i> <code name="code" class="python">increment the integer value of key<\/code><\/li><li> <a href="IncrCommand.html">INCRBY<\/a> <i>key<\/i> <i>integer<\/i><code name="code" class="python"> increment the integer value of key by integer<\/code><\/li><li> <a href="IncrCommand.html">DECR<\/a> <i>key<\/i> <code name="code" class="python">decrement the integer value of key<\/code><\/li><li> <a href="IncrCommand.html">DECRBY<\/a> <i>key<\/i> <i>integer<\/i> <code name="code" class="python">decrement the integer value of key by integer<\/code><\/li><li> <a href="ExistsCommand.html">EXISTS<\/a> <i>key<\/i> <code name="code" class="python">test if a key exists<\/code><\/li><li> <a href="DelCommand.html">DEL<\/a> <i>key<\/i> <code name="code" class="python">delete a key<\/code><\/li><li> <a href="TypeCommand.html">TYPE<\/a> <i>key<\/i> <code name="code" class="python">return the type of the value stored at key<\/code><\/li><\/ul>$/;"	a
+Commands operating on the key space	doc/CommandReference.html	/^<h2><a name="Commands operating on the key space">Commands operating on the key space<\/a><\/h2><ul><li> <a href="KeysCommand.html">KEYS<\/a> <i>pattern<\/i> <code name="code" class="python">return all the keys matching a given pattern<\/code><\/li><li> <a href="RandomkeyCommand.html">RANDOMKEY<\/a> <code name="code" class="python">return a random key from the key space<\/code><\/li><li> <a href="RenameCommand.html">RENAME<\/a> <i>oldname<\/i> <i>newname<\/i> <code name="code" class="python">rename the old key in the new one, destroing the newname key if it already exists<\/code><\/li><li> <a href="RenamenxCommand.html">RENAMENX<\/a> <i>oldname<\/i> <i>newname<\/i> <code name="code" class="python">rename the old key in the new one, if the newname key does not already exist<\/code><\/li><li> <a href="DbsizeCommand.html">DBSIZE<\/a> <code name="code" class="python">return the number of keys in the current db<\/code><\/li><li> <a href="ExpireCommand.html">EXPIRE<\/a> <code name="code" class="python">set a time to live in seconds on a key<\/code><\/li><li> <a href="TtlCommand.html">TTL<\/a> <code name="code" class="python">get the time to live in seconds of a key<\/code><\/li><\/ul>$/;"	a
+Compiling Redis	doc/QuickStart.html	/^<\/pre><h2><a name="Compiling Redis">Compiling Redis<\/a><\/h2>Redis can be compiled in most POSIX systems, but the development targets mainly Linux, Mac OS X, FreeBSD and OpenBSD. Solaris is currently not supported and there are no short-term plans to support it.<br\/><br\/>To compile Redis just untar the tar.gz, enter the directly and type 'make'.<br\/><br\/><pre class="codeblock python python" name="code">$/;"	a
+ConnectionError	client-libraries/python/redis.py	/^class ConnectionError(RedisError): pass$/;"	c
+Credits	doc/Credits.html	/^                    <h1><a name="Credits">Credits<\/a><\/h1><ul><li> The Redis server was designed and written by <a href="http:\/\/invece.org" target="_blank">Salvatore Sanfilippo (aka antirez)<\/a><\/li><li> <a href="http:\/\/brainspl.at\/" target="_blank">Ezra Zygmuntowicz (aka ezmobius)<\/a> - Ruby client lib initial version and hacking<\/li><li> <a href="http:\/\/qix.it" target="_blank">Ludovico Magnocavallo (aka ludo)<\/a> - Python clinet lib<\/li><li> <a href="http:\/\/www.adroll.com\/" target="_blank">Valentino Volonghi of Adroll<\/a> - Erlang client lib<\/li><li> <b>brettbender<\/b> - found and fixed a bug in sds.c that caused the server to crash at least on 64 bit systems, and anyway to be buggy since we used the same vararg thing against vsprintf without to call va_start and va_end every time.<\/li><li> <a href="http:\/\/www.rot13.org\/~dpavlin" target="_blank">Dobrica Pavlinusic<\/a> - Perl client lib<\/li><li> Brian Hammond - AUTH command implementation, C++ client lib<\/li><li> <a href="http:\/\/www.clorophilla.net\/" target="_blank">Daniele Alessandri<\/a> - Lua client lib<\/li><li> Corey Stup - C99 cleanups<\/li><li> Taylor Weibley - Ruby client improvements<\/li><li> Bob Potter - Rearrange redisObject struct to reduce memory usage in 64bit environments<\/li><li> Luca Guidi and Brian McKinney - Ruby client improvements<\/li><li> Aman Gupta - SDIFF \/ SDIFFSTORE, other Set operations improvements, ability to disable clients timeout.<\/li><li> Diego Rosario Brogna - Code and ideas about dumping backtrace on sigsegv and similar error conditions.<\/li><\/ul>$/;"	a
+DBSIZE	doc/DbsizeCommand.html	/^                    <h1><a name="DBSIZE">DBSIZE<\/a><\/h1><blockquote>Return the number of keys in the currently selected database.<\/blockquote>$/;"	a
+DEBUG	Makefile	/^DEBUG?= -g -rdynamic -ggdb $/;"	m
+DECR _key_ _integer_	doc/IncrCommand.html	/^<h1><a name="DECR _key_ _integer_">DECR _key_ _integer_<\/a><\/h1>$/;"	a
+DECRBY _key_ _integer_	doc/IncrCommand.html	/^<h1><a name="DECRBY _key_ _integer_">DECRBY _key_ _integer_<\/a><\/h1>$/;"	a
+DEL _key_	doc/DelCommand.html	/^                    <h1><a name="DEL _key_">DEL _key_<\/a><\/h1>$/;"	a
+DELETE	client-libraries/perl/lib/Redis/Hash.pm	/^sub DELETE {$/;"	s
+DESTROY	client-libraries/perl/lib/Redis.pm	/^sub DESTROY {}$/;"	s
+DESTROY	client-libraries/perl/lib/Redis/List.pm	/^sub DESTROY {$/;"	s
+DICT_ERR	dict.h	40;"	d
+DICT_HT_INITIAL_SIZE	dict.h	76;"	d
+DICT_NOTUSED	dict.h	43;"	d
+DICT_OK	dict.h	39;"	d
+DICT_STATS_VECTLEN	dict.c	456;"	d	file:
+DOC_DIR	client-libraries/erlang/support/include.mk	/^DOC_DIR  := ..\/doc$/;"	m
+Data layout	doc/TwitterAlikeExample.html	/^<h2><a name="Data layout">Data layout<\/a><\/h2>$/;"	a
+DistRedis	client-libraries/ruby/lib/dist_redis.rb	/^class DistRedis$/;"	c
+Does Redis support locking?	doc/README.html	/^<h1><a name="Does Redis support locking?">Does Redis support locking?<\/a><\/h1>No, the idea is to provide atomic primitives in order to make the programmer$/;"	a
+EBIN_DIR	client-libraries/erlang/support/include.mk	/^EBIN_DIR := ..\/ebin$/;"	m
+EBIN_DIRS	client-libraries/erlang/support/include.mk	/^EBIN_DIRS := $(wildcard ..\/deps\/*\/ebin)$/;"	m
+EBIN_FILES	client-libraries/erlang/support/include.mk	/^EBIN_FILES = $(ERL_OBJECTS) $(APP_FILES:%.app=..\/ebin\/%.app) $(ERL_TEMPLATES)$/;"	m
+EMULATOR	client-libraries/erlang/support/include.mk	/^EMULATOR := beam$/;"	m
+EOL	client-libraries/erlang/src/client.erl	/^-define(EOL, "\\r\\n").$/;"	d
+EOL	client-libraries/erlang/src/erldis.erl	/^-define(EOL, "\\r\\n").$/;"	d
+ERL	client-libraries/erlang/support/include.mk	/^ERL := erl$/;"	m
+ERLC	client-libraries/erlang/support/include.mk	/^ERLC := $(ERL)c$/;"	m
+ERLC_FLAGS	client-libraries/erlang/support/include.mk	/^ERLC_FLAGS := -W $(INCLUDE_DIRS:..\/%=-I ..\/%) $(EBIN_DIRS:%=-pa %)$/;"	m
+ERL_HEADERS	client-libraries/erlang/support/include.mk	/^ERL_HEADERS  := $(wildcard *.hrl) $(wildcard ..\/include\/*.hrl)$/;"	m
+ERL_OBJECTS	client-libraries/erlang/support/include.mk	/^ERL_OBJECTS  := $(ERL_SOURCES:%.erl=$(EBIN_DIR)\/%.beam)$/;"	m
+ERL_OBJECTS_LOCAL	client-libraries/erlang/support/include.mk	/^ERL_OBJECTS_LOCAL := $(ERL_SOURCES:%.erl=.\/%.$(EMULATOR))$/;"	m
+ERL_SOURCES	client-libraries/erlang/support/include.mk	/^ERL_SOURCES  := $(wildcard *.erl)$/;"	m
+ERL_TEMPLATE	client-libraries/erlang/support/include.mk	/^ERL_TEMPLATE := $(wildcard *.et)$/;"	m
+ERL_TEMPLATES	client-libraries/erlang/support/include.mk	/^ERL_TEMPLATES := $(ERL_TEMPLATE:%.et=$(EBIN_DIR)\/%.beam)$/;"	m
+EXISTS	client-libraries/perl/lib/Redis/Hash.pm	/^sub EXISTS {$/;"	s
+EXISTS _key_	doc/ExistsCommand.html	/^                    <h1><a name="EXISTS _key_">EXISTS _key_<\/a><\/h1>$/;"	a
+EXTEND	client-libraries/perl/lib/Redis/List.pm	/^sub EXTEND {$/;"	s
+Error reply	doc/ReplyTypes.html	/^Status code replies are single line strings having the <b>+<\/b> character as first byte. The string to return to the client is simply verything that follows the first <b>+<\/b> character. For example the <a href="PingCommand.html">PING<\/a> command returns <b>+PONG<\/b>, that is the string &quot;PONG&quot;.<h1><a name="Error reply">Error reply<\/a><\/h1>$/;"	a
+Expire _key_ _seconds_	doc/ExpireCommand.html	/^                    <h1><a name="Expire _key_ _seconds_">Expire _key_ _seconds_<\/a><\/h1>$/;"	a
+FETCH	client-libraries/perl/lib/Redis/Hash.pm	/^sub FETCH {$/;"	s
+FETCH	client-libraries/perl/lib/Redis/List.pm	/^sub FETCH {$/;"	s
+FETCHSIZE	client-libraries/perl/lib/Redis/List.pm	/^sub FETCHSIZE {$/;"	s
+FIRSTKEY	client-libraries/perl/lib/Redis/Hash.pm	/^sub FIRSTKEY {$/;"	s
+FLUSHALL	doc/FlushallCommand.html	/^                    <h1><a name="FLUSHALL">FLUSHALL<\/a><\/h1>$/;"	a
+FLUSHDB	doc/FlushdbCommand.html	/^                    <h1><a name="FLUSHDB">FLUSHDB<\/a><\/h1>$/;"	a
+FRST	lzf_c.c	48;"	d	file:
+Following users	doc/TwitterAlikeExample.html	/^<\/pre><code name="code" class="python">showPost<\/code> will simply convert and print a Post in HTML while <code name="code" class="python">showUserPosts<\/code> get range of posts passing them to <code name="code" class="python">showPosts<\/code>.<h2><a name="Following users">Following users<\/a><\/h2>If user id 1000 (antirez) wants to follow user id 1001 (pippo), we can do this with just two SADD:<br\/><br\/><pre class="codeblock python python python python python python python python python python python python python python python python python python python python python python python" name="code">$/;"	a
+Following, followers and updates	doc/TwitterAlikeExample.html	/^<h2><a name="Following, followers and updates">Following, followers and updates<\/a><\/h2>$/;"	a
+Foo	client-libraries/ruby/spec/redis_spec.rb	/^class Foo$/;"	c
+Further reading	doc/QuickStart.html	/^<\/pre><h2><a name="Further reading">Further reading<\/a><\/h2><ul><li> To know more about Redis check the <a href="README.html">Readme<\/a> file.<\/li><li> Read the full list of available commands in the <a href="CommandReference.html">Command Reference<\/a>.<\/li><li> To get started with the Redis replication read the <a href="ReplicationHowto.html">Replication Howto<\/a>.<\/li><\/ul>$/;"	a
+GET _key_	doc/GetCommand.html	/^                    <h1><a name="GET _key_">GET _key_<\/a><\/h1>$/;"	a
+GETSET _key_ _value_	doc/GetsetCommand.html	/^                    <h1><a name="GETSET _key_ _value_">GETSET _key_ _value_<\/a><\/h1>$/;"	a
+Get the latest Redis source code	doc/UnstableSource.html	/^                    <h1><a name="Get the latest Redis source code">Get the latest Redis source code<\/a><\/h1><h2><a name="Unstable code">Unstable code<\/a><\/h2>$/;"	a
+HAVE_BACKTRACE	config.h	26;"	d
+HAVE_MALLOC_SIZE	config.h	11;"	d
+HLOG	lzfP.h	55;"	d
+HSIZE	lzf_c.c	39;"	d	file:
+HashRing	client-libraries/ruby/lib/hash_ring.rb	/^class HashRing$/;"	c
+Hashing the key	doc/TwitterAlikeExample.html	/^<h3><a name="Hashing the key">Hashing the key<\/a><\/h3>$/;"	a
+How Fast is Redis?	doc/Benchmarks.html	/^                    <h1><a name="How Fast is Redis?">How Fast is Redis?<\/a><\/h1>Redis includes the <code name="code" class="python">redis-benchmark<\/code> utility that simulates SETs\/GETs done by N clients at the same time sending M total queries (it is similar to the Apache's <code name="code" class="python">ab<\/code> utility). Below you'll find the full output of the benchmark executed against a Linux box.<br\/><br\/><ul><li> The test was done with 50 simultaneous clients performing 100000 requests.<\/li><li> The value SET and GET is a 256 bytes string.<\/li><li> The Linux box is running <b>Linux 2.6<\/b>, it's <b>Xeon X3320 2.5Ghz<\/b>.<\/li><li> Text executed using the loopback interface (127.0.0.1).<\/li><\/ul>$/;"	a
+How Redis replication works	doc/ReplicationHowto.html	/^<h2><a name="How Redis replication works">How Redis replication works<\/a><\/h2>In order to start the replication, or after the connection closes in order resynchronize with the master, the client connects to the master and issues the SYNC command.<br\/><br\/>The master starts a background saving, and at the same time starts to collect all the new commands received that had the effect to modify the dataset. When the background saving completed the master starts the transfer of the database file to the slave, that saves it on disk, and then load it in memory. At this point the master starts to send all the accumulated commands, and all the new commands received from clients, that had the effect of a dataset modification.<br\/><br\/>You can try it yourself via telnet. Connect to the Redis port while the server is doing some work and issue the SYNC command. You'll see a bulk transfer and then every command received by the master will be re-issued in the telnet session.<br\/><br\/>Slaves are able to automatically reconnect when the master <code name="code" class="python">&lt;-&gt;<\/code> slave link goes down for some reason. If the master receives multiple concurrent slave synchronization requests it performs a single background saving in order to serve all them.<h2><a name="Configuration">Configuration<\/a><\/h2>To configure replication is trivial: just add the following line to the slave configuration file:$/;"	a
+How the expire is removed from a key	doc/ExpireCommand.html	/^<h2><a name="How the expire is removed from a key">How the expire is removed from a key<\/a><\/h2><blockquote>When the key is set to a new value using the SET command, the INCR commandor any other command that modify the value stored at key the timeout isremoved from the key and the key becomes non volatile.<\/blockquote>$/;"	a
+IDX	lzf_c.c	51;"	d	file:
+IDX	lzf_c.c	53;"	d	file:
+IDX	lzf_c.c	55;"	d	file:
+INCLUDE_DIRS	client-libraries/erlang/support/include.mk	/^INCLUDE_DIRS := ..\/include $(wildcard ..\/deps\/*\/include)$/;"	m
+INCR _key_	doc/IncrCommand.html	/^                    <h1><a name="INCR _key_">INCR _key_<\/a><\/h1>$/;"	a
+INCRBY _key_ _integer_	doc/IncrCommand.html	/^<h1><a name="INCRBY _key_ _integer_">INCRBY _key_ _integer_<\/a><\/h1>$/;"	a
+INFO	doc/InfoCommand.html	/^                    <h1><a name="INFO">INFO<\/a><\/h1><blockquote>The info command returns different information and statistics about the server in an format that's simple to parse by computers and easy to red by huamns.<\/blockquote>$/;"	a
+INIT_HTAB	lzfP.h	91;"	d
+Implementation Details	doc/README.html	/^that can be stored inside a 'long long' type, that is a 64-bit signed integer.<h2><a name="Implementation Details">Implementation Details<\/a><\/h2>Strings are implemented as dynamically allocated strings of characters.$/;"	a
+Integer reply	doc/ProtocolSpecification.html	/^PING, SET, SELECT, SAVE, BGSAVE, SHUTDOWN, RENAME, LPUSH, RPUSH, LSET, LTRIM<h2><a name="Integer reply">Integer reply<\/a><\/h2>This type of reply is just a CRLF terminated string representing an integer, prefixed by a &quot;:&quot; byte. For example &quot;:0\\r\\n&quot;, or &quot;:1000\\r\\n&quot; are integer replies.<br\/><br\/>With commands like INCR or LASTSAVE using the integer reply to actually return a value there is no special meaning for the returned integer. It is just an incremental number for INCR, a UNIX time for LASTSAVE and so on.<br\/><br\/>Some commands like EXISTS will return 1 for true and 0 for false.<br\/><br\/>Other commands like SADD, SREM and SETNX will return 1 if the operation was actually done, 0 otherwise.<br\/><br\/>The following commands will reply with an integer reply: SETNX, DEL, EXISTS, INCR, INCRBY, DECR, DECRBY, DBSIZE, LASTSAVE, RENAMENX, MOVE, LLEN, SADD, SREM, SISMEMBER, SCARD<h2><a name="Multiple commands and pipelining">Multiple commands and pipelining<\/a><\/h2>A client can use the same connection in order to issue multiple commands.$/;"	a
+Integer reply	doc/ReplyTypes.html	/^This is like a status code reply but the first character is <b>-<\/b> instead of <b>+<\/b>. The client library should raise an error for error replies and stop the execution of the program if the exception is not trapped, showing the error message (everything following the first <b>-<\/b> character). An example of error is &quot;-Error no such key&quot; or &quot;-foobar&quot;. Note that error replies will not collide with negative integer replies since integer replies are prefixed with the <b>:<\/b> character.<h1><a name="Integer reply">Integer reply<\/a><\/h1>$/;"	a
+Introduction	doc/README.html	/^                    <h1><a name="Introduction">Introduction<\/a><\/h1>Redis is a database. To be more specific redis is a very simple database$/;"	a
+InvalidData	client-libraries/python/redis.py	/^class InvalidData(RedisError): pass$/;"	c
+InvalidResponse	client-libraries/python/redis.py	/^class InvalidResponse(RedisError): pass$/;"	c
+Isn't this key-value thing just hype?	doc/FAQ.html	/^<h1><a name="Isn't this key-value thing just hype?">Isn't this key-value thing just hype?<\/a><\/h1>I imagine key-value DBs, in the short term future, to be used like you use memory in a program, with lists, hashes, and so on. With Redis it's like this, but this special kind of memory containing your data structures is shared, atomic, persistent.<br\/><br\/>When we write code it is obvious, when we take data in memory, to use the most sensible data structure for the work, right? Incredibly when data is put inside a relational DB this is no longer true, and we create an absurd data model even if our need is to put data and get this data back in the same order we put it inside (an ORDER BY is required when the data should be already sorted. Strange, dont' you think?).<br\/><br\/>Key-value DBs bring this back at home, to create sensible data models and use the right data structures for the problem we are trying to solve.<h1><a name="Can I backup a Redis DB while the server is working?">Can I backup a Redis DB while the server is working?<\/a><\/h1>Yes you can. When Redis saves the DB it actually creates a temp file, then rename(2) that temp file name to the destination file name. So even while the server is working it is safe to save the database file just with the <i>cp<\/i> unix command. Note that you can use master-slave replication in order to have redundancy of data, but if all you need is backups, cp or scp will do the work pretty well.<h1><a name="What's the Redis memory footprint?">What's the Redis memory footprint?<\/a><\/h1>Worst case scenario: 1 Million keys with the key being the natural numbers from 0 to 999999 and the string &quot;Hello World&quot; as value use 100MB on my Intel macbook (32bit). Note that the same data stored linearly in an unique string takes something like 16MB, this is the norm because with small keys and values there is a lot of overhead. Memcached will perform similarly.<br\/><br\/>With large keys\/values the ratio is much better of course.<br\/><br\/>64 bit systems will use much more memory than 32 bit systems to store the same keys, especially if the keys and values are small, this is because pointers takes 8 bytes in 64 bit systems. But of course the advantage is that you can have a lot of memory in 64 bit systems, so to run large Redis servers a 64 bit system is more or less required.<h1><a name="I like Redis high level operations and features, but I don't like it takes everything in memory and I can't have a dataset larger the memory. Plans to change this?">I like Redis high level operations and features, but I don't like it takes everything in memory and I can't have a dataset larger the memory. Plans to change this?<\/a><\/h1>The whole key-value hype started for a reason: performances. Redis takes the whole dataset in memory and writes asynchronously on disk in order to be very fast, you have the best of both worlds: hyper-speed and persistence of data, but the price to pay is exactly this, that the dataset must fit on your computers RAM.<br\/><br\/>If the data is larger then memory, and this data is stored on disk, what happens is that the bottleneck of the disk I\/O speed will start to ruin the performances. Maybe not in benchmarks, but once you have real load from multiple clients with distributed key accesses the data must come from disk, and the disk is damn slow. Not only, but Redis supports higher level data structures than the plain values. To implement this things on disk is even slower.<br\/><br\/>Redis will always continue to hold the whole dataset in memory because this days scalability requires to use RAM as storage media, and RAM is getting cheaper and cheaper. Today it is common for an entry level server to have 16 GB of RAM! And in the 64-bit era there are no longer limits to the amount of RAM you can have in theory.<h1><a name="Ok but I absolutely need to have a DB larger than memory, still I need the Redis features">Ok but I absolutely need to have a DB larger than memory, still I need the Redis features<\/a><\/h1>You may try to load a dataset larger than your memory in Redis and see what happens, basically if you are using a modern Operating System, and you have a lot of data in the DB that is rarely accessed, the OS's virtual memory implementation will try to swap rarely used pages of memory on the disk, to only recall this pages when they are needed. If you have many large values rarely used this will work. If your DB is big because you have tons of little values accessed at random without a specific pattern this will not work (at low level a page is usually 4096 bytes, and you can have different keys\/values stored at a single page. The OS can't swap this page on disk if there are even few keys used frequently).<br\/><br\/>Another possible solution is to use both MySQL and Redis at the same time, basically take the state on Redis, and all the things that get accessed very frequently: user auth tokens, Redis Lists with chronologically ordered IDs of the last N-comments, N-posts, and so on. Then use MySQL as a simple storage engine for larger data, that is just create a table with an auto-incrementing ID as primary key and a large BLOB field as data field. Access MySQL data only by primary key (the ID). The application will run the high traffic queries against Redis but when there is to take the big data will ask MySQL for specific resources IDs.<h1><a name="I have an empty Redis server but INFO and logs are reporting megabytes of memory in use!">I have an empty Redis server but INFO and logs are reporting megabytes of memory in use!<\/a><\/h1>This may happen and it's prefectly ok. Redis objects are small C structures allocated and freed a lot of times. This costs a lot of CPU so instead of being freed, released objects are taken into a free list and reused when needed. This memory is taken exactly by this free objects ready to be reused.<h1><a name="What happens if Redis runs out of memory?">What happens if Redis runs out of memory?<\/a><\/h1>With modern operating systems malloc() returning NULL is not common, usually the server will start swapping and Redis performances will be disastrous so you'll know it's time to use more Redis servers or get more RAM.<br\/><br\/>However it is planned to add a configuration directive to tell Redis to stop accepting queries but instead to SAVE the latest data and quit if it is using more than a given amount of memory. Also the new INFO command (work in progress in this days) will report the amount of memory Redis is using so you can write scripts that monitor your Redis servers checking for critical conditions.<br\/><br\/>Update: redis SVN is able to know how much memory it is using and report it via the <a href="InfoCommand.html">INFO<\/a> command.<h1><a name="How much time it takes to load a big database at server startup?">How much time it takes to load a big database at server startup?<\/a><\/h1>Just an example on normal hardware: It takes about 45 seconds to restore a 2 GB database on a fairly standard system, no RAID. This can give you some kind of feeling about the order of magnitude of the time needed to load data when you restart the server.<h1><a name="Background saving is failing with a fork() error under Linux even if I've a lot of free RAM!">Background saving is failing with a fork() error under Linux even if I've a lot of free RAM!<\/a><\/h1>Short answer: <code name="code" class="python">echo 1 &gt; \/proc\/sys\/vm\/overcommit_memory<\/code> :)<br\/><br\/>And now the long one:<br\/><br\/>Redis background saving schema relies on the copy-on-write semantic of fork in modern operating systems: Redis forks (creates a child process) that is an exact copy of the parent. The child process dumps the DB on disk and finally exits. In theory the child should use as much memory as the parent being a copy, but actually thanks to the copy-on-write semantic implemented by most modern operating systems the parent and child process will <i>share<\/i> the common memory pages. A page will be duplicated only when it changes in the child or in the parent. Since in theory all the pages may change while the child process is saving, Linux can't tell in advance how much memory the child will take, so if the <code name="code" class="python">overcommit_memory<\/code> setting is set to zero fork will fail unless there is as much free RAM as required to really duplicate all the parent memory pages, with the result that if you have a Redis dataset of 3 GB and just 2 GB of free memory it will fail.<br\/><br\/>Setting <code name="code" class="python">overcommit_memory<\/code> to 1 says Linux to relax and perform the fork in a more optimistic allocation fashion, and this is indeed what you want for Redis.<h1><a name="Redis is single threaded, how can I exploit multiple CPU \/ cores?">Redis is single threaded, how can I exploit multiple CPU \/ cores?<\/a><\/h1>Simply start multiple instances of Redis in different ports in the same box and threat them as different servers! Given that Redis is a distributed database anyway in order to scale you need to think in terms of multiple computational units. At some point a single box may not be enough anyway.<br\/><br\/>In general key-value databases are very scalable because of the property that different keys can stay on different servers independently.<br\/><br\/>In Redis there are client libraries such Redis-rb (the Ruby client) that are able to handle multiple servers automatically using <i>consistent hashing<\/i>. We are going to implement consistent hashing in all the other major client libraries. If you use a different language you can implement it yourself otherwise just hash the key before to SET \/ GET it from a given server. For example imagine to have N Redis servers, server-0, server-1, ..., server-N. You want to store the key &quot;foo&quot;, what's the right server where to put &quot;foo&quot; in order to distribute keys evenly among different servers? Just perform the <i>crc<\/i> = CRC32(&quot;foo&quot;), then <i>servernum<\/i> = <i>crc<\/i> % N (the rest of the division for N). This will give a number between 0 and N-1 for every key. Connect to this server and store the key. The same for gets.<br\/><br\/>This is a basic way of performing key partitioning, consistent hashing is much better and this is why after Redis 1.0 will be released we'll try to implement this in every widely used client library starting from Python and PHP (Ruby already implements this support).<h1><a name="I'm using some form of key hashing for partitioning, but what about SORT BY?">I'm using some form of key hashing for partitioning, but what about SORT BY?<\/a><\/h1>With <a href="SortCommand.html">SORT<\/a> BY you need that all the <i>weight keys<\/i> are in the same Redis instance of the list\/set you are trying to sort. In order to make this possible we developed a concept called <i>key tags<\/i>. A key tag is a special pattern inside a key that, if preset, is the only part of the key hashed in order to select the server for this key. For example in order to hash the key &quot;foo&quot; I simply perform the CRC32 checksum of the whole string, but if this key has a pattern in the form of the characters {...} I only hash this substring. So for example for the key &quot;foo{bared}&quot; the key hashing code will simply perform the CRC32 of &quot;bared&quot;. This way using key tags you can ensure that related keys will be stored on the same Redis instance just using the same key tag for all this keys. Redis-rb already implements key tags.<h1><a name="What is the maximum number of keys a single Redis instance can hold?">What is the maximum number of keys a single Redis instance can hold?<\/a><\/h1>The latest versions of Redis in the Git repository are able to handle at least 150 million of keys per instance. We are working in order to experiment with larger values.<h1><a name="What Redis means actually?">What Redis means actually?<\/a><\/h1>Redis means two things:$/;"	a
+KEYS _pattern_	doc/KeysCommand.html	/^                    <h1><a name="KEYS _pattern_">KEYS _pattern_<\/a><\/h1>$/;"	a
+LASTSAVE	doc/LastsaveCommand.html	/^                    <h1><a name="LASTSAVE">LASTSAVE<\/a><\/h1>$/;"	a
+LIBDIR	client-libraries/erlang/Makefile	/^LIBDIR=`erl -eval 'io:format("~s~n", [code:lib_dir()])' -s init stop -noshell`$/;"	m
+LIBNAME	client-libraries/cpp/Makefile	/^LIBNAME = libredisclient.a$/;"	m
+LINDEX _key_ _index_	doc/LindexCommand.html	/^                    <h1><a name="LINDEX _key_ _index_">LINDEX _key_ _index_<\/a><\/h1>$/;"	a
+LLEN _key_	doc/LlenCommand.html	/^                    <h1><a name="LLEN _key_">LLEN _key_<\/a><\/h1>$/;"	a
+LPOP _key_	doc/LpopCommand.html	/^                    <h1><a name="LPOP _key_">LPOP _key_<\/a><\/h1>$/;"	a
+LPUSH _key_ _string_	doc/RpushCommand.html	/^<h3><a name="LPUSH _key_ _string_">LPUSH _key_ _string_<\/a><\/h3>$/;"	a
+LRANGE _key_ _start_ _end_	doc/LrangeCommand.html	/^                    <h1><a name="LRANGE _key_ _start_ _end_">LRANGE _key_ _start_ _end_<\/a><\/h1>$/;"	a
+LREM _key_ _count_ _value_	doc/LremCommand.html	/^                    <h1><a name="LREM _key_ _count_ _value_">LREM _key_ _count_ _value_<\/a><\/h1>$/;"	a
+LSET _key_ _index_ _value_	doc/LsetCommand.html	/^                    <h1><a name="LSET _key_ _index_ _value_">LSET _key_ _index_ _value_<\/a><\/h1>$/;"	a
+LTRIM _key_ _start_ _end_	doc/LtrimCommand.html	/^                    <h1><a name="LTRIM _key_ _start_ _end_">LTRIM _key_ _start_ _end_<\/a><\/h1>$/;"	a
+LZFP_h	lzfP.h	38;"	d
+LZF_H	lzf.h	38;"	d
+LZF_STATE	lzfP.h	/^typedef const u8 *LZF_STATE[1 << (HLOG)];$/;"	t
+LZF_STATE_ARG	lzfP.h	109;"	d
+LZF_VERSION	lzf.h	49;"	d
+Latency percentiles	doc/Benchmarks.html	/^Results: <b>about 110000 SETs per second, about 81000 GETs per second.<\/b><h1><a name="Latency percentiles">Latency percentiles<\/a><\/h1><pre class="codeblock python" name="code">$/;"	a
+License	doc/README.html	/^for a language missing a decent client implementation.<h1><a name="License">License<\/a><\/h1>Redis is released under the BSD license. See the COPYING file for more information.<h1><a name="Credits">Credits<\/a><\/h1>Redis is written and maintained by Salvatore Sanfilippo, Aka 'antirez'.<br\/><br\/>Enjoy,$/;"	a
+MAX_LATENCY	benchmark.c	56;"	d	file:
+MAX_LIT	lzf_c.c	74;"	d	file:
+MAX_OFF	lzf_c.c	75;"	d	file:
+MAX_REF	lzf_c.c	76;"	d	file:
+MGET _key1_ _key2_ ... _keyN_	doc/MgetCommand.html	/^                    <h1><a name="MGET _key1_ _key2_ ... _keyN_">MGET _key1_ _key2_ ... _keyN_<\/a><\/h1>$/;"	a
+MODULES	client-libraries/erlang/support/include.mk	/^MODULES = $(ERL_SOURCES:%.erl=%)$/;"	m
+MONITOR	doc/MonitorCommand.html	/^                    <h1><a name="MONITOR">MONITOR<\/a><\/h1><blockquote>MONITOR is a debugging command that outputs the whole sequence of commandsreceived by the Redis server. is very handy in order to understandwhat is happening into the database. This command is used directlyvia telnet.<\/blockquote>$/;"	a
+MOVE _key_ _dbindex_	doc/MoveCommand.html	/^                    <h1><a name="MOVE _key_ _dbindex_">MOVE _key_ _dbindex_<\/a><\/h1>$/;"	a
+Making it horizontally scalable	doc/TwitterAlikeExample.html	/^<h1><a name="Making it horizontally scalable">Making it horizontally scalable<\/a><\/h1>$/;"	a
+Multi bulk reply	doc/ReplyTypes.html	/^A bulk reply is a binary-safe reply that is used to return a binary safe single string value (string is not limited to alphanumerical strings, it may contain binary data of any kind). Client libraries will usually return a string as return value of Redis commands returning bulk replies. There is a special bulk reply that signal that the element does not exist. When this happens the client library should return 'nil', 'false', or some other special element that can be distinguished by an empty string.<h1><a name="Multi bulk reply">Multi bulk reply<\/a><\/h1>$/;"	a
+Multi-Bulk replies	doc/ProtocolSpecification.html	/^NULL, and so forth.<h2><a name="Multi-Bulk replies">Multi-Bulk replies<\/a><\/h2>Commands similar to LRANGE needs to return multiple values (every element$/;"	a
+Multiple databases handling commands	doc/CommandReference.html	/^<h2><a name="Multiple databases handling commands">Multiple databases handling commands<\/a><\/h2><ul><li> <a href="SelectCommand.html">SELECT<\/a> <i>index<\/i> <code name="code" class="python">Select the DB having the specified index<\/code><\/li><li> <a href="MoveCommand.html">MOVE<\/a> <i>key<\/i> <i>dbindex<\/i> <code name="code" class="python">Move the key from the currently selected DB to the DB having as index dbindex<\/code><\/li><li> <a href="FlushdbCommand.html">FLUSHDB<\/a> <code name="code" class="python">Remove all the keys of the currently selected DB<\/code><\/li><li> <a href="FlushallCommand.html">FLUSHALL<\/a> <code name="code" class="python">Remove all the keys from all the databases<\/code><\/li><\/ul>$/;"	a
+Multiple databases support	doc/README.html	/^order to implement distributed algorithms.<br\/><br\/>(News: locking with key-granularity is now planned)<h1><a name="Multiple databases support">Multiple databases support<\/a><\/h1>Another synchronization primitive is the support for multiple DBs. By default DB 0 is selected for every new connection, but using the SELECT command it is possible to select a different database. The MOVE operation can move an item from one DB to another atomically. This can be used as a base for locking free algorithms together with the 'RANDOMKEY' commands.<h1><a name="Redis Data Types">Redis Data Types<\/a><\/h1>Redis supports the following three data types as values:<br\/><br\/><ul><li> Strings: just any sequence of bytes. Redis strings are binary safe so they can not just hold text, but images, compressed data and everything else.<\/li><li> Lists: lists of strings, with support for operations like append a new string on head, on tail, list length, obtain a range of elements, truncate the list to a given length, sort the list, and so on.<\/li><li> Sets: an unsorted set of strings. It is possible to add or delete elements from a set, to perform set intersection, union, subtraction, and so on.<\/li><\/ul>$/;"	a
+NEXT	lzf_c.c	49;"	d	file:
+NEXTKEY	client-libraries/perl/lib/Redis/Hash.pm	/^sub NEXTKEY {$/;"	s
+Networking layer	doc/ProtocolSpecification.html	/^to get a first feeling of the protocol playing with it by TELNET.<h2><a name="Networking layer">Networking layer<\/a><\/h2>A client connects to a Redis server creating a TCP connection to the port 6379.$/;"	a
+Nil elements in Multi-Bulk replies	doc/ProtocolSpecification.html	/^happens. This makes possible to distinguish between empty list and non existing ones.<h2><a name="Nil elements in Multi-Bulk replies">Nil elements in Multi-Bulk replies<\/a><\/h2>Single elements of a multi bulk reply may have -1 length, in order to signal that this elements are missing and not empty strings. This can happen with the SORT command when used with the GET <i>pattern<\/i> option when the specified key is missing. Example of a multi bulk reply containing an empty element:<br\/><br\/><pre class="codeblock python python python python python python python python" name="code">$/;"	a
+Notes	doc/InfoCommand.html	/^<\/pre>All the fields are in the form <code name="code" class="python">field:value<\/code><h2><a name="Notes">Notes<\/a><\/h2><ul><li> <code name="code" class="python">used_memory<\/code> is returned in bytes, and is the total number of bytes allocated by the program using <code name="code" class="python">malloc<\/code>.<\/li><li> <code name="code" class="python">uptime_in_days<\/code> is redundant since the uptime in seconds contains already the full uptime information, this field is only mainly present for humans.<\/li><li> <code name="code" class="python">changes_since_last_save<\/code> does not refer to the number of key changes, but to the number of operations that produced some kind of change in the dataset.<\/li><\/ul>$/;"	a
+OBJ	Makefile	/^OBJ = adlist.o ae.o anet.o dict.o redis.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o$/;"	m
+PRGNAME	Makefile	/^PRGNAME = redis-server$/;"	m
+PUSH	client-libraries/perl/lib/Redis/List.pm	/^sub PUSH {$/;"	s
+Paginating updates	doc/TwitterAlikeExample.html	/^<h2><a name="Paginating updates">Paginating updates<\/a><\/h2>$/;"	a
+Persistence control commands	doc/CommandReference.html	/^<h2><a name="Persistence control commands">Persistence control commands<\/a><\/h2><ul><li> <a href="SaveCommand.html">SAVE<\/a> <code name="code" class="python">Synchronously save the DB on disk<\/code><\/li><li> <a href="BgsaveCommand.html">BGSAVE<\/a> <code name="code" class="python">Asynchronously save the DB on disk<\/code><\/li><li> <a href="LastsaveCommand.html">LASTSAVE<\/a> <code name="code" class="python">Return the UNIX time stamp of the last successfully saving of the dataset on disk<\/code><\/li><li> <a href="ShutdownCommand.html">SHUTDOWN<\/a> <code name="code" class="python">Synchronously save the DB on disk, then shutdown the server<\/code><\/li><\/ul>$/;"	a
+Pipeline	client-libraries/ruby/lib/pipeline.rb	/^  class Pipeline < Redis$/;"	c	class:Redis
+Prerequisites	doc/TwitterAlikeExample.html	/^<h2><a name="Prerequisites">Prerequisites<\/a><\/h2>$/;"	a
+Protocol Specification	doc/ProtocolSpecification.html	/^                    <h1><a name="Protocol Specification">Protocol Specification<\/a><\/h1>The Redis protocol is a compromise between being easy to parse by a computer$/;"	a
+Quick Start	doc/QuickStart.html	/^                    <h1><a name="Quick Start">Quick Start<\/a><\/h1>This quickstart is a five minutes howto on how to get started with Redis. For more information on Redis check <a href="http:\/\/code.google.com\/p\/redis\/wiki\/index" target="_blank">Redis Documentation Index<\/a>.<h2><a name="Obtaining the latest version of Redis">Obtaining the latest version of Redis<\/a><\/h2>The latest stable source distribution of Redis can be obtained <a href="http:\/\/code.google.com\/p\/redis\/downloads\/list" target="_blank">at this location as a tarball<\/a>. The unstable source code, with more features but not ready for production, can be downloaded using git:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Quit	doc/QuitCommand.html	/^                    <h1><a name="Quit">Quit<\/a><\/h1><blockquote>Ask the server to silently close the connection.<\/blockquote>$/;"	a
+RANDOMKEY	doc/RandomkeyCommand.html	/^                    <h1><a name="RANDOMKEY">RANDOMKEY<\/a><\/h1>$/;"	a
+REDISCLIENT_H	client-libraries/cpp/redisclient.h	32;"	d
+REDIS_CLOSE	redis.c	140;"	d	file:
+REDIS_CMD_BULK	redis-cli.c	44;"	d	file:
+REDIS_CMD_BULK	redis.c	93;"	d	file:
+REDIS_CMD_DENYOOM	redis.c	99;"	d	file:
+REDIS_CMD_INLINE	redis-cli.c	43;"	d	file:
+REDIS_CMD_INLINE	redis.c	94;"	d	file:
+REDIS_CONFIGLINE_MAX	redis.c	82;"	d	file:
+REDIS_DEBUG	redis.c	173;"	d	file:
+REDIS_DEFAULT_DBNUM	redis.c	81;"	d	file:
+REDIS_EOF	redis.c	110;"	d	file:
+REDIS_ERR	redis.c	73;"	d	file:
+REDIS_EXPIRELOOKUPS_PER_CRON	redis.c	85;"	d	file:
+REDIS_EXPIRETIME	redis.c	108;"	d	file:
+REDIS_HASH	redis.c	105;"	d	file:
+REDIS_HEAD	redis.c	160;"	d	file:
+REDIS_HT_MINFILL	redis.c	90;"	d	file:
+REDIS_IOBUF_LEN	redis.c	78;"	d	file:
+REDIS_LIST	redis.c	103;"	d	file:
+REDIS_LOADBUF_LEN	redis.c	79;"	d	file:
+REDIS_MASTER	redis.c	142;"	d	file:
+REDIS_MAXIDLETIME	redis.c	77;"	d	file:
+REDIS_MAX_SYNC_TIME	redis.c	84;"	d	file:
+REDIS_MAX_WRITE_PER_EVENT	redis.c	86;"	d	file:
+REDIS_MONITOR	redis.c	143;"	d	file:
+REDIS_NOTICE	redis.c	174;"	d	file:
+REDIS_NOTUSED	benchmark.c	58;"	d	file:
+REDIS_NOTUSED	redis-cli.c	46;"	d	file:
+REDIS_NOTUSED	redis.c	178;"	d	file:
+REDIS_OBJFREELIST_MAX	redis.c	83;"	d	file:
+REDIS_OK	redis.c	72;"	d	file:
+REDIS_OP_DIFF	redis.c	3211;"	d	file:
+REDIS_OP_UNION	redis.c	3210;"	d	file:
+REDIS_RDB_14BITLEN	redis.c	126;"	d	file:
+REDIS_RDB_32BITLEN	redis.c	127;"	d	file:
+REDIS_RDB_6BITLEN	redis.c	125;"	d	file:
+REDIS_RDB_ENCVAL	redis.c	128;"	d	file:
+REDIS_RDB_ENC_INT16	redis.c	135;"	d	file:
+REDIS_RDB_ENC_INT32	redis.c	136;"	d	file:
+REDIS_RDB_ENC_INT8	redis.c	134;"	d	file:
+REDIS_RDB_ENC_LZF	redis.c	137;"	d	file:
+REDIS_RDB_LENERR	redis.c	129;"	d	file:
+REDIS_REPL_CONNECT	redis.c	147;"	d	file:
+REDIS_REPL_CONNECTED	redis.c	148;"	d	file:
+REDIS_REPL_NONE	redis.c	146;"	d	file:
+REDIS_REPL_ONLINE	redis.c	157;"	d	file:
+REDIS_REPL_SEND_BULK	redis.c	156;"	d	file:
+REDIS_REPL_WAIT_BGSAVE_END	redis.c	155;"	d	file:
+REDIS_REPL_WAIT_BGSAVE_START	redis.c	154;"	d	file:
+REDIS_REQUEST_MAX_SIZE	redis.c	87;"	d	file:
+REDIS_SELECTDB	redis.c	109;"	d	file:
+REDIS_SERVERPORT	redis.c	76;"	d	file:
+REDIS_SET	redis.c	104;"	d	file:
+REDIS_SLAVE	redis.c	141;"	d	file:
+REDIS_SORTKEY_MAX	redis.c	170;"	d	file:
+REDIS_SORT_ASC	redis.c	168;"	d	file:
+REDIS_SORT_DECR	redis.c	167;"	d	file:
+REDIS_SORT_DEL	redis.c	165;"	d	file:
+REDIS_SORT_DESC	redis.c	169;"	d	file:
+REDIS_SORT_GET	redis.c	164;"	d	file:
+REDIS_SORT_INCR	redis.c	166;"	d	file:
+REDIS_STATIC_ARGS	redis.c	80;"	d	file:
+REDIS_STRING	redis.c	102;"	d	file:
+REDIS_TAIL	redis.c	161;"	d	file:
+REDIS_VERSION	redis.c	30;"	d	file:
+REDIS_WARNING	redis.c	175;"	d	file:
+REG_CS	redis.h	/^  REG_CS,$/;"	e	enum:__anon1
+REG_CS	redis.h	66;"	d
+REG_DS	redis.h	/^  REG_DS,$/;"	e	enum:__anon1
+REG_DS	redis.h	42;"	d
+REG_EAX	redis.h	/^  REG_EAX,$/;"	e	enum:__anon1
+REG_EAX	redis.h	58;"	d
+REG_EBP	redis.h	/^  REG_EBP,$/;"	e	enum:__anon1
+REG_EBP	redis.h	48;"	d
+REG_EBX	redis.h	/^  REG_EBX,$/;"	e	enum:__anon1
+REG_EBX	redis.h	52;"	d
+REG_ECX	redis.h	/^  REG_ECX,$/;"	e	enum:__anon1
+REG_ECX	redis.h	56;"	d
+REG_EDI	redis.h	/^  REG_EDI,$/;"	e	enum:__anon1
+REG_EDI	redis.h	44;"	d
+REG_EDX	redis.h	/^  REG_EDX,$/;"	e	enum:__anon1
+REG_EDX	redis.h	54;"	d
+REG_EFL	redis.h	/^  REG_EFL,$/;"	e	enum:__anon1
+REG_EFL	redis.h	68;"	d
+REG_EIP	redis.h	/^  REG_EIP,$/;"	e	enum:__anon1
+REG_EIP	redis.h	64;"	d
+REG_ERR	redis.h	/^  REG_ERR,$/;"	e	enum:__anon1
+REG_ERR	redis.h	62;"	d
+REG_ES	redis.h	/^  REG_ES,$/;"	e	enum:__anon1
+REG_ES	redis.h	40;"	d
+REG_ESI	redis.h	/^  REG_ESI,$/;"	e	enum:__anon1
+REG_ESI	redis.h	46;"	d
+REG_ESP	redis.h	/^  REG_ESP,$/;"	e	enum:__anon1
+REG_ESP	redis.h	50;"	d
+REG_FS	redis.h	/^  REG_FS,$/;"	e	enum:__anon1
+REG_FS	redis.h	38;"	d
+REG_GS	redis.h	/^  REG_GS = 0,$/;"	e	enum:__anon1
+REG_GS	redis.h	36;"	d
+REG_SS	redis.h	/^  REG_SS$/;"	e	enum:__anon1
+REG_SS	redis.h	72;"	d
+REG_TRAPNO	redis.h	/^  REG_TRAPNO,$/;"	e	enum:__anon1
+REG_TRAPNO	redis.h	60;"	d
+REG_UESP	redis.h	/^  REG_UESP,$/;"	e	enum:__anon1
+REG_UESP	redis.h	70;"	d
+RENAME _oldkey_ _newkey_	doc/RenameCommand.html	/^                    <h1><a name="RENAME _oldkey_ _newkey_">RENAME _oldkey_ _newkey_<\/a><\/h1>$/;"	a
+RENAMENX _oldkey_ _newkey_	doc/RenamenxCommand.html	/^                    <h1><a name="RENAMENX _oldkey_ _newkey_">RENAMENX _oldkey_ _newkey_<\/a><\/h1>$/;"	a
+REPLY_BULK	benchmark.c	50;"	d	file:
+REPLY_INT	benchmark.c	48;"	d	file:
+REPLY_RETCODE	benchmark.c	49;"	d	file:
+RPOP _key_	doc/LpopCommand.html	/^<h1><a name="RPOP _key_">RPOP _key_<\/a><\/h1>$/;"	a
+RPUSH _key_ _string_	doc/RpushCommand.html	/^                    <h3><a name="RPUSH _key_ _string_">RPUSH _key_ _string_<\/a><\/h3>$/;"	a
+Redis	client-libraries/perl/lib/Redis.pm	/^package Redis;$/;"	p
+Redis	client-libraries/php/redis.php	/^class Redis {$/;"	c
+Redis	client-libraries/python/redis.py	/^class Redis(object):$/;"	c
+Redis	client-libraries/ruby/lib/pipeline.rb	/^class Redis$/;"	c
+Redis	client-libraries/ruby/lib/redis.rb	/^class Redis$/;"	c
+Redis Command Reference	doc/CommandReference.html	/^                    <h1><a name="Redis Command Reference">Redis Command Reference<\/a><\/h1>Every command name links to a specific wiki page describing the behavior of the command.<h2><a name="Connection handling">Connection handling<\/a><\/h2><ul><li> <a href="QuitCommand.html">QUIT<\/a> <code name="code" class="python">close the connection<\/code><\/li><li> <a href="AuthCommand.html">AUTH<\/a> <code name="code" class="python">simple password authentication if enabled<\/code><\/li><\/ul>$/;"	a
+Redis Documentation	doc/index.html	/^                    <h1><a name="Redis Documentation">Redis Documentation<\/a><\/h1>Hello! The followings are pointers to different parts of the Redis Documentation.<br\/><br\/><ul><li> <a href="README.html">The README<\/a> is the best starting point to know more about the project.<\/li><li> <a href="QuickStart.html">This short Quick Start<\/a> provides a five minutes step-by-step istructions on how to download, compile, run and test the basic workings of a Redis server.<\/li><li> <a href="CommandReference.html">The command reference<\/a> is a description of all the Redis commands with links to command specific pages.<\/li><li> <a href="ProtocolSpecification.html">The Protocol Specification<\/a> is all you need in order to implement a Redis client library for a missing language. PHP, Python, Ruby and Erlang are already supported.<\/li><li> <a href="TwitterAlikeExample.html">This is a tuturial about creating a Twitter clone using *only* Redis as database, no relational DB at all is used<\/a>, it is a good start to understand the key-value database paradigm.<\/li><li> <a href="ReplicationHowto.html">The Redis Replication HOWTO<\/a> is what you need to read in order to understand how Redis master <code name="code" class="python">&lt;-&gt;<\/code> slave replication works.<\/li><li> <a href="FAQ.html">Our FAQ<\/a> contains of course some answers to common questions about Redis.<\/li><li> <a href="Benchmarks.html">The benchmark page<\/a> is about the speed performances of Redis.<\/li><li> <b>New!<\/b> video: <a href="http:\/\/mwrc2009.confreaks.com\/13-mar-2009-19-24-redis-key-value-nirvana-ezra-zygmuntowicz.html" target="_blank">watch the Ezra Zygmuntowicz talk about Redis<\/a> to know the most important Redis ideas in few minutes.<\/li><\/ul>$/;"	a
+Redis Replication Howto	doc/ReplicationHowto.html	/^                    <h1><a name="Redis Replication Howto">Redis Replication Howto<\/a><\/h1><h2><a name="General Information">General Information<\/a><\/h2>Redis replication is a very simple to use and configure master-slave replication that allows slave Redis servers to be exact copies of master servers. The following are some very important facts about Redis replication:<br\/><br\/><ul><li> A master can have multiple slaves.<\/li><li> Slaves are able to accept other slaves connections, so instead to connect a number of slaves against the same master it is also possible to connect some of the slaves to other slaves in a graph-alike structure.<\/li><li> Redis replication is non-blocking on the master side, this means that the master will continue to serve queries while one or more slaves are performing the first synchronization. Instead replication is blocking on the slave side: while the slave is performing the first synchronization it can't reply to queries.<\/li><li> Replications can be used both for scalability, in order to have multiple slaves for read-only queries (for example heavy <a href="SortCommand.html">SORT<\/a> operations can be launched against slaves), or simply for data redundancy.<\/li><li> It is possible to use replication to avoid the saving process on the master side: just configure your master redis.conf in order to avoid saving at all (just comment al the &quot;save&quot; directives), then connect a slave configured to save from time to time.<\/li><\/ul>$/;"	a
+Redis Reply Types	doc/ReplyTypes.html	/^                    <h1><a name="Redis Reply Types">Redis Reply Types<\/a><\/h1>Redis commands can reply to the client with four different kind of replies, you can find the protocol level specification of this replies in the <a href="ProtocolSpecification.html">Redis Protocol Specification<\/a>. This page is instead an higher level description of the four types of replies from the point of view of the final user.<h1><a name="Status code reply">Status code reply<\/a><\/h1>$/;"	a
+Redis Tutorial	doc/README.html	/^Sets are implemented using hash tables that use chaining to resolve collisions.<h1><a name="Redis Tutorial">Redis Tutorial<\/a><\/h1>(note, you can skip this section if you are only interested in &quot;formal&quot; doc.)<br\/><br\/>Later in this document you can find detailed information about Redis commands,$/;"	a
+Redis::Hash	client-libraries/perl/lib/Redis/Hash.pm	/^package Redis::Hash;$/;"	p
+Redis::List	client-libraries/perl/lib/Redis/List.pm	/^package Redis::List;$/;"	p
+RedisError	client-libraries/python/redis.py	/^class RedisError(Exception): pass$/;"	c
+RedisRunner	client-libraries/ruby/tasks/redis.tasks.rb	/^class RedisRunner$/;"	c
+Remote server control commands	doc/CommandReference.html	/^<h2><a name="Remote server control commands">Remote server control commands<\/a><\/h2><ul><li> <a href="InfoCommand.html">INFO<\/a> <code name="code" class="python">Provide information and statistics about the server<\/code><\/li><li> <a href="MonitorCommand.html">MONITOR<\/a> <code name="code" class="python">Dump all the received requests in real time<\/code><\/li><li> <a href="SlaveofCommand.html">SLAVEOF<\/a> <code name="code" class="python">Change the replication settings<\/code><\/li><\/ul>$/;"	a
+ResetServerSaveParams	redis.c	/^static void ResetServerSaveParams() {$/;"	f	file:
+ResponseError	client-libraries/python/redis.py	/^class ResponseError(RedisError): pass$/;"	c
+Restrictions with write operations against volatile keys	doc/ExpireCommand.html	/^<h2><a name="Restrictions with write operations against volatile keys">Restrictions with write operations against volatile keys<\/a><\/h2><blockquote>Write operations like LPUSH, LSET and every other command that has theeffect of modifying the value stored at a volatile key have a special semantic:basically a volatile key is destroyed when it is target of a write operation.See for example the following usage pattern:<\/blockquote>$/;"	a
+Return value	doc/AuthCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a>$/;"	a
+Return value	doc/BgsaveCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/DbsizeCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/DelCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/ExistsCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/ExpireCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python python" name="code">$/;"	a
+Return value	doc/FlushallCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/FlushdbCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/GetCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Bulk reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/GetsetCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Bulk reply<\/a><h2><a name="Design patterns">Design patterns<\/a><\/h2><blockquote>GETSET can be used together with INCR for counting with atomic reset whena given condition arises. For example a process may call INCR against thekey <i>mycounter<\/i> every time some event occurred, but from time totime we need to get the value of the counter and reset it to zero atomicallyusing <code name="code" class="python">GETSET mycounter 0<\/code>.<\/blockquote>$/;"	a
+Return value	doc/IncrCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, this commands will reply with the new value of <i>key<\/i> after the increment or decrement.<h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/InfoCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Bulk reply<\/a>, specifically in the following format:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/KeysCommand.html	/^<blockquote>* h<a href="ae.html">ae<\/a>llo will match hello and hallo, but not hillo<\/blockquote>Use \\ to escape special chars if you want to match them verbatim.<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Bulk reply<\/a>, specifically a string in the form of space separated list of keys. Note that most client libraries will return an Array of keys and not a single string with space separated keys (that is, split by &quot; &quot; is performed in the client library usually).<h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/LastsaveCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, specifically an UNIX time stamp.<h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/LindexCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Bulk reply<\/a>, specifically the requested element.<h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/LlenCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/LpopCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Bulk reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/LrangeCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Multi bulk reply<\/a>, specifically a list of elements in the specified range.<h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/LremCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer Reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/LsetCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/LtrimCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/MgetCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Multi bulk reply<\/a><h2><a name="Example">Example<\/a><\/h2><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/MonitorCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><b>Non standard return value<\/b>, just dumps the received commands in an infinite flow.<h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/MoveCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/QuitCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2>None. The connection is closed as soon as the QUIT command is received.$/;"	a
+Return value	doc/RandomkeyCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Singe line reply<\/a>, specifically the randomly selected key or an empty string is the database is empty.<h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/RenameCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code repy<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/RenamenxCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/RpushCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/SaddCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/SaveCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/ScardCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/SdiffCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Multi bulk reply<\/a>, specifically the list of common elements.<h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/SdiffstoreCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/SelectCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/SetCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/SetnxCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/ShutdownCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a> on error. On success nothing is returned since the server quits and the connection is closed.<h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/SinterCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Multi bulk reply<\/a>, specifically the list of common elements.<h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/SinterstoreCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/SismemberCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/SlaveofCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/SmembersCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Multi bulk reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/SmoveCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/SortCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Multi bulk reply<\/a>, specifically a list of sorted elements.<h2><a name="See Also">See Also<\/a><\/h2>$/;"	a
+Return value	doc/SpopCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">bulk reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/SremCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Return value	doc/SunionCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Multi bulk reply<\/a>, specifically the list of common elements.<h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/SunionstoreCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/TemplateCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">ReplyTypes<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/TtlCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Integer reply<\/a><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Return value	doc/TypeCommand.html	/^<h2><a name="Return value">Return value<\/a><\/h2><a href="ReplyTypes.html">Status code reply<\/a>, specifically:<br\/><br\/><pre class="codeblock python" name="code">$/;"	a
+Running Redis	doc/QuickStart.html	/^<\/pre>In order to test if the Redis server is working well in your computer make sure to run <code name="code" class="python">make test<\/code>and check that all the tests are passed.<h2><a name="Running Redis">Running Redis<\/a><\/h2>Redis can run just fine without a configuration file (when executed without a config file a standard configuration is used). To run Redis just type the following command:<br\/><br\/><pre class="codeblock python python python" name="code">$/;"	a
+SADD _key_ _member_	doc/SaddCommand.html	/^                    <h1><a name="SADD _key_ _member_">SADD _key_ _member_<\/a><\/h1>$/;"	a
+SAVE	doc/SaveCommand.html	/^                    <h3><a name="SAVE">SAVE<\/a><\/h3>$/;"	a
+SCARD _key_	doc/ScardCommand.html	/^                    <h1><a name="SCARD _key_">SCARD _key_<\/a><\/h1>$/;"	a
+SDIFF _key1_ _key2_ ... _keyN_	doc/SdiffCommand.html	/^                    <h1><a name="SDIFF _key1_ _key2_ ... _keyN_">SDIFF _key1_ _key2_ ... _keyN_<\/a><\/h1>$/;"	a
+SDIFFSTORE _dstkey_ _key1_ _key2_ ... _keyN_	doc/SdiffstoreCommand.html	/^                    <h1><a name="SDIFFSTORE _dstkey_ _key1_ _key2_ ... _keyN_">SDIFFSTORE _dstkey_ _key1_ _key2_ ... _keyN_<\/a><\/h1>$/;"	a
+SDS_ABORT_ON_OOM	sds.c	31;"	d	file:
+SELECT _index_	doc/SelectCommand.html	/^                    <h1><a name="SELECT _index_">SELECT _index_<\/a><\/h1>$/;"	a
+SET _key_ _value_	doc/SetCommand.html	/^                    <h1><a name="SET _key_ _value_">SET _key_ _value_<\/a><\/h1>$/;"	a
+SETNX _key_ _value_	doc/SetnxCommand.html	/^                    <h1><a name="SETNX _key_ _value_">SETNX _key_ _value_<\/a><\/h1>$/;"	a
+SET_ERRNO	lzf_d.c	40;"	d	file:
+SET_ERRNO	lzf_d.c	43;"	d	file:
+SHIFT	client-libraries/perl/lib/Redis/List.pm	/^sub SHIFT {$/;"	s
+SHUTDOWN	doc/ShutdownCommand.html	/^                    <h1><a name="SHUTDOWN">SHUTDOWN<\/a><\/h1>$/;"	a
+SINTER _key1_ _key2_ ... _keyN_	doc/SinterCommand.html	/^                    <h1><a name="SINTER _key1_ _key2_ ... _keyN_">SINTER _key1_ _key2_ ... _keyN_<\/a><\/h1>$/;"	a
+SINTERSTORE _dstkey_ _key1_ _key2_ ... _keyN_	doc/SinterstoreCommand.html	/^                    <h1><a name="SINTERSTORE _dstkey_ _key1_ _key2_ ... _keyN_">SINTERSTORE _dstkey_ _key1_ _key2_ ... _keyN_<\/a><\/h1>$/;"	a
+SISMEMBER _key_ _member_	doc/SismemberCommand.html	/^                    <h1><a name="SISMEMBER _key_ _member_">SISMEMBER _key_ _member_<\/a><\/h1>$/;"	a
+SLAVEOF _host_ _port_	doc/SlaveofCommand.html	/^                    <h1><a name="SLAVEOF _host_ _port_">SLAVEOF _host_ _port_<\/a><\/h1>$/;"	a
+SLAVEOF no one	doc/SlaveofCommand.html	/^<h1><a name="SLAVEOF no one">SLAVEOF no one<\/a><\/h1><blockquote>The SLAVEOF command can change the replication settings of a slave on the fly.If a Redis server is arleady acting as slave, the command <code name="code" class="python">SLAVEOF NO ONE<\/code>will turn off the replicaiton turning the Redis server into a MASTER.In the proper form <code name="code" class="python">SLAVEOF hostname port<\/code> will make the server a slave of thespecific server listening at the specified hostname and port.<\/blockquote>$/;"	a
+SMEMBERS _key_	doc/SmembersCommand.html	/^                    <h1><a name="SMEMBERS _key_">SMEMBERS _key_<\/a><\/h1>$/;"	a
+SMOVE _srckey_ _dstkey_ _member_	doc/SmoveCommand.html	/^                    <h1><a name="SMOVE _srckey_ _dstkey_ _member_">SMOVE _srckey_ _dstkey_ _member_<\/a><\/h1>$/;"	a
+SORT _key_ BY _pattern_ LIMIT _start_ _end_ GET _pattern_ ASC|DESC ALPHA	doc/SortCommand.html	/^                    <h1><a name="SORT _key_ BY _pattern_ LIMIT _start_ _end_ GET _pattern_ ASC|DESC ALPHA">SORT _key_ BY _pattern_ LIMIT _start_ _end_ GET _pattern_ ASC|DESC ALPHA<\/a><\/h1>$/;"	a
+SPLICE	client-libraries/perl/lib/Redis/List.pm	/^sub SPLICE {$/;"	s
+SPOP _key_	doc/SpopCommand.html	/^                    <h1><a name="SPOP _key_">SPOP _key_<\/a><\/h1>$/;"	a
+SREM _key_ _member_	doc/SremCommand.html	/^                    <h1><a name="SREM _key_ _member_">SREM _key_ _member_<\/a><\/h1>$/;"	a
+STANDALONE	lzfP.h	40;"	d
+STORE	client-libraries/perl/lib/Redis/Hash.pm	/^sub STORE {$/;"	s
+STORE	client-libraries/perl/lib/Redis/List.pm	/^sub STORE {$/;"	s
+STORESIZE	client-libraries/perl/lib/Redis/List.pm	/^sub STORESIZE {$/;"	s
+STRICT_ALIGN	lzfP.h	139;"	d
+STRICT_ALIGN	lzfP.h	140;"	d
+STRICT_ALIGN	lzfP.h	82;"	d
+SUNION _key1_ _key2_ ... _keyN_	doc/SunionCommand.html	/^                    <h1><a name="SUNION _key1_ _key2_ ... _keyN_">SUNION _key1_ _key2_ ... _keyN_<\/a><\/h1>$/;"	a
+SUNIONSTORE _dstkey_ _key1_ _key2_ ... _keyN_	doc/SunionstoreCommand.html	/^                    <h1><a name="SUNIONSTORE _dstkey_ _key1_ _key2_ ... _keyN_">SUNIONSTORE _dstkey_ _key1_ _key2_ ... _keyN_<\/a><\/h1>$/;"	a
+SWAPINIT	pqsort.c	75;"	d	file:
+See also	doc/DelCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/ExistsCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/ExpireCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/GetsetCommand.html	/^<h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/InfoCommand.html	/^<h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/LlenCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/LremCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/MgetCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/MoveCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/RenamenxCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/SaddCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/ScardCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/SetnxCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/SismemberCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/SmoveCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/SremCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+See also	doc/TypeCommand.html	/^<\/pre><h2><a name="See also">See also<\/a><\/h2>$/;"	a
+Setting the timeout again on already volatile keys	doc/ExpireCommand.html	/^<h2><a name="Setting the timeout again on already volatile keys">Setting the timeout again on already volatile keys<\/a><\/h2><blockquote>Trying to call EXPIRE against a key that already has an associated timeoutwill not change the timeout of the key, but will just return 0. If insteadthe key does not have a timeout associated the timeout will be set and EXPIREwill return 1.<\/blockquote>$/;"	a
+Simple INLINE commands	doc/ProtocolSpecification.html	/^terminated by &quot;\\r\\n&quot; (CRLF).<h2><a name="Simple INLINE commands">Simple INLINE commands<\/a><\/h2>The simplest commands are the inline commands. This is an example of a$/;"	a
+Single line reply	doc/ProtocolSpecification.html	/^<\/pre><h2><a name="Single line reply">Single line reply<\/a><\/h2>As already seen a single line reply is in the form of a single line string$/;"	a
+Sorting	doc/CommandReference.html	/^<h2><a name="Sorting">Sorting<\/a><\/h2><ul><li> <a href="SortCommand.html">SORT<\/a> <i>key<\/i> BY <i>pattern<\/i> LIMIT <i>start<\/i> <i>end<\/i> GET <i>pattern<\/i> ASC|DESC ALPHA <code name="code" class="python">Sort a Set or a List accordingly to the specified parameters<\/code><\/li><\/ul>$/;"	a
+Special keys	doc/TwitterAlikeExample.html	/^<\/pre>This has a lot of problems since if you add one server you need to move too much keys and so on, but this is the general idea even if you use a better hashing scheme like consistent hashing.<br\/><br\/>Ok, are key accesses distributed among the key space? Well, all the user data will be partitioned among different servers. There are no inter-keys operations used (like SINTER, otherwise you need to care that things you want to intersect will end in the same server. <b>This is why Redis unlike memcached does not force a specific hashing scheme, it's application specific<\/b>). Btw there are keys that are accessed more frequently.<h3><a name="Special keys">Special keys<\/a><\/h3>For example every time we post a new message, we <b>need<\/b> to increment the <code name="code" class="python">global:nextPostId<\/code> key. How to fix this problem? A Single server will get a lot if increments. The simplest way to handle this is to have a dedicated server just for increments. This is probably an overkill btw unless you have really a lot of traffic. There is another trick. The ID does not really need to be an incremental number, but just <b>it needs to be unique<\/b>. So you can get a random string long enough to be unlikely (almost impossible, if it's md5-size) to collide, and you are done. We successfully eliminated our main problem to make it really horizontally scalable!<br\/><br\/>There is another one: global:timeline. There is no fix for this, if you need to take something in order you can split among different servers and <b>then merge<\/b> when you need to get the data back, or take it ordered and use a single key. Again if you really have so much posts per second, you can use a single server just for this. Remember that with commodity hardware Redis is able to handle 100000 writes for second, that's enough even for Twitter, I guess.<br\/><br\/>Please feel free to use the comments below for questions and feedbacks.$/;"	a
+Stable code	doc/UnstableSource.html	/^The development version of Redis is <a href="http:\/\/github.com\/antirez\/redis\/tree\/master" target="_blank">hosted here at Github<\/a>, have fun cloning the source code with Git. If you are not familar with Git just use the <b>download<\/b> button to get a tarball.<h2><a name="Stable code">Stable code<\/a><\/h2>$/;"	a
+TESTAPP	client-libraries/cpp/Makefile	/^TESTAPP = test_client$/;"	m
+TESTAPPLIBS	client-libraries/cpp/Makefile	/^TESTAPPLIBS = $(LIBNAME) -lstdc++$/;"	m
+TESTAPPOBJS	client-libraries/cpp/Makefile	/^TESTAPPOBJS = test_client.o$/;"	m
+TIEARRAY	client-libraries/perl/lib/Redis/List.pm	/^sub TIEARRAY {$/;"	s
+TIEHASH	client-libraries/perl/lib/Redis/Hash.pm	/^sub TIEHASH {$/;"	s
+TTL _key_	doc/TtlCommand.html	/^                    <h1><a name="TTL _key_">TTL _key_<\/a><\/h1><blockquote>The TTL command returns the remaining time to live in seconds of a key that has an <a href="ExpireCommand.html">EXPIRE<\/a> set. This introspection capability allows a Redis client to check how many seconds a given key will continue to be part of the dataset. If the Key does not exists or does not have an associated expire, -1 is returned.<\/blockquote>$/;"	a
+TYPE _key_	doc/TypeCommand.html	/^                    <h1><a name="TYPE _key_">TYPE _key_<\/a><\/h1>$/;"	a
+Testing Redis	doc/QuickStart.html	/^<\/pre><h2><a name="Testing Redis">Testing Redis<\/a><\/h2>To check if the server is working correctly you can use the <code name="code" class="python">redis-cli<\/code> utility included in the source distribution (and automatically compiled when you compile Redis). For instance to set a key and read back the value use the following:<br\/><br\/><pre class="codeblock python python python python python" name="code">$/;"	a
+The set data type	doc/TwitterAlikeExample.html	/^<h3><a name="The set data type">The set data type<\/a><\/h3>$/;"	a
+ULTRA_FAST	lzfP.h	75;"	d
+UNSHIFT	client-libraries/perl/lib/Redis/List.pm	/^sub UNSHIFT {$/;"	s
+Updates	doc/TwitterAlikeExample.html	/^<h2><a name="Updates">Updates<\/a><\/h2>$/;"	a
+VERY_FAST	lzfP.h	146;"	d
+VERY_FAST	lzfP.h	64;"	d
+What are the differences between Redis and Tokyo Cabinet / Tyrant?	doc/README.html	/^<h1><a name="What are the differences between Redis and Tokyo Cabinet \/ Tyrant?">What are the differences between Redis and Tokyo Cabinet \/ Tyrant?<\/a><\/h1>Redis and Tokyo Cabinet can be used for the same applications, but actually they are <b>very<\/b> different beasts. If you read twitter messages of people involved in scalable things both products are reported to work well, but surely there are times where one or the other can be the best choice. Some differences are the followings (I may be biased, make sure to check yourself both the products).<br\/><br\/><ul><li> Tokyo Cabinet writes synchronously on disk, Redis takes the whole dataset on memory and writes on disk asynchronously. Tokyo Cabinet is safer and probably a better idea if your dataset is going to be bigger than RAM, but Redis is faster (note that Redis supports master-slave replication that is trivial to setup, so you are safe anyway if you want a setup where data can't be lost even after a disaster).<\/li><\/ul>$/;"	a
+Why I need Redis if there is already memcachedb, Tokyo Cabinet, ...?	doc/FAQ.html	/^                    <h1><a name="Why I need Redis if there is already memcachedb, Tokyo Cabinet, ...?">Why I need Redis if there is already memcachedb, Tokyo Cabinet, ...?<\/a><\/h1>Memcachedb is basically memcached done persistent. Redis is a different evolution$/;"	a
+Why did you started the Redis project?	doc/FAQ.html	/^<h1><a name="Why did you started the Redis project?">Why did you started the Redis project?<\/a><\/h1>In order to scale <a href="http:\/\/lloogg.com" target="_blank">LLOOGG<\/a>. But after I got the basic server working I liked the idea to share the work with other guys, and Redis was turned into an open source project.$/;"	a
+[]	client-libraries/ruby/lib/redis.rb	/^  def [](key)$/;"	f	class:Redis
+[]=	client-libraries/ruby/lib/redis.rb	/^  def []=(key,value)$/;"	f	class:Redis
+_BSD_SOURCE	client-libraries/cpp/fmacros.h	4;"	d
+_BSD_SOURCE	fmacros.h	4;"	d
+_REDIS_FMACRO_H	client-libraries/cpp/fmacros.h	2;"	d
+_REDIS_FMACRO_H	fmacros.h	2;"	d
+_XOPEN_SOURCE	client-libraries/cpp/fmacros.h	5;"	d
+_XOPEN_SOURCE	fmacros.h	5;"	d
+_ZMALLOC_H	zmalloc.h	32;"	d
+__ADLIST_H__	adlist.h	32;"	d
+__AE_H__	ae.h	34;"	d
+__CONFIG_H	config.h	2;"	d
+__DICT_H	dict.h	37;"	d
+__PQSORT_H	pqsort.h	9;"	d
+__REDIS_H__	redis.h	31;"	d
+__SDS_H	sds.h	32;"	d
+__USE_POSIX199309	redis.c	40;"	d	file:
+__author__	client-libraries/python/redis.py	/^__author__ = "Ludovico Magnocavallo <ludo\\x40qix\\x2eit>"$/;"	v
+__construct	client-libraries/php/redis.php	/^    public function __construct($host='localhost', $port=6379) {$/;"	f
+__copyright__	client-libraries/python/redis.py	/^__copyright__ = "Copyright 2009, Ludovico Magnocavallo"$/;"	v
+__date__	client-libraries/python/redis.py	/^__date__ = "$LastChangedDate: 2009-03-17 16:15:55 +0100 (Mar, 17 Mar 2009) $"[18:-2]$/;"	v
+__init__	client-libraries/python/redis.py	/^    def __init__(self, host=None, port=None, timeout=None, db=None, nodelay=None, charset='utf8', errors='strict'):$/;"	m	class:Redis
+__license__	client-libraries/python/redis.py	/^__license__ = "MIT"$/;"	v
+__revision__	client-libraries/python/redis.py	/^__revision__ = "$LastChangedRevision: 175 $"[22:-2]$/;"	v
+__sock_read_bulk	client-libraries/perl/lib/Redis.pm	/^sub __sock_read_bulk {$/;"	s
+__sock_read_multi_bulk	client-libraries/perl/lib/Redis.pm	/^sub __sock_read_multi_bulk {$/;"	s
+__version__	client-libraries/python/redis.py	/^__version__ = "0.5"$/;"	v
+_client	benchmark.c	/^typedef struct _client {$/;"	s	file:
+_dictAlloc	dict.c	/^static void *_dictAlloc(size_t size)$/;"	f	file:
+_dictClear	dict.c	/^int _dictClear(dict *ht)$/;"	f
+_dictExpandIfNeeded	dict.c	/^static int _dictExpandIfNeeded(dict *ht)$/;"	f	file:
+_dictFree	dict.c	/^static void _dictFree(void *ptr) {$/;"	f	file:
+_dictInit	dict.c	/^int _dictInit(dict *ht, dictType *type,$/;"	f
+_dictKeyIndex	dict.c	/^static int _dictKeyIndex(dict *ht, const void *key)$/;"	f	file:
+_dictNextPower	dict.c	/^static unsigned long _dictNextPower(unsigned long size)$/;"	f	file:
+_dictPanic	dict.c	/^static void _dictPanic(const char *fmt, ...)$/;"	f	file:
+_dictReset	dict.c	/^static void _dictReset(dict *ht)$/;"	f	file:
+_dictStringCopyHTHashFunction	dict.c	/^static unsigned int _dictStringCopyHTHashFunction(const void *key)$/;"	f	file:
+_dictStringCopyHTKeyCompare	dict.c	/^static int _dictStringCopyHTKeyCompare(void *privdata, const void *key1,$/;"	f	file:
+_dictStringCopyHTKeyDestructor	dict.c	/^static void _dictStringCopyHTKeyDestructor(void *privdata, void *key)$/;"	f	file:
+_dictStringCopyHTKeyDup	dict.c	/^static void *_dictStringCopyHTKeyDup(void *privdata, const void *key)$/;"	f	file:
+_dictStringKeyValCopyHTValDestructor	dict.c	/^static void _dictStringKeyValCopyHTValDestructor(void *privdata, void *val)$/;"	f	file:
+_dictStringKeyValCopyHTValDup	dict.c	/^static void *_dictStringKeyValCopyHTValDup(void *privdata, const void *val)$/;"	f	file:
+_encode	client-libraries/python/redis.py	/^    def _encode(self, s):$/;"	m	class:Redis
+_get_value	client-libraries/python/redis.py	/^    def _get_value(self, data=None):$/;"	m	class:Redis
+_pqsort	pqsort.c	/^_pqsort(void *a, size_t n, size_t es,$/;"	f	file:
+_read	client-libraries/python/redis.py	/^    def _read(self):$/;"	m	class:Redis
+_redisSortObject	redis.c	/^typedef struct _redisSortObject {$/;"	s	file:
+_redisSortOperation	redis.c	/^typedef struct _redisSortOperation {$/;"	s	file:
+_sock	client-libraries/php/redis.php	/^            $this->_sock = $sock;$/;"	v
+_sock	client-libraries/php/redis.php	/^        $this->_sock = null;$/;"	v
+_sock	client-libraries/php/redis.php	/^    private $_sock;$/;"	v
+_v	client-libraries/php/redis.php	/^            $_v = strpos($v, '.') !== false ? (float)$v : (int)$v;$/;"	v
+_write	client-libraries/python/redis.py	/^    def _write(self, s):$/;"	m	class:Redis
+a 	doc/style.css	/^a {$/;"	s
+acceptHandler	redis.c	/^static void acceptHandler(aeEventLoop *el, int fd, void *privdata, int mask) {$/;"	f	file:
+addReply	redis.c	/^static void addReply(redisClient *c, robj *obj) {$/;"	f	file:
+addReplySds	redis.c	/^static void addReplySds(redisClient *c, sds s) {$/;"	f	file:
+add_node	client-libraries/ruby/lib/hash_ring.rb	/^  def add_node(node)$/;"	f	class:HashRing
+add_server	client-libraries/ruby/lib/dist_redis.rb	/^  def add_server(server)$/;"	f	class:DistRedis
+aeAddMillisecondsToNow	ae.c	/^static void aeAddMillisecondsToNow(long long milliseconds, long *sec, long *ms) {$/;"	f	file:
+aeCreateEventLoop	ae.c	/^aeEventLoop *aeCreateEventLoop(void) {$/;"	f
+aeCreateFileEvent	ae.c	/^int aeCreateFileEvent(aeEventLoop *eventLoop, int fd, int mask,$/;"	f
+aeCreateTimeEvent	ae.c	/^long long aeCreateTimeEvent(aeEventLoop *eventLoop, long long milliseconds,$/;"	f
+aeDeleteEventLoop	ae.c	/^void aeDeleteEventLoop(aeEventLoop *eventLoop) {$/;"	f
+aeDeleteFileEvent	ae.c	/^void aeDeleteFileEvent(aeEventLoop *eventLoop, int fd, int mask)$/;"	f
+aeDeleteTimeEvent	ae.c	/^int aeDeleteTimeEvent(aeEventLoop *eventLoop, long long id)$/;"	f
+aeEventFinalizerProc	ae.h	/^typedef void aeEventFinalizerProc(struct aeEventLoop *eventLoop, void *clientData);$/;"	t
+aeEventLoop	ae.h	/^typedef struct aeEventLoop {$/;"	s
+aeEventLoop	ae.h	/^} aeEventLoop;$/;"	t	typeref:struct:aeEventLoop
+aeFileEvent	ae.h	/^typedef struct aeFileEvent {$/;"	s
+aeFileEvent	ae.h	/^} aeFileEvent;$/;"	t	typeref:struct:aeFileEvent
+aeFileProc	ae.h	/^typedef void aeFileProc(struct aeEventLoop *eventLoop, int fd, void *clientData, int mask);$/;"	t
+aeGetTime	ae.c	/^static void aeGetTime(long *seconds, long *milliseconds)$/;"	f	file:
+aeMain	ae.c	/^void aeMain(aeEventLoop *eventLoop)$/;"	f
+aeProcessEvents	ae.c	/^int aeProcessEvents(aeEventLoop *eventLoop, int flags)$/;"	f
+aeSearchNearestTimer	ae.c	/^static aeTimeEvent *aeSearchNearestTimer(aeEventLoop *eventLoop)$/;"	f	file:
+aeStop	ae.c	/^void aeStop(aeEventLoop *eventLoop) {$/;"	f
+aeTimeEvent	ae.h	/^typedef struct aeTimeEvent {$/;"	s
+aeTimeEvent	ae.h	/^} aeTimeEvent;$/;"	t	typeref:struct:aeTimeEvent
+aeTimeProc	ae.h	/^typedef int aeTimeProc(struct aeEventLoop *eventLoop, long long id, void *clientData);$/;"	t
+aeWait	ae.c	/^int aeWait(int fd, int mask, long long milliseconds) {$/;"	f
+amount	client-libraries/php/redis.php	/^    public function decr($name, $amount=1) {$/;"	v
+amount	client-libraries/php/redis.php	/^    public function incr($name, $amount=1) {$/;"	v
+anetAccept	anet.c	/^int anetAccept(char *err, int serversock, char *ip, int *port)$/;"	f
+anetAccept	client-libraries/cpp/anet.c	/^int anetAccept(char *err, int serversock, char *ip, int *port)$/;"	f
+anetNonBlock	anet.c	/^int anetNonBlock(char *err, int fd)$/;"	f
+anetNonBlock	client-libraries/cpp/anet.c	/^int anetNonBlock(char *err, int fd)$/;"	f
+anetRead	anet.c	/^int anetRead(int fd, char *buf, int count)$/;"	f
+anetRead	client-libraries/cpp/anet.c	/^int anetRead(int fd, char *buf, int count)$/;"	f
+anetResolve	anet.c	/^int anetResolve(char *err, char *host, char *ipbuf)$/;"	f
+anetResolve	client-libraries/cpp/anet.c	/^int anetResolve(char *err, char *host, char *ipbuf)$/;"	f
+anetSetError	anet.c	/^static void anetSetError(char *err, const char *fmt, ...)$/;"	f	file:
+anetSetError	client-libraries/cpp/anet.c	/^static void anetSetError(char *err, const char *fmt, ...)$/;"	f	file:
+anetSetSendBuffer	anet.c	/^int anetSetSendBuffer(char *err, int fd, int buffsize)$/;"	f
+anetSetSendBuffer	client-libraries/cpp/anet.c	/^int anetSetSendBuffer(char *err, int fd, int buffsize)$/;"	f
+anetTcpConnect	anet.c	/^int anetTcpConnect(char *err, char *addr, int port)$/;"	f
+anetTcpConnect	client-libraries/cpp/anet.c	/^int anetTcpConnect(char *err, char *addr, int port)$/;"	f
+anetTcpGenericConnect	anet.c	/^static int anetTcpGenericConnect(char *err, char *addr, int port, int flags)$/;"	f	file:
+anetTcpGenericConnect	client-libraries/cpp/anet.c	/^static int anetTcpGenericConnect(char *err, char *addr, int port, int flags)$/;"	f	file:
+anetTcpKeepAlive	anet.c	/^int anetTcpKeepAlive(char *err, int fd)$/;"	f
+anetTcpKeepAlive	client-libraries/cpp/anet.c	/^int anetTcpKeepAlive(char *err, int fd)$/;"	f
+anetTcpNoDelay	anet.c	/^int anetTcpNoDelay(char *err, int fd)$/;"	f
+anetTcpNoDelay	client-libraries/cpp/anet.c	/^int anetTcpNoDelay(char *err, int fd)$/;"	f
+anetTcpNonBlockConnect	anet.c	/^int anetTcpNonBlockConnect(char *err, char *addr, int port)$/;"	f
+anetTcpNonBlockConnect	client-libraries/cpp/anet.c	/^int anetTcpNonBlockConnect(char *err, char *addr, int port)$/;"	f
+anetTcpServer	anet.c	/^int anetTcpServer(char *err, int port, char *bindaddr)$/;"	f
+anetTcpServer	client-libraries/cpp/anet.c	/^int anetTcpServer(char *err, int port, char *bindaddr)$/;"	f
+anetWrite	anet.c	/^int anetWrite(int fd, char *buf, int count)$/;"	f
+anetWrite	client-libraries/cpp/anet.c	/^int anetWrite(int fd, char *buf, int count)$/;"	f
+appendServerSaveParams	redis.c	/^static void appendServerSaveParams(time_t seconds, int changes) {$/;"	f	file:
+argc	redis.c	/^    int argc;$/;"	m	struct:redisClient	file:
+argv	redis.c	/^    robj **argv;$/;"	m	struct:redisClient	file:
+arity	redis-cli.c	/^    int arity;$/;"	m	struct:redisCommand	file:
+arity	redis.c	/^    int arity;$/;"	m	struct:redisCommand	file:
+asend	client-libraries/erlang/src/client.erl	/^asend(Client, Cmd) ->$/;"	f	module:client
+assert_equal	client-libraries/cpp/test_client.cpp	/^void assert_equal(const T & actual, const T & expected, int lineno)$/;"	f
+assert_gt	client-libraries/cpp/test_client.cpp	/^void assert_gt(const T & a, const T & b, int lineno)$/;"	f
+assert_not_equal	client-libraries/cpp/test_client.cpp	/^void assert_not_equal(const T & a, const T & b, int lineno)$/;"	f
+attach	client-libraries/ruby/tasks/redis.tasks.rb	/^  def self.attach$/;"	F	class:RedisRunner
+auth	client-libraries/cpp/redisclient.cpp	/^  void client::auth(const client::string_type & pass)$/;"	f	class:redis::client
+auth	client-libraries/erlang/src/erldis.erl	/^auth(Client, Password) -> client:ssend(Client, auth, [Password]).$/;"	f	module:erldis
+auth	client-libraries/python/redis.py	/^    def auth(self, passwd):$/;"	m	class:Redis
+authCommand	redis.c	/^static void authCommand(redisClient *c) {$/;"	f	file:
+authenticated	redis.c	/^    int authenticated;      \/* when requirepass is non-NULL *\/$/;"	m	struct:redisClient	file:
+basic_test	client-libraries/erlang/test/erldis_tests.erl	/^basic_test() ->$/;"	f	module:erldis_tests
+bgsave	client-libraries/cpp/redisclient.cpp	/^  void client::bgsave()$/;"	f	class:redis::client
+bgsave	client-libraries/erlang/src/erldis.erl	/^bgsave(Client) -> client:ssend(Client, bgsave).$/;"	f	module:erldis
+bgsave	client-libraries/php/redis.php	/^    public function bgsave($background=false) {$/;"	f
+bgsave	client-libraries/ruby/lib/dist_redis.rb	/^  def bgsave$/;"	f	class:DistRedis
+bgsaveCommand	redis.c	/^static void bgsaveCommand(redisClient *c) {$/;"	f	file:
+bgsave_in_progress	client-libraries/cpp/redisclient.h	/^    bool bgsave_in_progress;$/;"	m	struct:redis::server_info
+bgsavechildpid	redis.c	/^    pid_t bgsavechildpid;$/;"	m	struct:redisServer	file:
+bgsaveinprogress	redis.c	/^    int bgsaveinprogress;$/;"	m	struct:redisServer	file:
+binary_search	client-libraries/ruby/lib/hash_ring.rb	/^      def binary_search(ary, value, &block)$/;"	f	class:HashRing
+bindaddr	redis.c	/^    char *bindaddr;$/;"	m	struct:redisServer	file:
+body 	doc/style.css	/^body {$/;"	s
+buf	sds.h	/^    char buf[];$/;"	m	struct:sdshdr
+buffer	client-libraries/php/redis.php	/^        $buffer = '';$/;"	v
+buffer_	client-libraries/cpp/redisclient.cpp	/^    ostringstream buffer_;$/;"	m	class:__anon3::makecmd	file:
+bulk	client-libraries/lua/redis.lua	/^local function bulk(command, reader)$/;"	f
+bulklen	client-libraries/php/redis.php	/^        $bulklen = (int)$data;$/;"	v
+bulklen	redis.c	/^    int bulklen;            \/* bulk read len. -1 if not in bulk read mode *\/$/;"	m	struct:redisClient	file:
+c	client-libraries/php/redis.php	/^        $c = $data[0];$/;"	v
+call_command	client-libraries/ruby/lib/pipeline.rb	/^    def call_command(command)$/;"	f	class:Redis.Pipeline
+call_command	client-libraries/ruby/lib/redis.rb	/^  def call_command(argv)$/;"	f	class:Redis
+changes	redis.c	/^    int changes;$/;"	m	struct:saveparam	file:
+changes_since_last_save	client-libraries/cpp/redisclient.h	/^    unsigned long changes_since_last_save;$/;"	m	struct:redis::server_info
+cliConnect	redis-cli.c	/^static int cliConnect(void) {$/;"	f	file:
+cliReadBulkReply	redis-cli.c	/^static int cliReadBulkReply(int fd) {$/;"	f	file:
+cliReadLine	redis-cli.c	/^static sds cliReadLine(int fd) {$/;"	f	file:
+cliReadMultiBulkReply	redis-cli.c	/^static int cliReadMultiBulkReply(int fd) {$/;"	f	file:
+cliReadReply	redis-cli.c	/^static int cliReadReply(int fd) {$/;"	f	file:
+cliReadSingleLineReply	redis-cli.c	/^static int cliReadSingleLineReply(int fd) {$/;"	f	file:
+cliSendCommand	redis-cli.c	/^static int cliSendCommand(int argc, char **argv) {$/;"	f	file:
+client	benchmark.c	/^} *client;$/;"	t	typeref:struct:_client	file:
+client	client-libraries/cpp/redisclient.cpp	/^  client::client(const string_type & host, unsigned int port)$/;"	f	class:redis::client
+client	client-libraries/cpp/redisclient.h	/^  class client$/;"	c	namespace:redis
+client	client-libraries/erlang/src/client.erl	/^-module(client).$/;"	m
+clientData	ae.h	/^    void *clientData;$/;"	m	struct:aeFileEvent
+clientData	ae.h	/^    void *clientData;$/;"	m	struct:aeTimeEvent
+clientDone	benchmark.c	/^static void clientDone(client c) {$/;"	f	file:
+clients	benchmark.c	/^    list *clients;$/;"	m	struct:config	file:
+clients	redis.c	/^    list *clients;$/;"	m	struct:redisServer	file:
+closeTimedoutClients	redis.c	/^static void closeTimedoutClients(void) {$/;"	f	file:
+cmdTable	redis-cli.c	/^static struct redisCommand cmdTable[] = {$/;"	v	typeref:struct:redisCommand	file:
+cmdTable	redis.c	/^static struct redisCommand cmdTable[] = {$/;"	v	typeref:struct:redisCommand	file:
+cmpobj	redis.c	/^        robj *cmpobj;$/;"	m	union:_redisSortObject::__anon2	file:
+code_change	client-libraries/erlang/src/client.erl	/^code_change(_OldVsn, State, _Extra) -> {ok, State}.$/;"	f	module:client
+colon	redis.c	/^    *colon, *nullbulk, *nullmultibulk,$/;"	m	struct:sharedObjectsStruct	file:
+cone	redis.c	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *pong, *space,$/;"	m	struct:sharedObjectsStruct	file:
+config	benchmark.c	/^static struct config {$/;"	s	file:
+config	benchmark.c	/^} config;$/;"	v	typeref:struct:config	file:
+config	redis-cli.c	/^static struct config {$/;"	s	file:
+config	redis-cli.c	/^} config;$/;"	v	typeref:struct:config	file:
+connect	client-libraries/erlang/src/client.erl	/^connect(Host) ->$/;"	f	module:client
+connect	client-libraries/erlang/src/client.erl	/^connect(Host, Port) ->$/;"	f	module:client
+connect	client-libraries/erlang/src/erldis.erl	/^connect(Host) ->$/;"	f	module:erldis
+connect	client-libraries/lua/redis.lua	/^function connect(host, port)$/;"	f
+connect	client-libraries/php/redis.php	/^    public function connect() {$/;"	f
+connect	client-libraries/python/redis.py	/^    def connect(self):$/;"	m	class:Redis
+connect_to	client-libraries/ruby/lib/redis.rb	/^  def connect_to(host, port, timeout=nil)$/;"	f	class:Redis
+connect_to_server	client-libraries/ruby/lib/redis.rb	/^  def connect_to_server$/;"	f	class:Redis
+connected_clients	client-libraries/cpp/redisclient.h	/^    unsigned long connected_clients;$/;"	m	struct:redis::server_info
+connected_slaves	client-libraries/cpp/redisclient.h	/^    unsigned long connected_slaves;$/;"	m	struct:redis::server_info
+connection_error	client-libraries/cpp/redisclient.cpp	/^  connection_error::connection_error(const string & err) : redis_error(err)$/;"	f	class:redis::connection_error
+connection_error	client-libraries/cpp/redisclient.h	/^  class connection_error : public redis_error$/;"	c	namespace:redis
+convert	client-libraries/erlang/src/proto.erl	/^convert("+" ++ Message) -> $/;"	f	module:proto
+convert	client-libraries/erlang/src/proto.erl	/^convert(":" ++ Message) ->$/;"	f	module:proto
+convert	client-libraries/erlang/src/proto.erl	/^convert(Message) ->$/;"	f	module:proto
+createClient	benchmark.c	/^static client createClient(void) {$/;"	f	file:
+createClient	redis.c	/^static redisClient *createClient(int fd) {$/;"	f	file:
+createListObject	redis.c	/^static robj *createListObject(void) {$/;"	f	file:
+createMissingClients	benchmark.c	/^static void createMissingClients(client c) {$/;"	f	file:
+createObject	redis.c	/^static robj *createObject(int type, void *ptr) {$/;"	f	file:
+createSetObject	redis.c	/^static robj *createSetObject(void) {$/;"	f	file:
+createSharedObjects	redis.c	/^static void createSharedObjects(void) {$/;"	f	file:
+createSortOperation	redis.c	/^static redisSortOperation *createSortOperation(int type, robj *pattern) {$/;"	f	file:
+createStringObject	redis.c	/^static robj *createStringObject(char *ptr, size_t len) {$/;"	f	file:
+crlf	client-libraries/php/redis.php	/^        $crlf = fread($this->_sock,2);$/;"	v
+crlf	redis.c	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *pong, *space,$/;"	m	struct:sharedObjectsStruct	file:
+cronloops	redis.c	/^    int cronloops;              \/* number of times the cron function run *\/$/;"	m	struct:redisServer	file:
+custom	client-libraries/lua/redis.lua	/^local function custom(command, send, parse)$/;"	f
+czero	redis.c	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *pong, *space,$/;"	m	struct:sharedObjectsStruct	file:
+daemonize	redis.c	/^    int daemonize;$/;"	m	struct:redisServer	file:
+daemonize	redis.c	/^static void daemonize(void) {$/;"	f	file:
+data	client-libraries/php/redis.php	/^            $data = fread($this->_sock,$bulklen);$/;"	v
+data	client-libraries/php/redis.php	/^            $data = trim($this->read());$/;"	v
+data	client-libraries/php/redis.php	/^        $data = substr($data, 1);$/;"	v
+data	client-libraries/php/redis.php	/^        $data = trim($this->read());$/;"	v
+data	client-libraries/php/redis.php	/^        $data =& $this->get_response();$/;"	v
+datasize	benchmark.c	/^    int datasize;$/;"	m	struct:config	file:
+datatype	client-libraries/cpp/redisclient.h	/^    enum datatype $/;"	g	class:redis::client
+datatype_list	client-libraries/cpp/redisclient.h	/^      datatype_list,$/;"	e	enum:redis::client::datatype
+datatype_none	client-libraries/cpp/redisclient.h	/^      datatype_none,      \/\/ key doesn't exist$/;"	e	enum:redis::client::datatype
+datatype_set	client-libraries/cpp/redisclient.h	/^      datatype_set$/;"	e	enum:redis::client::datatype
+datatype_string	client-libraries/cpp/redisclient.h	/^      datatype_string,$/;"	e	enum:redis::client::datatype
+db	redis.c	/^    redisDb *db;$/;"	m	struct:redisClient	file:
+db	redis.c	/^    redisDb *db;$/;"	m	struct:redisServer	file:
+dbfilename	redis.c	/^    char *dbfilename;$/;"	m	struct:redisServer	file:
+dbnum	redis.c	/^    int dbnum;$/;"	m	struct:redisServer	file:
+dbsize	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::dbsize()$/;"	f	class:redis::client
+dbsize	client-libraries/erlang/src/erldis.erl	/^dbsize(Client) -> client:ssend(Client, dbsize).$/;"	f	module:erldis
+dbsize	client-libraries/python/redis.py	/^    def dbsize(self):$/;"	m	class:Redis
+dbsizeCommand	redis.c	/^static void dbsizeCommand(redisClient *c) {$/;"	f	file:
+debugCommand	redis.c	/^static void debugCommand(redisClient *c) {$/;"	f	file:
+decimal	client-libraries/python/redis.py	/^import decimal$/;"	i
+decr	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::decr(const client::string_type & key)$/;"	f	class:redis::client
+decr	client-libraries/erlang/src/erldis.erl	/^decr(Client, Key) -> client:ssend(Client, decr, [Key]).$/;"	f	module:erldis
+decr	client-libraries/php/redis.php	/^    public function decr($name, $amount=1) {$/;"	f
+decr	client-libraries/python/redis.py	/^    def decr(self, name, amount=1):$/;"	m	class:Redis
+decr	client-libraries/ruby/lib/redis.rb	/^  def decr(key,decrement = nil)$/;"	f	class:Redis
+decrCommand	redis.c	/^static void decrCommand(redisClient *c) {$/;"	f	file:
+decrRefCount	redis.c	/^static void decrRefCount(void *obj) {$/;"	f	file:
+decrby	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::decrby(const client::string_type & key, $/;"	f	class:redis::client
+decrby	client-libraries/erlang/src/erldis.erl	/^decrby(Client, Key, By) -> client:ssend(Client, decrby, [Key, By]).$/;"	f	module:erldis
+decrbyCommand	redis.c	/^static void decrbyCommand(redisClient *c) {$/;"	f	file:
+del	client-libraries/cpp/redisclient.cpp	/^  void client::del(const client::string_type & key)$/;"	f	class:redis::client
+del	client-libraries/erlang/src/erldis.erl	/^del(Client, Key) -> client:ssend(Client, del, [Key]).$/;"	f	module:erldis
+delCommand	redis.c	/^static void delCommand(redisClient *c) {$/;"	f	file:
+delete	client-libraries/php/redis.php	/^    public function delete($name) {$/;"	f
+delete	client-libraries/python/redis.py	/^    def delete(self, name):$/;"	m	class:Redis
+deleteIfVolatile	redis.c	/^static int deleteIfVolatile(redisDb *db, robj *key) {$/;"	f	file:
+deleteKey	redis.c	/^static int deleteKey(redisDb *db, robj *key) {$/;"	f	file:
+delete_cloud!	client-libraries/ruby/lib/dist_redis.rb	/^  def delete_cloud!$/;"	f	class:DistRedis
+dict	dict.h	/^typedef struct dict {$/;"	s
+dict	dict.h	/^} dict;$/;"	t	typeref:struct:dict
+dict	redis.c	/^    dict *dict;$/;"	m	struct:redisDb	file:
+dictAdd	dict.c	/^int dictAdd(dict *ht, void *key, void *val)$/;"	f
+dictCompareHashKeys	dict.h	101;"	d
+dictCreate	dict.c	/^dict *dictCreate(dictType *type,$/;"	f
+dictDelete	dict.c	/^int dictDelete(dict *ht, const void *key) {$/;"	f
+dictDeleteNoFree	dict.c	/^int dictDeleteNoFree(dict *ht, const void *key) {$/;"	f
+dictEmpty	dict.c	/^void dictEmpty(dict *ht) {$/;"	f
+dictEntry	dict.h	/^typedef struct dictEntry {$/;"	s
+dictEntry	dict.h	/^} dictEntry;$/;"	t	typeref:struct:dictEntry
+dictExpand	dict.c	/^int dictExpand(dict *ht, unsigned long size)$/;"	f
+dictFind	dict.c	/^dictEntry *dictFind(dict *ht, const void *key)$/;"	f
+dictFreeEntryKey	dict.h	90;"	d
+dictFreeEntryVal	dict.h	79;"	d
+dictGenHashFunction	dict.c	/^unsigned int dictGenHashFunction(const unsigned char *buf, int len) {$/;"	f
+dictGenericDelete	dict.c	/^static int dictGenericDelete(dict *ht, const void *key, int nofree)$/;"	f	file:
+dictGetEntryKey	dict.h	108;"	d
+dictGetEntryVal	dict.h	109;"	d
+dictGetIterator	dict.c	/^dictIterator *dictGetIterator(dict *ht)$/;"	f
+dictGetRandomKey	dict.c	/^dictEntry *dictGetRandomKey(dict *ht)$/;"	f
+dictHashKey	dict.h	106;"	d
+dictIdentityHashFunction	dict.c	/^unsigned int dictIdentityHashFunction(unsigned int key)$/;"	f
+dictIntHashFunction	dict.c	/^unsigned int dictIntHashFunction(unsigned int key)$/;"	f
+dictIterator	dict.h	/^typedef struct dictIterator {$/;"	s
+dictIterator	dict.h	/^} dictIterator;$/;"	t	typeref:struct:dictIterator
+dictNext	dict.c	/^dictEntry *dictNext(dictIterator *iter)$/;"	f
+dictPrintStats	dict.c	/^void dictPrintStats(dict *ht) {$/;"	f
+dictRedisObjectDestructor	redis.c	/^static void dictRedisObjectDestructor(void *privdata, void *val)$/;"	f	file:
+dictRelease	dict.c	/^void dictRelease(dict *ht)$/;"	f
+dictReleaseIterator	dict.c	/^void dictReleaseIterator(dictIterator *iter)$/;"	f
+dictReplace	dict.c	/^int dictReplace(dict *ht, void *key, void *val)$/;"	f
+dictResize	dict.c	/^int dictResize(dict *ht)$/;"	f
+dictSdsHash	redis.c	/^static unsigned int dictSdsHash(const void *key) {$/;"	f	file:
+dictSdsKeyCompare	redis.c	/^static int dictSdsKeyCompare(void *privdata, const void *key1,$/;"	f	file:
+dictSetHashKey	dict.h	94;"	d
+dictSetHashVal	dict.h	83;"	d
+dictSize	dict.h	111;"	d
+dictSlots	dict.h	110;"	d
+dictType	dict.h	/^typedef struct dictType {$/;"	s
+dictType	dict.h	/^} dictType;$/;"	t	typeref:struct:dictType
+dictTypeHeapStringCopyKey	dict.c	/^dictType dictTypeHeapStringCopyKey = {$/;"	v
+dictTypeHeapStringCopyKeyValue	dict.c	/^dictType dictTypeHeapStringCopyKeyValue = {$/;"	v
+dictTypeHeapStrings	dict.c	/^dictType dictTypeHeapStrings = {$/;"	v
+dictid	redis.c	/^    int dictid;$/;"	m	struct:redisClient	file:
+direction	adlist.h	/^    int direction;$/;"	m	struct:listIter
+dirty	redis.c	/^    long long dirty;            \/* changes to DB from the last save *\/$/;"	m	struct:redisServer	file:
+disconnect	client-libraries/erlang/src/client.erl	/^disconnect(Client) ->$/;"	f	module:client
+disconnect	client-libraries/php/redis.php	/^    public function disconnect() {$/;"	f
+disconnect	client-libraries/python/redis.py	/^    def disconnect(self):$/;"	m	class:Redis
+do_echo	client-libraries/php/redis.php	/^    public function do_echo($s) {$/;"	f
+doctest	client-libraries/python/redis.py	/^    import doctest$/;"	i
+donerequests	benchmark.c	/^    int donerequests;$/;"	m	struct:config	file:
+dtach_socket	client-libraries/ruby/tasks/redis.tasks.rb	/^  def self.dtach_socket$/;"	F	class:RedisRunner
+dup	adlist.h	/^    void *(*dup)(void *ptr);$/;"	m	struct:list
+dupClientReplyValue	redis.c	/^static void *dupClientReplyValue(void *o) {$/;"	f	file:
+echoCommand	redis.c	/^static void echoCommand(redisClient *c) {$/;"	f	file:
+el	benchmark.c	/^    aeEventLoop *el;$/;"	m	struct:config	file:
+el	redis.c	/^    aeEventLoop *el;$/;"	m	struct:redisServer	file:
+emptyDb	redis.c	/^static long long emptyDb() {$/;"	f	file:
+emptybulk	redis.c	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *pong, *space,$/;"	m	struct:sharedObjectsStruct	file:
+emptymultibulk	redis.c	/^    *emptymultibulk, *wrongtypeerr, *nokeyerr, *syntaxerr, *sameobjecterr,$/;"	m	struct:sharedObjectsStruct	file:
+endBenchmark	benchmark.c	/^static void endBenchmark(char *title) {$/;"	f	file:
+entry	dict.h	/^    dictEntry *entry, *nextEntry;$/;"	m	struct:dictIterator
+erldis	client-libraries/erlang/src/erldis.erl	/^-module(erldis).$/;"	m
+erldis_tests	client-libraries/erlang/test/erldis_tests.erl	/^-module(erldis_tests).$/;"	m
+err	redis.c	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *pong, *space,$/;"	m	struct:sharedObjectsStruct	file:
+err_	client-libraries/cpp/redisclient.h	/^    std::string err_;$/;"	m	class:redis::redis_error
+errno	client-libraries/python/redis.py	/^import errno$/;"	i
+execute	client-libraries/ruby/lib/pipeline.rb	/^    def execute$/;"	f	class:Redis.Pipeline
+exists	client-libraries/cpp/redisclient.cpp	/^  bool client::exists(const client::string_type & key)$/;"	f	class:redis::client
+exists	client-libraries/erlang/src/erldis.erl	/^exists(Client, Key) -> client:ssend(Client, exists, [Key]).$/;"	f	module:erldis
+exists	client-libraries/php/redis.php	/^    public function exists($name) {$/;"	f
+exists	client-libraries/python/redis.py	/^    def exists(self, name):$/;"	m	class:Redis
+existsCommand	redis.c	/^static void existsCommand(redisClient *c) {$/;"	f	file:
+expect	lzf_c.c	79;"	d	file:
+expect	lzf_c.c	82;"	d	file:
+expect_false	lzf_c.c	86;"	d	file:
+expect_true	lzf_c.c	87;"	d	file:
+expire	client-libraries/cpp/redisclient.cpp	/^  void client::expire(const string_type & key, unsigned int secs)$/;"	f	class:redis::client
+expire	client-libraries/erlang/src/erldis.erl	/^expire(Client, Key, Seconds) -> client:ssend(Client, expire, [Key, Seconds]).$/;"	f	module:erldis
+expire	client-libraries/php/redis.php	/^    public function expire($name, $time) {$/;"	f
+expire	client-libraries/python/redis.py	/^    def expire(self, name, time):$/;"	m	class:Redis
+expireCommand	redis.c	/^static void expireCommand(redisClient *c) {$/;"	f	file:
+expireIfNeeded	redis.c	/^static int expireIfNeeded(redisDb *db, robj *key) {$/;"	f	file:
+expires	redis.c	/^    dict *expires;$/;"	m	struct:redisDb	file:
+fd	ae.h	/^    int fd;$/;"	m	struct:aeFileEvent
+fd	benchmark.c	/^    int fd;$/;"	m	struct:_client	file:
+fd	redis.c	/^    int fd;$/;"	m	struct:redisClient	file:
+fd	redis.c	/^    int fd;$/;"	m	struct:redisServer	file:
+fileEventHead	ae.h	/^    aeFileEvent *fileEventHead;$/;"	m	struct:aeEventLoop
+fileProc	ae.h	/^    aeFileProc *fileProc;$/;"	m	struct:aeFileEvent
+finalizerProc	ae.h	/^    aeEventFinalizerProc *finalizerProc;$/;"	m	struct:aeFileEvent
+finalizerProc	ae.h	/^    aeEventFinalizerProc *finalizerProc;$/;"	m	struct:aeTimeEvent
+findFuncName	redis.c	/^static char *findFuncName(void *pointer, unsigned long *offset){$/;"	f	file:
+flags	redis-cli.c	/^    int flags;$/;"	m	struct:redisCommand	file:
+flags	redis.c	/^    int flags;              \/* REDIS_CLOSE | REDIS_SLAVE | REDIS_MONITOR *\/$/;"	m	struct:redisClient	file:
+flags	redis.c	/^    int flags;$/;"	m	struct:redisCommand	file:
+flatten	client-libraries/erlang/src/erldis.erl	/^flatten(List) when is_list(List)->   $/;"	f	module:erldis
+flatten	client-libraries/erlang/src/erldis.erl	/^flatten({error, Message}) ->$/;"	f	module:erldis
+flush	client-libraries/python/redis.py	/^    def flush(self, all_dbs=False):$/;"	m	class:Redis
+flush_all	client-libraries/ruby/lib/dist_redis.rb	/^  def flush_all$/;"	f	class:DistRedis
+flush_db	client-libraries/ruby/lib/dist_redis.rb	/^  def flush_db$/;"	f	class:DistRedis
+flushall	client-libraries/cpp/redisclient.cpp	/^  void client::flushall()$/;"	f	class:redis::client
+flushall	client-libraries/erlang/src/erldis.erl	/^flushall(Client) -> client:ssend(Client, flushall).$/;"	f	module:erldis
+flushall	client-libraries/php/redis.php	/^    public function flushall() {$/;"	f
+flushallCommand	redis.c	/^static void flushallCommand(redisClient *c) {$/;"	f	file:
+flushdb	client-libraries/cpp/redisclient.cpp	/^  void client::flushdb()$/;"	f	class:redis::client
+flushdb	client-libraries/erlang/src/erldis.erl	/^flushdb(Client) -> client:ssend(Client, flushdb).$/;"	f	module:erldis
+flushdb	client-libraries/php/redis.php	/^    public function flushdb($all=false) {$/;"	f
+flushdbCommand	redis.c	/^static void flushdbCommand(redisClient *c) {$/;"	f	file:
+format	client-libraries/erlang/src/client.erl	/^format(Lines) ->$/;"	f	module:client
+format	client-libraries/erlang/src/client.erl	/^format([Line|Rest], Result) ->$/;"	f	module:client
+format	client-libraries/erlang/src/client.erl	/^format([], Result) ->$/;"	f	module:client
+free	adlist.h	/^    void (*free)(void *ptr);$/;"	m	struct:list
+free	sds.h	/^    long free;$/;"	m	struct:sdshdr
+freeAllClients	benchmark.c	/^static void freeAllClients(void) {$/;"	f	file:
+freeClient	benchmark.c	/^static void freeClient(client c) {$/;"	f	file:
+freeClient	redis.c	/^static void freeClient(redisClient *c) {$/;"	f	file:
+freeClientArgv	redis.c	/^static void freeClientArgv(redisClient *c) {$/;"	f	file:
+freeHashObject	redis.c	/^static void freeHashObject(robj *o) {$/;"	f	file:
+freeListObject	redis.c	/^static void freeListObject(robj *o) {$/;"	f	file:
+freeMemoryIfNeeded	redis.c	/^static void freeMemoryIfNeeded(void) {$/;"	f	file:
+freeSetObject	redis.c	/^static void freeSetObject(robj *o) {$/;"	f	file:
+freeStringObject	redis.c	/^static void freeStringObject(robj *o) {$/;"	f	file:
+get	client-libraries/cpp/redisclient.cpp	/^  client::string_type client::get(const client::string_type & key)$/;"	f	class:redis::client
+get	client-libraries/erlang/src/erldis.erl	/^get(Client, Key) -> client:ssend(Client, get, [Key]).$/;"	f	module:erldis
+get	client-libraries/php/redis.php	/^    public function get($name) {$/;"	f
+get	client-libraries/python/redis.py	/^    def get(self, name):$/;"	m	class:Redis
+getCommand	redis.c	/^static void getCommand(redisClient *c) {$/;"	f	file:
+getExpire	redis.c	/^static time_t getExpire(redisDb *db, robj *key) {$/;"	f	file:
+getMcontextEip	redis.c	/^static void *getMcontextEip(ucontext_t *uc) {$/;"	f	file:
+getSetCommand	redis.c	/^static void getSetCommand(redisClient *c) {$/;"	f	file:
+get_all_results	client-libraries/erlang/src/client.erl	/^get_all_results(Client) ->$/;"	f	module:client
+get_all_results	client-libraries/erlang/src/erldis.erl	/^get_all_results(Client) -> client:get_all_results(Client).$/;"	f	module:erldis
+get_bulk_reply	client-libraries/php/redis.php	/^    private function get_bulk_reply($data=null) {$/;"	f
+get_list	client-libraries/cpp/redisclient.h	/^    int_type get_list(const string_type & key, string_vector & out)$/;"	f	class:redis::client
+get_node	client-libraries/ruby/lib/hash_ring.rb	/^  def get_node(key)$/;"	f	class:HashRing
+get_node_pos	client-libraries/ruby/lib/hash_ring.rb	/^  def get_node_pos(key)$/;"	f	class:HashRing
+get_response	client-libraries/php/redis.php	/^    private function get_response() {$/;"	f
+get_response	client-libraries/python/redis.py	/^    def get_response(self):$/;"	m	class:Redis
+get_type	client-libraries/python/redis.py	/^    def get_type(self, name):$/;"	m	class:Redis
+getset	client-libraries/cpp/redisclient.cpp	/^  client::string_type client::getset(const client::string_type & key, $/;"	f	class:redis::client
+getset	client-libraries/erlang/src/erldis.erl	/^getset(Client, Key, Value) -> internal_set_like(Client, getset, Key, Value).$/;"	f	module:erldis
+getset	client-libraries/python/redis.py	/^    def getset(self, name, value):$/;"	m	class:Redis
+glueReplyBuffersIfNeeded	redis.c	/^static void glueReplyBuffersIfNeeded(redisClient *c) {$/;"	f	file:
+glueoutputbuf	redis.c	/^    int glueoutputbuf;$/;"	m	struct:redisServer	file:
+h1	doc/style.css	/^h1, h2, h3, h4, h5 {$/;"	s
+h1 	doc/style.css	/^h1 {$/;"	s
+h1.wikiname 	doc/style.css	/^h1.wikiname {$/;"	s
+h2	doc/style.css	/^h1, h2, h3, h4, h5 {$/;"	s
+h3	doc/style.css	/^h1, h2, h3, h4, h5 {$/;"	s
+h4	doc/style.css	/^h1, h2, h3, h4, h5 {$/;"	s
+h5 	doc/style.css	/^h1, h2, h3, h4, h5 {$/;"	s
+handle_call	client-libraries/erlang/src/client.erl	/^handle_call(_, _From, State) -> {noreply, State}.$/;"	f	module:client
+handle_call	client-libraries/erlang/src/client.erl	/^handle_call(disconnect, _From, State) ->$/;"	f	module:client
+handle_call	client-libraries/erlang/src/client.erl	/^handle_call(get_all_results, From, State) ->$/;"	f	module:client
+handle_call	client-libraries/erlang/src/client.erl	/^handle_call({send, Cmd}, From, State) ->$/;"	f	module:client
+handle_cast	client-libraries/erlang/src/client.erl	/^handle_cast(_Msg, State) -> {noreply, State}.$/;"	f	module:client
+handle_cast	client-libraries/erlang/src/client.erl	/^handle_cast({asend, Cmd}, State) ->$/;"	f	module:client
+handle_cast	client-libraries/erlang/src/client.erl	/^handle_cast({send, Cmd}, State=#redis{remaining=Remaining, calls=Calls}) ->$/;"	f	module:client
+handle_info	client-libraries/erlang/src/client.erl	/^handle_info(_Info, State) -> {noreply, State}.$/;"	f	module:client
+handle_info	client-libraries/erlang/src/client.erl	/^handle_info({tcp, Socket, Data}, State=#redis{calls=Calls}) ->$/;"	f	module:client
+hashDictType	redis.c	/^static dictType hashDictType = {$/;"	v	file:
+hashFunction	dict.h	/^    unsigned int (*hashFunction)(const void *key);$/;"	m	struct:dictType
+head	adlist.h	/^    listNode *head;$/;"	m	struct:list
+host	client-libraries/php/redis.php	/^        $this->host = $host;$/;"	v
+hostip	benchmark.c	/^    char *hostip;$/;"	m	struct:config	file:
+hostip	redis-cli.c	/^    char *hostip;$/;"	m	struct:config	file:
+hostport	benchmark.c	/^    int hostport;$/;"	m	struct:config	file:
+hostport	redis-cli.c	/^    int hostport;$/;"	m	struct:config	file:
+ht	dict.h	/^    dict *ht;$/;"	m	struct:dictIterator
+htNeedsResize	redis.c	/^static int htNeedsResize(dict *dict) {$/;"	f	file:
+i	client-libraries/php/redis.php	/^                $i = strpos($data, '.') !== false ? (int)$data : (float)$data;$/;"	v
+i	client-libraries/php/redis.php	/^            $i = fwrite($this->_sock, $s);$/;"	v
+i	client-libraries/php/redis.php	/^            if ($i == 0) \/\/ || $i == strlen($s))$/;"	v
+ibuf	benchmark.c	/^    sds ibuf;$/;"	m	struct:_client	file:
+id	ae.h	/^    long long id; \/* time event identifier. *\/$/;"	m	struct:aeTimeEvent
+id	redis.c	/^    int id;$/;"	m	struct:redisDb	file:
+incr	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::incr(const client::string_type & key)$/;"	f	class:redis::client
+incr	client-libraries/erlang/src/erldis.erl	/^incr(Client, Key) -> client:ssend(Client, incr, [Key]).$/;"	f	module:erldis
+incr	client-libraries/php/redis.php	/^    public function incr($name, $amount=1) {$/;"	f
+incr	client-libraries/python/redis.py	/^    def incr(self, name, amount=1):$/;"	m	class:Redis
+incr	client-libraries/ruby/lib/redis.rb	/^  def incr(key, increment = nil)$/;"	f	class:Redis
+incrCommand	redis.c	/^static void incrCommand(redisClient *c) {$/;"	f	file:
+incrDecrCommand	redis.c	/^static void incrDecrCommand(redisClient *c, long long incr) {$/;"	f	file:
+incrRefCount	redis.c	/^static void incrRefCount(robj *o) {$/;"	f	file:
+incrby	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::incrby(const client::string_type & key, $/;"	f	class:redis::client
+incrby	client-libraries/erlang/src/erldis.erl	/^incrby(Client, Key, By) -> client:ssend(Client, incrby, [Key, By]).$/;"	f	module:erldis
+incrbyCommand	redis.c	/^static void incrbyCommand(redisClient *c) {$/;"	f	file:
+index	dict.h	/^    int index;$/;"	m	struct:dictIterator
+info	client-libraries/cpp/redisclient.cpp	/^  void client::info(server_info & out)$/;"	f	class:redis::client
+info	client-libraries/erlang/src/erldis.erl	/^info(Client) -> client:ssend(Client, info).$/;"	f	module:erldis
+info	client-libraries/php/redis.php	/^        $info = array();$/;"	v
+info	client-libraries/php/redis.php	/^    public function info() {$/;"	f
+info	client-libraries/python/redis.py	/^    def info(self):$/;"	m	class:Redis
+infoCommand	redis.c	/^static void infoCommand(redisClient *c) {$/;"	f	file:
+init	client-libraries/erlang/src/client.erl	/^init([Host, Port]) ->$/;"	f	module:client
+initServer	redis.c	/^static void initServer() {$/;"	f	file:
+initServerConfig	redis.c	/^static void initServerConfig() {$/;"	f	file:
+initialize	client-libraries/ruby/lib/dist_redis.rb	/^  def initialize(opts={})$/;"	f	class:DistRedis
+initialize	client-libraries/ruby/lib/hash_ring.rb	/^  def initialize(nodes=[], replicas=POINTS_PER_SERVER)$/;"	f	class:HashRing
+initialize	client-libraries/ruby/lib/pipeline.rb	/^    def initialize(redis)$/;"	f	class:Redis.Pipeline
+initialize	client-libraries/ruby/lib/redis.rb	/^  def initialize(options = {})$/;"	f	class:Redis
+initialize	client-libraries/ruby/spec/redis_spec.rb	/^  def initialize(bar)$/;"	f	class:Foo
+inline	client-libraries/lua/redis.lua	/^local function inline(command, reader)$/;"	f
+inline	lzf_c.c	80;"	d	file:
+inline	lzf_c.c	83;"	d	file:
+int_type	client-libraries/cpp/redisclient.h	/^    typedef long int_type;$/;"	t	class:redis::client
+internal_set_like	client-libraries/erlang/src/erldis.erl	/^internal_set_like(Client, Command, Key, Value) ->$/;"	f	module:erldis
+isLoggedIn	doc/TwitterAlikeExample.html	/^function isLoggedIn() {$/;"	f
+isslave	redis.c	/^    int isslave;$/;"	m	struct:redisServer	file:
+iter	adlist.h	/^    listIter iter;$/;"	m	struct:list
+iter_nodes	client-libraries/ruby/lib/hash_ring.rb	/^  def iter_nodes(key)$/;"	f	class:HashRing
+keepalive	benchmark.c	/^    int keepalive;$/;"	m	struct:config	file:
+key	dict.h	/^    void *key;$/;"	m	struct:dictEntry
+keyCompare	dict.h	/^    int (*keyCompare)(void *privdata, const void *key1, const void *key2);$/;"	m	struct:dictType
+keyDestructor	dict.h	/^    void (*keyDestructor)(void *privdata, void *key);$/;"	m	struct:dictType
+keyDup	dict.h	/^    void *(*keyDup)(void *privdata, const void *key);$/;"	m	struct:dictType
+key_error	client-libraries/cpp/redisclient.cpp	/^  key_error::key_error(const string & err) : redis_error(err)$/;"	f	class:redis::key_error
+key_error	client-libraries/cpp/redisclient.h	/^  class key_error : public redis_error$/;"	c	namespace:redis
+keys	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::keys(const client::string_type & pattern,$/;"	f	class:redis::client
+keys	client-libraries/erlang/src/erldis.erl	/^keys(Client, Pattern) -> client:ssend(Client, keys, [Pattern]).$/;"	f	module:erldis
+keys	client-libraries/php/redis.php	/^    public function keys($pattern) {$/;"	f
+keys	client-libraries/python/redis.py	/^    def keys(self, pattern):$/;"	m	class:Redis
+keys	client-libraries/ruby/lib/dist_redis.rb	/^  def keys(glob)$/;"	f	class:DistRedis
+keysCommand	redis.c	/^static void keysCommand(redisClient *c) {$/;"	f	file:
+keysize	benchmark.c	/^    int keysize;$/;"	m	struct:config	file:
+last_save_time	client-libraries/cpp/redisclient.h	/^    unsigned long last_save_time;$/;"	m	struct:redis::server_info
+lastinteraction	redis.c	/^    time_t lastinteraction; \/* time of the last interaction, used for timeout *\/$/;"	m	struct:redisClient	file:
+lastsave	client-libraries/cpp/redisclient.cpp	/^  time_t client::lastsave()$/;"	f	class:redis::client
+lastsave	client-libraries/erlang/src/erldis.erl	/^lastsave(Client) -> client:ssend(Client, lastsave).$/;"	f	module:erldis
+lastsave	client-libraries/php/redis.php	/^    public function lastsave() {$/;"	f
+lastsave	client-libraries/python/redis.py	/^    def lastsave(self):$/;"	m	class:Redis
+lastsave	redis.c	/^    time_t lastsave;            \/* Unix time of last save succeeede *\/$/;"	m	struct:redisServer	file:
+lastsaveCommand	redis.c	/^static void lastsaveCommand(redisClient *c) {$/;"	f	file:
+latency	benchmark.c	/^    int *latency;$/;"	m	struct:config	file:
+len	adlist.h	/^    unsigned int len;$/;"	m	struct:list
+len	sds.h	/^    long len;$/;"	m	struct:sdshdr
+lindex	client-libraries/cpp/redisclient.cpp	/^  client::string_type client::lindex(const client::string_type & key, $/;"	f	class:redis::client
+lindex	client-libraries/erlang/src/erldis.erl	/^lindex(Client, Key, Index) -> client:ssend(Client, lindex, [Key, Index]).$/;"	f	module:erldis
+lindex	client-libraries/php/redis.php	/^    public function lindex($name, $index) {$/;"	f
+lindex	client-libraries/python/redis.py	/^    def lindex(self, name, index):$/;"	m	class:Redis
+lindexCommand	redis.c	/^static void lindexCommand(redisClient *c) {$/;"	f	file:
+linuxOvercommitMemoryValue	redis.c	/^int linuxOvercommitMemoryValue(void) {$/;"	f
+linuxOvercommitMemoryWarning	redis.c	/^void linuxOvercommitMemoryWarning(void) {$/;"	f
+list	adlist.h	/^typedef struct list {$/;"	s
+list	adlist.h	/^} list;$/;"	t	typeref:struct:list
+listAddNodeHead	adlist.c	/^list *listAddNodeHead(list *list, void *value)$/;"	f
+listAddNodeTail	adlist.c	/^list *listAddNodeTail(list *list, void *value)$/;"	f
+listCreate	adlist.c	/^list *listCreate(void)$/;"	f
+listDelNode	adlist.c	/^void listDelNode(list *list, listNode *node)$/;"	f
+listDup	adlist.c	/^list *listDup(list *orig)$/;"	f
+listFirst	adlist.h	59;"	d
+listGetDupMethod	adlist.h	69;"	d
+listGetFree	adlist.h	70;"	d
+listGetIterator	adlist.c	/^listIter *listGetIterator(list *list, int direction)$/;"	f
+listGetMatchMethod	adlist.h	71;"	d
+listIndex	adlist.c	/^listNode *listIndex(list *list, int index) {$/;"	f
+listIter	adlist.h	/^typedef struct listIter {$/;"	s
+listIter	adlist.h	/^} listIter;$/;"	t	typeref:struct:listIter
+listLast	adlist.h	60;"	d
+listLength	adlist.h	58;"	d
+listNext	adlist.c	/^listNode *listNext(listIter *iter)$/;"	f
+listNextNode	adlist.h	62;"	d
+listNode	adlist.h	/^typedef struct listNode {$/;"	s
+listNode	adlist.h	/^} listNode;$/;"	t	typeref:struct:listNode
+listNodeValue	adlist.h	63;"	d
+listPrevNode	adlist.h	61;"	d
+listRelease	adlist.c	/^void listRelease(list *list)$/;"	f
+listReleaseIterator	adlist.c	/^void listReleaseIterator(listIter *iter) {$/;"	f
+listRewind	adlist.c	/^void listRewind(list *list) {$/;"	f
+listRewindTail	adlist.c	/^void listRewindTail(list *list) {$/;"	f
+listSearchKey	adlist.c	/^listNode *listSearchKey(list *list, void *key)$/;"	f
+listSetDupMethod	adlist.h	65;"	d
+listSetFreeMethod	adlist.h	66;"	d
+listSetMatchMethod	adlist.h	67;"	d
+listYield	adlist.c	/^listNode *listYield(list *list) {$/;"	f
+liveclients	benchmark.c	/^    int liveclients;$/;"	m	struct:config	file:
+llen	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::llen(const client::string_type & key)$/;"	f	class:redis::client
+llen	client-libraries/erlang/src/erldis.erl	/^llen(Client, Key) -> client:ssend(Client, llen, [Key]).$/;"	f	module:erldis
+llen	client-libraries/php/redis.php	/^    public function llen($name) {$/;"	f
+llen	client-libraries/python/redis.py	/^    def llen(self, name):$/;"	m	class:Redis
+llenCommand	redis.c	/^static void llenCommand(redisClient *c) {$/;"	f	file:
+loadServerConfig	redis.c	/^static void loadServerConfig(char *filename) {$/;"	f	file:
+loadUserInfo	doc/TwitterAlikeExample.html	/^function loadUserInfo($userid) {$/;"	f
+load_methods	client-libraries/lua/redis.lua	/^local function load_methods(proto, methods)$/;"	f
+local function toboolean(value) return value 	client-libraries/lua/redis.lua	/^local function toboolean(value) return value == 1 end$/;"	f
+logfile	redis.c	/^    char *logfile;$/;"	m	struct:redisServer	file:
+lookupCommand	redis-cli.c	/^static struct redisCommand *lookupCommand(char *name) {$/;"	f	file:
+lookupCommand	redis.c	/^static struct redisCommand *lookupCommand(char *name) {$/;"	f	file:
+lookupKey	redis.c	/^static robj *lookupKey(redisDb *db, robj *key) {$/;"	f	file:
+lookupKeyByPattern	redis.c	/^static robj *lookupKeyByPattern(redisDb *db, robj *pattern, robj *subst) {$/;"	f	file:
+lookupKeyRead	redis.c	/^static robj *lookupKeyRead(redisDb *db, robj *key) {$/;"	f	file:
+lookupKeyWrite	redis.c	/^static robj *lookupKeyWrite(redisDb *db, robj *key) {$/;"	f	file:
+loop	benchmark.c	/^    int loop;$/;"	m	struct:config	file:
+lpop	client-libraries/cpp/redisclient.cpp	/^  client::string_type client::lpop(const client::string_type & key)$/;"	f	class:redis::client
+lpop	client-libraries/erlang/src/erldis.erl	/^lpop(Client, Key) -> client:ssend(Client, lpop, [Key]).$/;"	f	module:erldis
+lpop	client-libraries/php/redis.php	/^    public function lpop($name, $value) {$/;"	f
+lpopCommand	redis.c	/^static void lpopCommand(redisClient *c) {$/;"	f	file:
+lpush	client-libraries/cpp/redisclient.cpp	/^  void client::lpush(const client::string_type & key, $/;"	f	class:redis::client
+lpush	client-libraries/erlang/src/erldis.erl	/^lpush(Client, Key, Value) -> internal_set_like(Client, lpush, Key, Value).$/;"	f	module:erldis
+lpush	client-libraries/php/redis.php	/^    public function lpush($name, $value) {$/;"	f
+lpushCommand	redis.c	/^static void lpushCommand(redisClient *c) {$/;"	f	file:
+lrange	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::lrange(const client::string_type & key, $/;"	f	class:redis::client
+lrange	client-libraries/erlang/src/erldis.erl	/^lrange(Client, Key, Start, End) -> client:ssend(Client, lrange, [Key, Start, End]).$/;"	f	module:erldis
+lrange	client-libraries/php/redis.php	/^    public function lrange($name, $start, $end) {$/;"	f
+lrange	client-libraries/python/redis.py	/^    def lrange(self, name, start, end):$/;"	m	class:Redis
+lrangeCommand	redis.c	/^static void lrangeCommand(redisClient *c) {$/;"	f	file:
+lrem	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::lrem(const client::string_type & key, $/;"	f	class:redis::client
+lrem	client-libraries/erlang/src/erldis.erl	/^lrem(Client, Key, Number, Value) ->$/;"	f	module:erldis
+lrem	client-libraries/python/redis.py	/^    def lrem(self, name, value, num=0):$/;"	m	class:Redis
+lremCommand	redis.c	/^static void lremCommand(redisClient *c) {$/;"	f	file:
+lrem_exact	client-libraries/cpp/redisclient.h	/^    void lrem_exact(const string_type & key,$/;"	f	class:redis::client
+lset	client-libraries/cpp/redisclient.cpp	/^  void client::lset(const client::string_type & key, $/;"	f	class:redis::client
+lset	client-libraries/erlang/src/erldis.erl	/^lset(Client, Key, Index, Value) ->$/;"	f	module:erldis
+lset	client-libraries/php/redis.php	/^    public function lset($name, $value, $index) {$/;"	f
+lset	client-libraries/python/redis.py	/^    def lset(self, name, index, value):$/;"	m	class:Redis
+lsetCommand	redis.c	/^static void lsetCommand(redisClient *c) {$/;"	f	file:
+ltrim	client-libraries/cpp/redisclient.cpp	/^  void client::ltrim(const client::string_type & key, $/;"	f	class:redis::client
+ltrim	client-libraries/erlang/src/erldis.erl	/^ltrim(Client, Key, Start, End) -> client:ssend(Client, ltrim, [Key, Start, End]).$/;"	f	module:erldis
+ltrim	client-libraries/php/redis.php	/^    public function ltrim($name, $start, $end) {$/;"	f
+ltrim	client-libraries/python/redis.py	/^    def ltrim(self, name, start, end):$/;"	m	class:Redis
+ltrimCommand	redis.c	/^static void ltrimCommand(redisClient *c) {$/;"	f	file:
+lzf_compress	lzf_c.c	/^lzf_compress (const void *const in_data, unsigned int in_len,$/;"	f
+lzf_decompress	lzf_d.c	/^lzf_decompress (const void *const in_data,  unsigned int in_len,$/;"	f
+main	benchmark.c	/^int main(int argc, char **argv) {$/;"	f
+main	client-libraries/cpp/test_client.cpp	/^int main(int argc, char ** argv)$/;"	f
+main	redis-cli.c	/^int main(int argc, char **argv) {$/;"	f
+main	redis.c	/^int main(int argc, char **argv) {$/;"	f
+main	test-redis.tcl	/^proc main {server port} {$/;"	p
+makecmd	client-libraries/cpp/redisclient.cpp	/^    explicit makecmd(const string & initial, bool finalize = false) $/;"	f	class:__anon3::makecmd
+makecmd	client-libraries/cpp/redisclient.cpp	/^  class makecmd$/;"	c	namespace:__anon3	file:
+mapped_mget	client-libraries/ruby/lib/redis.rb	/^  def mapped_mget(*keys)$/;"	f	class:Redis
+mask	ae.h	/^    int mask; \/* one of AE_(READABLE|WRITABLE|EXCEPTION) *\/$/;"	m	struct:aeFileEvent
+master	redis.c	/^    redisClient *master;    \/* client that is master for this slave *\/$/;"	m	struct:redisServer	file:
+masterhost	redis.c	/^    char *masterhost;$/;"	m	struct:redisServer	file:
+masterport	redis.c	/^    int masterport;$/;"	m	struct:redisServer	file:
+match	adlist.h	/^    int (*match)(void *ptr, void *key);$/;"	m	struct:list
+maxclients	redis.c	/^    unsigned int maxclients;$/;"	m	struct:redisServer	file:
+maxidletime	redis.c	/^    int maxidletime;$/;"	m	struct:redisServer	file:
+maxmemory	redis.c	/^    unsigned int maxmemory;$/;"	m	struct:redisServer	file:
+med3	pqsort.c	/^med3(char *a, char *b, char *c,$/;"	f	file:
+method_missing	client-libraries/ruby/lib/dist_redis.rb	/^  def method_missing(sym, *args, &blk)$/;"	f	class:DistRedis
+method_missing	client-libraries/ruby/lib/redis.rb	/^  def method_missing(*argv)$/;"	f	class:Redis
+mget	client-libraries/cpp/redisclient.cpp	/^  void client::mget(const client::string_vector & keys, string_vector & out)$/;"	f	class:redis::client
+mget	client-libraries/erlang/src/erldis.erl	/^mget(Client, Keys) -> client:ssend(Client, mget, Keys).$/;"	f	module:erldis
+mget	client-libraries/php/redis.php	/^    public function mget($keys) {$/;"	f
+mget	client-libraries/python/redis.py	/^    def mget(self, *args):$/;"	m	class:Redis
+mgetCommand	redis.c	/^static void mgetCommand(redisClient *c) {$/;"	f	file:
+min	pqsort.c	59;"	d	file:
+missing_value	client-libraries/cpp/redisclient.h	/^    static string_type missing_value;$/;"	m	class:redis::client
+monitorCommand	redis.c	/^static void monitorCommand(redisClient *c) {$/;"	f	file:
+monitors	redis.c	/^    list *slaves, *monitors;$/;"	m	struct:redisServer	file:
+move	client-libraries/cpp/redisclient.cpp	/^  void client::move(const client::string_type & key, $/;"	f	class:redis::client
+move	client-libraries/erlang/src/erldis.erl	/^move(Client, Key, DBIndex) -> client:ssend(Client, move, [Key, DBIndex]).$/;"	f	module:erldis
+move	client-libraries/php/redis.php	/^    public function move($name, $db) {$/;"	f
+move	client-libraries/python/redis.py	/^    def move(self, name, db):$/;"	m	class:Redis
+moveCommand	redis.c	/^static void moveCommand(redisClient *c) {$/;"	f	file:
+msg	client-libraries/php/redis.php	/^        $msg = "Cannot open socket to {$this->host}:{$this->port}";$/;"	v
+mstime	benchmark.c	/^static long long mstime(void) {$/;"	f	file:
+name	redis-cli.c	/^    char *name;$/;"	m	struct:redisCommand	file:
+name	redis.c	/^    char *name;$/;"	m	struct:redisCommand	file:
+name	redis.c	/^    char *name;$/;"	m	struct:redisFunctionSym	file:
+neterr	redis.c	/^    char neterr[ANET_ERR_LEN];$/;"	m	struct:redisServer	file:
+network.read	client-libraries/lua/redis.lua	/^function network.read(client, len)$/;"	f
+network.write	client-libraries/lua/redis.lua	/^function network.write(client, buffer)$/;"	f
+new	client-libraries/perl/lib/Redis.pm	/^sub new {$/;"	s
+next	adlist.h	/^    listNode *next;$/;"	m	struct:listIter
+next	adlist.h	/^    struct listNode *next;$/;"	m	struct:listNode	typeref:struct:listNode::listNode
+next	ae.h	/^    struct aeFileEvent *next;$/;"	m	struct:aeFileEvent	typeref:struct:aeFileEvent::aeFileEvent
+next	ae.h	/^    struct aeTimeEvent *next;$/;"	m	struct:aeTimeEvent	typeref:struct:aeTimeEvent::aeTimeEvent
+next	dict.h	/^    struct dictEntry *next;$/;"	m	struct:dictEntry	typeref:struct:dictEntry::dictEntry
+nextEntry	dict.h	/^    dictEntry *entry, *nextEntry;$/;"	m	struct:dictIterator
+node_for_key	client-libraries/ruby/lib/dist_redis.rb	/^  def node_for_key(key)$/;"	f	class:DistRedis
+nokeyerr	redis.c	/^    *emptymultibulk, *wrongtypeerr, *nokeyerr, *syntaxerr, *sameobjecterr,$/;"	m	struct:sharedObjectsStruct	file:
+nullbulk	redis.c	/^    *colon, *nullbulk, *nullmultibulk,$/;"	m	struct:sharedObjectsStruct	file:
+nullmultibulk	redis.c	/^    *colon, *nullbulk, *nullmultibulk,$/;"	m	struct:sharedObjectsStruct	file:
+num	client-libraries/php/redis.php	/^                $num = (int)$data;$/;"	v
+numclients	benchmark.c	/^    int numclients;$/;"	m	struct:config	file:
+obj	redis.c	/^    robj *obj;$/;"	m	struct:_redisSortObject	file:
+objfreelist	redis.c	/^    list *objfreelist;          \/* A list of freed objects to avoid malloc() *\/$/;"	m	struct:redisServer	file:
+obuf	benchmark.c	/^    sds obuf;$/;"	m	struct:_client	file:
+ok	redis.c	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *pong, *space,$/;"	m	struct:sharedObjectsStruct	file:
+on_each_node	client-libraries/ruby/lib/dist_redis.rb	/^  def on_each_node(command, *args)$/;"	f
+oom	redis.c	/^static void oom(const char *msg) {$/;"	f	file:
+operator <<	client-libraries/cpp/redisclient.cpp	/^    makecmd & operator<<(T const & datum)$/;"	f	class:__anon3::makecmd
+operator <<	client-libraries/cpp/redisclient.cpp	/^    makecmd & operator<<(const vector<T> & data) $/;"	f	class:__anon3::makecmd
+operator const std::string	client-libraries/cpp/redisclient.cpp	/^  redis_error::operator const std::string () const$/;"	f	class:redis::redis_error
+operator std::string	client-libraries/cpp/redisclient.cpp	/^    operator std::string ()$/;"	f	class:__anon3::makecmd
+operator std::string	client-libraries/cpp/redisclient.cpp	/^  redis_error::operator std::string ()$/;"	f	class:redis::redis_error
+outofrangeerr	redis.c	/^    *outofrangeerr, *plus,$/;"	m	struct:sharedObjectsStruct	file:
+output_proto_debug	client-libraries/cpp/redisclient.cpp	/^  void output_proto_debug(const string & data, bool is_received = true)$/;"	f	namespace:__anon3
+parse	client-libraries/erlang/src/proto.erl	/^parse(empty, "$" ++ BulkSize) ->$/;"	f	module:proto
+parse	client-libraries/erlang/src/proto.erl	/^parse(empty, "$-1") ->$/;"	f	module:proto
+parse	client-libraries/erlang/src/proto.erl	/^parse(empty, "*" ++ MultiBulkSize) ->$/;"	f	module:proto
+parse	client-libraries/erlang/src/proto.erl	/^parse(empty, "*-1") ->$/;"	f	module:proto
+parse	client-libraries/erlang/src/proto.erl	/^parse(empty, "+OK") ->$/;"	f	module:proto
+parse	client-libraries/erlang/src/proto.erl	/^parse(empty, "+PONG") ->$/;"	f	module:proto
+parse	client-libraries/erlang/src/proto.erl	/^parse(empty, "-" ++ Message) ->$/;"	f	module:proto
+parse	client-libraries/erlang/src/proto.erl	/^parse(empty, ":0") ->$/;"	f	module:proto
+parse	client-libraries/erlang/src/proto.erl	/^parse(empty, ":1") ->$/;"	f	module:proto
+parse	client-libraries/erlang/src/proto.erl	/^parse(empty, Message) ->$/;"	f	module:proto
+parse	client-libraries/erlang/src/proto.erl	/^parse(read, "$" ++ BulkSize) ->$/;"	f	module:proto
+parseOptions	benchmark.c	/^void parseOptions(int argc, char **argv) {$/;"	f
+parseOptions	redis-cli.c	/^static int parseOptions(int argc, char **argv) {$/;"	f	file:
+parse_test	client-libraries/erlang/test/proto_tests.erl	/^parse_test() ->$/;"	f	module:proto_tests
+pattern	redis.c	/^    robj *pattern;$/;"	m	struct:_redisSortOperation	file:
+pidfile	redis.c	/^    char *pidfile;$/;"	m	struct:redisServer	file:
+ping	client-libraries/php/redis.php	/^    public function ping() {$/;"	f
+ping	client-libraries/python/redis.py	/^    def ping(self):$/;"	m	class:Redis
+pingCommand	redis.c	/^static void pingCommand(redisClient *c) {$/;"	f	file:
+pipelined	client-libraries/ruby/lib/redis.rb	/^  def pipelined(&block)$/;"	f	class:Redis
+plus	redis.c	/^    *outofrangeerr, *plus,$/;"	m	struct:sharedObjectsStruct	file:
+pointer	redis.c	/^    unsigned long pointer;$/;"	m	struct:redisFunctionSym	file:
+pong	redis.c	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *pong, *space,$/;"	m	struct:sharedObjectsStruct	file:
+pop	client-libraries/php/redis.php	/^    public function pop($name, $tail=true) {$/;"	f
+pop	client-libraries/python/redis.py	/^    def pop(self, name, tail=False):$/;"	m	class:Redis
+popGenericCommand	redis.c	/^static void popGenericCommand(redisClient *c, int where) {$/;"	f	file:
+port	client-libraries/php/redis.php	/^        $this->port = $port;$/;"	v
+port	client-libraries/php/redis.php	/^    public $port;$/;"	v
+port	client-libraries/php/redis.php	/^    public function __construct($host='localhost', $port=6379) {$/;"	v
+port	redis.c	/^    int port;$/;"	m	struct:redisServer	file:
+pqsort	pqsort.c	/^pqsort(void *a, size_t n, size_t es,$/;"	f
+prefix_int_reply	client-libraries/cpp/redisclient.cpp	/^  const char prefix_int_reply = ':';$/;"	m	namespace:__anon3	file:
+prefix_multi_bulk_reply	client-libraries/cpp/redisclient.cpp	/^  const char prefix_multi_bulk_reply = '*';$/;"	m	namespace:__anon3	file:
+prefix_single_bulk_reply	client-libraries/cpp/redisclient.cpp	/^  const char prefix_single_bulk_reply = '$';$/;"	m	namespace:__anon3	file:
+prefix_status_reply_value	client-libraries/cpp/redisclient.cpp	/^  const char prefix_status_reply_value = '+';$/;"	m	namespace:__anon3	file:
+prepareForBenchmark	benchmark.c	/^static void prepareForBenchmark(void)$/;"	f	file:
+preserve	client-libraries/php/redis.php	/^    public function set($name, $value, $preserve=false) {$/;"	v
+prev	adlist.h	/^    struct listNode *prev;$/;"	m	struct:listNode	typeref:struct:listNode::listNode
+privdata	dict.h	/^    void *privdata;$/;"	m	struct:dict
+proc	redis.c	/^    redisCommandProc *proc;$/;"	m	struct:redisCommand	file:
+processCommand	redis.c	/^static int processCommand(redisClient *c) {$/;"	f	file:
+proto	client-libraries/erlang/src/proto.erl	/^-module(proto).$/;"	m
+proto_tests	client-libraries/erlang/test/proto_tests.erl	/^-module(proto_tests).$/;"	m
+protocol_error	client-libraries/cpp/redisclient.cpp	/^  protocol_error::protocol_error(const string & err) : redis_error(err)$/;"	f	class:redis::protocol_error
+protocol_error	client-libraries/cpp/redisclient.h	/^  class protocol_error : public redis_error$/;"	c	namespace:redis
+ptr	redis.c	/^    void *ptr;$/;"	m	struct:redisObject	file:
+push	client-libraries/php/redis.php	/^    public function push($name, $value, $tail=true) {$/;"	f
+push	client-libraries/python/redis.py	/^    def push(self, name, value, tail=False):$/;"	m	class:Redis
+pushGenericCommand	redis.c	/^static void pushGenericCommand(redisClient *c, int where) {$/;"	f	file:
+qsortCompareSetsByCardinality	redis.c	/^static int qsortCompareSetsByCardinality(const void *s1, const void *s2) {$/;"	f	file:
+query	client-libraries/php/redis.php	/^    public function sort($name, $query=false) {$/;"	v
+querybuf	redis.c	/^    sds querybuf;$/;"	m	struct:redisClient	file:
+quiet	benchmark.c	/^    int quiet;$/;"	m	struct:config	file:
+quit	client-libraries/erlang/src/erldis.erl	/^quit(Client) ->$/;"	f	module:erldis
+quit	client-libraries/ruby/lib/dist_redis.rb	/^  def quit$/;"	f	class:DistRedis
+quit	client-libraries/ruby/lib/redis.rb	/^  def quit$/;"	f	class:Redis
+quit_test	client-libraries/erlang/test/erldis_tests.erl	/^quit_test() ->$/;"	f	module:erldis_tests
+r	client-libraries/php/redis.php	/^$r = new Redis();$/;"	v
+r	client-libraries/php/tests.php	/^$r =& new Redis('localhost');$/;"	v
+randomizeClientKey	benchmark.c	/^static void randomizeClientKey(client c) {$/;"	f	file:
+randomkey	client-libraries/cpp/redisclient.cpp	/^  client::string_type client::randomkey()$/;"	f	class:redis::client
+randomkey	client-libraries/erlang/src/erldis.erl	/^randomkey(Client, Key) -> client:ssend(Client, randomkey, [Key]).$/;"	f	module:erldis
+randomkey	client-libraries/php/redis.php	/^    public function randomkey() {$/;"	f
+randomkey	client-libraries/python/redis.py	/^    def randomkey(self):$/;"	m	class:Redis
+randomkeyCommand	redis.c	/^static void randomkeyCommand(redisClient *c) {$/;"	f	file:
+randomkeys	benchmark.c	/^    int randomkeys;$/;"	m	struct:config	file:
+randomkeys_keyspacelen	benchmark.c	/^    int randomkeys_keyspacelen;$/;"	m	struct:config	file:
+randstring	test-redis.tcl	/^proc randstring {min max {type binary}} {$/;"	p
+raw_call_command	client-libraries/ruby/lib/redis.rb	/^  def raw_call_command(argvp)$/;"	f	class:Redis
+raw_cmd 	client-libraries/lua/redis.lua	/^        raw_cmd = function(self, buffer)$/;"	f
+rdbLoad	redis.c	/^static int rdbLoad(char *filename) {$/;"	f	file:
+rdbLoadIntegerObject	redis.c	/^static robj *rdbLoadIntegerObject(FILE *fp, int enctype) {$/;"	f	file:
+rdbLoadLen	redis.c	/^static uint32_t rdbLoadLen(FILE *fp, int rdbver, int *isencoded) {$/;"	f	file:
+rdbLoadLzfStringObject	redis.c	/^static robj *rdbLoadLzfStringObject(FILE*fp, int rdbver) {$/;"	f	file:
+rdbLoadStringObject	redis.c	/^static robj *rdbLoadStringObject(FILE*fp, int rdbver) {$/;"	f	file:
+rdbLoadTime	redis.c	/^static time_t rdbLoadTime(FILE *fp) {$/;"	f	file:
+rdbLoadType	redis.c	/^static int rdbLoadType(FILE *fp) {$/;"	f	file:
+rdbRemoveTempFile	redis.c	/^static void rdbRemoveTempFile(pid_t childpid) {$/;"	f	file:
+rdbSave	redis.c	/^static int rdbSave(char *filename) {$/;"	f	file:
+rdbSaveBackground	redis.c	/^static int rdbSaveBackground(char *filename) {$/;"	f	file:
+rdbSaveLen	redis.c	/^static int rdbSaveLen(FILE *fp, uint32_t len) {$/;"	f	file:
+rdbSaveLzfStringObject	redis.c	/^static int rdbSaveLzfStringObject(FILE *fp, robj *obj) {$/;"	f	file:
+rdbSaveStringObject	redis.c	/^static int rdbSaveStringObject(FILE *fp, robj *obj) {$/;"	f	file:
+rdbSaveTime	redis.c	/^static int rdbSaveTime(FILE *fp, time_t t) {$/;"	f	file:
+rdbSaveType	redis.c	/^static int rdbSaveType(FILE *fp, unsigned char type) {$/;"	f	file:
+rdbTryIntegerEncoding	redis.c	/^static int rdbTryIntegerEncoding(sds s, unsigned char *enc) {$/;"	f	file:
+read	client-libraries/php/redis.php	/^    private function read($len=1024) {$/;"	f
+readArgFromStdin	redis-cli.c	/^static sds readArgFromStdin(void) {$/;"	f	file:
+readHandler	benchmark.c	/^static void readHandler(aeEventLoop *el, int fd, void *privdata, int mask)$/;"	f	file:
+readQueryFromClient	redis.c	/^static void readQueryFromClient(aeEventLoop *el, int fd, void *privdata, int mask) {$/;"	f	file:
+read_line	client-libraries/cpp/redisclient.cpp	/^  string read_line(int socket, ssize_t max_size = 2048) $/;"	f	namespace:__anon3
+read_n	client-libraries/cpp/redisclient.cpp	/^  string read_n(int socket, ssize_t n)$/;"	f	namespace:__anon3
+read_reply	client-libraries/ruby/lib/redis.rb	/^  def read_reply$/;"	f	class:Redis
+readlen	benchmark.c	/^    int readlen;        \/* readlen == -1 means read a single line *\/$/;"	m	struct:_client	file:
+recv_bulk_reply_	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::recv_bulk_reply_(char prefix)$/;"	f	class:redis::client
+recv_bulk_reply_	client-libraries/cpp/redisclient.cpp	/^  string client::recv_bulk_reply_() $/;"	f	class:redis::client
+recv_int_ok_reply_	client-libraries/cpp/redisclient.cpp	/^  void client::recv_int_ok_reply_()$/;"	f	class:redis::client
+recv_int_reply_	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::recv_int_reply_()$/;"	f	class:redis::client
+recv_multi_bulk_reply_	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::recv_multi_bulk_reply_(string_set & out)$/;"	f	class:redis::client
+recv_multi_bulk_reply_	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::recv_multi_bulk_reply_(string_vector & out)$/;"	f	class:redis::client
+recv_ok_reply_	client-libraries/cpp/redisclient.cpp	/^  void client::recv_ok_reply_() $/;"	f	class:redis::client
+recv_single_line_reply_	client-libraries/cpp/redisclient.cpp	/^  string client::recv_single_line_reply_()$/;"	f	class:redis::client
+redis	client-libraries/cpp/redisclient.cpp	/^namespace redis $/;"	n	file:
+redis	client-libraries/cpp/redisclient.h	/^namespace redis $/;"	n
+redis	client-libraries/erlang/include/erldis.hrl	/^-record(redis, {socket,buffer=[],reply_caller,calls=0,remaining=0,pstate=empty,results=[]}).$/;"	r
+redis	client-libraries/tcl/redis.tcl	/^proc redis {{server 127.0.0.1} {port 6379}} {$/;"	p
+redisClient	redis.c	/^typedef struct redisClient {$/;"	s	file:
+redisClient	redis.c	/^} redisClient;$/;"	t	typeref:struct:redisClient	file:
+redisCommand	redis-cli.c	/^struct redisCommand {$/;"	s	file:
+redisCommand	redis.c	/^struct redisCommand {$/;"	s	file:
+redisCommandProc	redis.c	/^typedef void redisCommandProc(redisClient *c);$/;"	t	file:
+redisCopy	utils/redis-copy.rb	/^def redisCopy(opts={})$/;"	f
+redisDb	redis.c	/^typedef struct redisDb {$/;"	s	file:
+redisDb	redis.c	/^} redisDb;$/;"	t	typeref:struct:redisDb	file:
+redisFunctionSym	redis.c	/^struct redisFunctionSym {$/;"	s	file:
+redisLog	redis.c	/^static void redisLog(int level, const char *fmt, ...) {$/;"	f	file:
+redisObject	redis.c	/^typedef struct redisObject {$/;"	s	file:
+redisServer	redis.c	/^struct redisServer {$/;"	s	file:
+redisSha1	utils/redis-sha1.rb	/^def redisSha1(opts={})$/;"	f
+redisSortObject	redis.c	/^} redisSortObject;$/;"	t	typeref:struct:_redisSortObject	file:
+redisSortOperation	redis.c	/^} redisSortOperation;$/;"	t	typeref:struct:_redisSortOperation	file:
+redis_error	client-libraries/cpp/redisclient.cpp	/^  redis_error::redis_error(const string & err) : err_(err) $/;"	f	class:redis::redis_error
+redis_error	client-libraries/cpp/redisclient.h	/^  class redis_error $/;"	c	namespace:redis
+redis_fstat	config.h	17;"	d
+redis_fstat	config.h	20;"	d
+redis_malloc_size	config.h	12;"	d
+redis_stat	config.h	18;"	d
+redis_stat	config.h	21;"	d
+redisconfdir	client-libraries/ruby/tasks/redis.tasks.rb	/^  def self.redisconfdir$/;"	F	class:RedisRunner
+redisdir	client-libraries/ruby/tasks/redis.tasks.rb	/^  def self.redisdir$/;"	F	class:RedisRunner
+refcount	redis.c	/^    int refcount;$/;"	m	struct:redisObject	file:
+removeExpire	redis.c	/^static int removeExpire(redisDb *db, robj *key) {$/;"	f	file:
+remove_node	client-libraries/ruby/lib/hash_ring.rb	/^  def remove_node(node)$/;"	f	class:HashRing
+rename	client-libraries/cpp/redisclient.cpp	/^  void client::rename(const client::string_type & old_name, $/;"	f	class:redis::client
+rename	client-libraries/erlang/src/erldis.erl	/^rename(Client, OldKey, NewKey) -> client:ssend(Client, rename, [OldKey, NewKey]).$/;"	f	module:erldis
+rename	client-libraries/php/redis.php	/^    public function rename($src, $dst) {$/;"	f
+rename	client-libraries/python/redis.py	/^    def rename(self, src, dst, preserve=False):$/;"	m	class:Redis
+renameCommand	redis.c	/^static void renameCommand(redisClient *c) {$/;"	f	file:
+renameGenericCommand	redis.c	/^static void renameGenericCommand(redisClient *c, int nx) {$/;"	f	file:
+renamenx	client-libraries/cpp/redisclient.cpp	/^  bool client::renamenx(const client::string_type & old_name, $/;"	f	class:redis::client
+renamenx	client-libraries/erlang/src/erldis.erl	/^renamenx(Client, OldKey, NewKey) -> client:ssend(Client, renamenx, [OldKey, NewKey]).$/;"	f	module:erldis
+renamenx	client-libraries/php/redis.php	/^    public function renamenx($src, $dst) {$/;"	f
+renamenxCommand	redis.c	/^static void renamenxCommand(redisClient *c) {$/;"	f	file:
+repldbfd	redis.c	/^    int repldbfd;           \/* replication DB file descriptor *\/$/;"	m	struct:redisClient	file:
+repldboff	redis.c	/^    long repldboff;          \/* replication DB file offset *\/$/;"	m	struct:redisClient	file:
+repldbsize	redis.c	/^    off_t repldbsize;       \/* replication DB file size *\/$/;"	m	struct:redisClient	file:
+replicationFeedSlaves	redis.c	/^static void replicationFeedSlaves(list *slaves, struct redisCommand *cmd, int dictid, robj **argv, int argc) {$/;"	f	file:
+replstate	redis.c	/^    int replstate;          \/* replication state if this is a slave *\/$/;"	m	struct:redisClient	file:
+replstate	redis.c	/^    int replstate;$/;"	m	struct:redisServer	file:
+reply	redis.c	/^    list *reply;$/;"	m	struct:redisClient	file:
+replytype	benchmark.c	/^    int replytype;$/;"	m	struct:_client	file:
+request.bulk	client-libraries/lua/redis.lua	/^function request.bulk(client, command, ...)$/;"	f
+request.inline	client-libraries/lua/redis.lua	/^function request.inline(client, command, ...)$/;"	f
+request.raw	client-libraries/lua/redis.lua	/^function request.raw(client, buffer)$/;"	f
+requests	benchmark.c	/^    int requests;$/;"	m	struct:config	file:
+requirepass	redis.c	/^    char *requirepass;$/;"	m	struct:redisServer	file:
+resetClient	benchmark.c	/^static void resetClient(client c) {$/;"	f	file:
+resetClient	redis.c	/^static void resetClient(redisClient *c) {$/;"	f	file:
+response.bulk	client-libraries/lua/redis.lua	/^function response.bulk(client, data)$/;"	f
+response.error	client-libraries/lua/redis.lua	/^function response.error(client, data)$/;"	f
+response.integer	client-libraries/lua/redis.lua	/^function response.integer(client, data)$/;"	f
+response.multibulk	client-libraries/lua/redis.lua	/^function response.multibulk(client, data)$/;"	f
+response.read	client-libraries/lua/redis.lua	/^function response.read(client)$/;"	f
+response.status	client-libraries/lua/redis.lua	/^function response.status(client, data)$/;"	f
+result	client-libraries/php/redis.php	/^                $result = array();$/;"	v
+robj	redis.c	/^} robj;$/;"	t	typeref:struct:redisObject	file:
+role	client-libraries/cpp/redisclient.h	/^    server_role role;$/;"	m	struct:redis::server_info
+role_master	client-libraries/cpp/redisclient.h	/^    role_master,$/;"	e	enum:redis::server_role
+role_slave	client-libraries/cpp/redisclient.h	/^    role_slave$/;"	e	enum:redis::server_role
+rpop	client-libraries/cpp/redisclient.cpp	/^  client::string_type client::rpop(const client::string_type & key)$/;"	f	class:redis::client
+rpop	client-libraries/erlang/src/erldis.erl	/^rpop(Client, Key) -> client:ssend(Client, rpop, [Key]).$/;"	f	module:erldis
+rpop	client-libraries/php/redis.php	/^    public function rpop($name, $value) {$/;"	f
+rpopCommand	redis.c	/^static void rpopCommand(redisClient *c) {$/;"	f	file:
+rpush	client-libraries/cpp/redisclient.cpp	/^  void client::rpush(const client::string_type & key, $/;"	f	class:redis::client
+rpush	client-libraries/erlang/src/erldis.erl	/^rpush(Client, Key, Value) -> internal_set_like(Client, rpush, Key, Value).$/;"	f	module:erldis
+rpush	client-libraries/php/redis.php	/^    public function rpush($name, $value) {$/;"	f
+rpushCommand	redis.c	/^static void rpushCommand(redisClient *c) {$/;"	f	file:
+rtrim	client-libraries/cpp/redisclient.cpp	/^  inline string & rtrim(string & str, const string & ws = whitespace)$/;"	f	namespace:__anon3
+run_in_background	client-libraries/ruby/benchmarking/suite.rb	/^def run_in_background(command)$/;"	f
+running	client-libraries/ruby/tasks/redis.tasks.rb	/^  def self.running?$/;"	F	class:RedisRunner
+s	client-libraries/php/redis.php	/^            $s = substr($s, $i);$/;"	v
+sadd	client-libraries/cpp/redisclient.cpp	/^  void client::sadd(const client::string_type & key, $/;"	f	class:redis::client
+sadd	client-libraries/erlang/src/erldis.erl	/^sadd(Client, Key, Value) -> internal_set_like(Client, sadd, Key, Value).$/;"	f	module:erldis
+sadd	client-libraries/php/redis.php	/^    public function sadd($name, $value) {$/;"	f
+sadd	client-libraries/python/redis.py	/^    def sadd(self, name, value):$/;"	m	class:Redis
+saddCommand	redis.c	/^static void saddCommand(redisClient *c) {$/;"	f	file:
+sameobjecterr	redis.c	/^    *emptymultibulk, *wrongtypeerr, *nokeyerr, *syntaxerr, *sameobjecterr,$/;"	m	struct:sharedObjectsStruct	file:
+save	client-libraries/cpp/redisclient.cpp	/^  void client::save()$/;"	f	class:redis::client
+save	client-libraries/erlang/src/erldis.erl	/^save(Client) -> client:ssend(Client, save).$/;"	f	module:erldis
+save	client-libraries/php/redis.php	/^    public function save($background=false) {$/;"	f
+save	client-libraries/python/redis.py	/^    def save(self, background=False):$/;"	m	class:Redis
+save	client-libraries/ruby/lib/dist_redis.rb	/^  def save$/;"	f	class:DistRedis
+saveCommand	redis.c	/^static void saveCommand(redisClient *c) {$/;"	f	file:
+save_or_reply	client-libraries/erlang/src/client.erl	/^save_or_reply(Result, State=#redis{calls=Calls, results=Results, reply_caller=ReplyCaller}) ->$/;"	f	module:client
+saveparam	redis.c	/^struct saveparam {$/;"	s	file:
+saveparams	redis.c	/^    struct saveparam *saveparams;$/;"	m	struct:redisServer	typeref:struct:redisServer::saveparam	file:
+saveparamslen	redis.c	/^    int saveparamslen;$/;"	m	struct:redisServer	file:
+scard	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::scard(const client::string_type & key)$/;"	f	class:redis::client
+scard	client-libraries/erlang/src/erldis.erl	/^scard(Client, Key) -> client:ssend(Client, scard, [Key]).$/;"	f	module:erldis
+scard	client-libraries/php/redis.php	/^    public function scard($name) {$/;"	f
+scardCommand	redis.c	/^static void scardCommand(redisClient *c) {$/;"	f	file:
+score	redis.c	/^        double score;$/;"	m	union:_redisSortObject::__anon2	file:
+sdiff	client-libraries/erlang/src/erldis.erl	/^sdiff(Client, Keys) -> client:ssend(Client, sdiff, Keys).$/;"	f	module:erldis
+sdiffCommand	redis.c	/^static void sdiffCommand(redisClient *c) {$/;"	f	file:
+sdiffstore	client-libraries/erlang/src/erldis.erl	/^sdiffstore(Client, DstKey, Keys) -> client:ssend(Client, sdiffstore, [DstKey|Keys]).$/;"	f	module:erldis
+sdiffstoreCommand	redis.c	/^static void sdiffstoreCommand(redisClient *c) {$/;"	f	file:
+sds	sds.h	/^typedef char *sds;$/;"	t
+sdsDictKeyCompare	redis.c	/^static int sdsDictKeyCompare(void *privdata, const void *key1,$/;"	f	file:
+sdsMakeRoomFor	sds.c	/^static sds sdsMakeRoomFor(sds s, size_t addlen) {$/;"	f	file:
+sdsOomAbort	sds.c	/^static void sdsOomAbort(void) {$/;"	f	file:
+sdsavail	sds.c	/^size_t sdsavail(sds s) {$/;"	f
+sdscat	sds.c	/^sds sdscat(sds s, char *t) {$/;"	f
+sdscatlen	sds.c	/^sds sdscatlen(sds s, void *t, size_t len) {$/;"	f
+sdscatprintf	sds.c	/^sds sdscatprintf(sds s, const char *fmt, ...) {$/;"	f
+sdscmp	sds.c	/^int sdscmp(sds s1, sds s2) {$/;"	f
+sdscpy	sds.c	/^sds sdscpy(sds s, char *t) {$/;"	f
+sdscpylen	sds.c	/^sds sdscpylen(sds s, char *t, size_t len) {$/;"	f
+sdsdup	sds.c	/^sds sdsdup(const sds s) {$/;"	f
+sdsempty	sds.c	/^sds sdsempty(void) {$/;"	f
+sdsfree	sds.c	/^void sdsfree(sds s) {$/;"	f
+sdshdr	sds.h	/^struct sdshdr {$/;"	s
+sdslen	sds.c	/^size_t sdslen(const sds s) {$/;"	f
+sdsnew	sds.c	/^sds sdsnew(const char *init) {$/;"	f
+sdsnewlen	sds.c	/^sds sdsnewlen(const void *init, size_t initlen) {$/;"	f
+sdsrange	sds.c	/^sds sdsrange(sds s, long start, long end) {$/;"	f
+sdssplitlen	sds.c	/^sds *sdssplitlen(char *s, int len, char *sep, int seplen, int *count) {$/;"	f
+sdstolower	sds.c	/^void sdstolower(sds s) {$/;"	f
+sdstoupper	sds.c	/^void sdstoupper(sds s) {$/;"	f
+sdstrim	sds.c	/^sds sdstrim(sds s, const char *cset) {$/;"	f
+sdsupdatelen	sds.c	/^void sdsupdatelen(sds s) {$/;"	f
+seconds	redis.c	/^    time_t seconds;$/;"	m	struct:saveparam	file:
+segvHandler	redis.c	/^static void segvHandler(int sig, siginfo_t *info, void *secret) {$/;"	f	file:
+select	client-libraries/cpp/redisclient.cpp	/^  void client::select(client::int_type dbindex)$/;"	f	class:redis::client
+select	client-libraries/erlang/src/erldis.erl	/^select(Client, Index) -> client:ssend(Client, select, [Index]).$/;"	f	module:erldis
+select	client-libraries/python/redis.py	/^    def select(self, db):$/;"	m	class:Redis
+select	client-libraries/ruby/lib/redis.rb	/^  def select(*args)$/;"	f	class:Redis
+select0	redis.c	/^    *select0, *select1, *select2, *select3, *select4,$/;"	m	struct:sharedObjectsStruct	file:
+select1	redis.c	/^    *select0, *select1, *select2, *select3, *select4,$/;"	m	struct:sharedObjectsStruct	file:
+select2	redis.c	/^    *select0, *select1, *select2, *select3, *select4,$/;"	m	struct:sharedObjectsStruct	file:
+select3	redis.c	/^    *select0, *select1, *select2, *select3, *select4,$/;"	m	struct:sharedObjectsStruct	file:
+select4	redis.c	/^    *select0, *select1, *select2, *select3, *select4,$/;"	m	struct:sharedObjectsStruct	file:
+select5	redis.c	/^    *select5, *select6, *select7, *select8, *select9;$/;"	m	struct:sharedObjectsStruct	file:
+select6	redis.c	/^    *select5, *select6, *select7, *select8, *select9;$/;"	m	struct:sharedObjectsStruct	file:
+select7	redis.c	/^    *select5, *select6, *select7, *select8, *select9;$/;"	m	struct:sharedObjectsStruct	file:
+select8	redis.c	/^    *select5, *select6, *select7, *select8, *select9;$/;"	m	struct:sharedObjectsStruct	file:
+select9	redis.c	/^    *select5, *select6, *select7, *select8, *select9;$/;"	m	struct:sharedObjectsStruct	file:
+selectCommand	redis.c	/^static void selectCommand(redisClient *c) {$/;"	f	file:
+selectDb	redis.c	/^static int selectDb(redisClient *c, int id) {$/;"	f	file:
+select_db	client-libraries/php/redis.php	/^    public function select_db($name) {$/;"	f
+send	client-libraries/erlang/src/client.erl	/^send(Client, Cmd) -> send(Client, Cmd, []).$/;"	f	module:client
+send	client-libraries/erlang/src/client.erl	/^send(Client, Cmd, Args) ->$/;"	f	module:client
+sendBulkToSlave	redis.c	/^static void sendBulkToSlave(aeEventLoop *el, int fd, void *privdata, int mask) {$/;"	f	file:
+sendReplyToClient	redis.c	/^static void sendReplyToClient(aeEventLoop *el, int fd, void *privdata, int mask) {$/;"	f	file:
+send_	client-libraries/cpp/redisclient.cpp	/^  void client::send_(const string & msg)$/;"	f	class:redis::client
+sentlen	redis.c	/^    int sentlen;$/;"	m	struct:redisClient	file:
+server	client-libraries/php/redis.php	/^    public $server;$/;"	v
+server	client-libraries/ruby/lib/redis.rb	/^  def server$/;"	f	class:Redis
+server	redis.c	/^static struct redisServer server; \/* server global state *\/$/;"	v	typeref:struct:redisServer	file:
+serverCron	redis.c	/^static int serverCron(struct aeEventLoop *eventLoop, long long id, void *clientData) {$/;"	f	file:
+server_info	client-libraries/cpp/redisclient.h	/^  struct server_info $/;"	s	namespace:redis
+server_info_key_bgsave_in_progress	client-libraries/cpp/redisclient.cpp	/^  const string server_info_key_bgsave_in_progress = "bgsave_in_progress";$/;"	m	namespace:__anon3	file:
+server_info_key_changes_since_last_save	client-libraries/cpp/redisclient.cpp	/^  const string server_info_key_changes_since_last_save = "changes_since_last_save";$/;"	m	namespace:__anon3	file:
+server_info_key_connected_clients	client-libraries/cpp/redisclient.cpp	/^  const string server_info_key_connected_clients = "connected_clients";$/;"	m	namespace:__anon3	file:
+server_info_key_connected_slaves	client-libraries/cpp/redisclient.cpp	/^  const string server_info_key_connected_slaves = "connected_slaves";$/;"	m	namespace:__anon3	file:
+server_info_key_last_save_time	client-libraries/cpp/redisclient.cpp	/^  const string server_info_key_last_save_time = "last_save_time";$/;"	m	namespace:__anon3	file:
+server_info_key_role	client-libraries/cpp/redisclient.cpp	/^  const string server_info_key_role = "role";$/;"	m	namespace:__anon3	file:
+server_info_key_total_commands_processed	client-libraries/cpp/redisclient.cpp	/^  const string server_info_key_total_commands_processed = "total_commands_processed";$/;"	m	namespace:__anon3	file:
+server_info_key_total_connections_received	client-libraries/cpp/redisclient.cpp	/^  const string server_info_key_total_connections_received = "total_connections_received";$/;"	m	namespace:__anon3	file:
+server_info_key_uptime_in_days	client-libraries/cpp/redisclient.cpp	/^  const string server_info_key_uptime_in_days = "uptime_in_days";$/;"	m	namespace:__anon3	file:
+server_info_key_uptime_in_seconds	client-libraries/cpp/redisclient.cpp	/^  const string server_info_key_uptime_in_seconds = "uptime_in_seconds";$/;"	m	namespace:__anon3	file:
+server_info_key_used_memory	client-libraries/cpp/redisclient.cpp	/^  const string server_info_key_used_memory = "used_memory";$/;"	m	namespace:__anon3	file:
+server_info_key_version	client-libraries/cpp/redisclient.cpp	/^  const string server_info_key_version = "redis_version";$/;"	m	namespace:__anon3	file:
+server_info_value_role_master	client-libraries/cpp/redisclient.cpp	/^  const string server_info_value_role_master = "master";$/;"	m	namespace:__anon3	file:
+server_info_value_role_slave	client-libraries/cpp/redisclient.cpp	/^  const string server_info_value_role_slave = "slave";$/;"	m	namespace:__anon3	file:
+server_role	client-libraries/cpp/redisclient.h	/^  enum server_role$/;"	g	namespace:redis
+set	client-libraries/cpp/redisclient.cpp	/^  void client::set(const client::string_type & key, $/;"	f	class:redis::client
+set	client-libraries/erlang/src/erldis.erl	/^set(Client, Key, Value) -> internal_set_like(Client, set, Key, Value).$/;"	f	module:erldis
+set	client-libraries/php/redis.php	/^    public function set($name, $value, $preserve=false) {$/;"	f
+set	client-libraries/python/redis.py	/^    def set(self, name, value, preserve=False, getset=False):$/;"	m	class:Redis
+set	client-libraries/ruby/lib/redis.rb	/^  def set(key, value, expiry=nil)$/;"	f	class:Redis
+setCommand	redis.c	/^static void setCommand(redisClient *c) {$/;"	f	file:
+setDictType	redis.c	/^static dictType setDictType = {$/;"	v	file:
+setExpire	redis.c	/^static int setExpire(redisDb *db, robj *key, time_t when) {$/;"	f	file:
+setGenericCommand	redis.c	/^static void setGenericCommand(redisClient *c, int nx) {$/;"	f	file:
+setnx	client-libraries/cpp/redisclient.cpp	/^  bool client::setnx(const client::string_type & key, $/;"	f	class:redis::client
+setnx	client-libraries/erlang/src/erldis.erl	/^setnx(Client, Key, Value) -> internal_set_like(Client, setnx, Key, Value).$/;"	f	module:erldis
+setnxCommand	redis.c	/^static void setnxCommand(redisClient *c) {$/;"	f	file:
+setupSigSegvAction	redis.c	/^static void setupSigSegvAction(void) {$/;"	f	file:
+sformat	client-libraries/erlang/src/client.erl	/^sformat(Line) ->$/;"	f	module:client
+shared	redis.c	/^} shared;$/;"	v	typeref:struct:sharedObjectsStruct
+sharedObjectsStruct	redis.c	/^struct sharedObjectsStruct {$/;"	s	file:
+shareobjects	redis.c	/^    int shareobjects;$/;"	m	struct:redisServer	file:
+sharingpool	redis.c	/^    dict *sharingpool;$/;"	m	struct:redisServer	file:
+sharingpoolsize	redis.c	/^    unsigned int sharingpoolsize;$/;"	m	struct:redisServer	file:
+shift_from_argv	client-libraries/ruby/benchmarking/worker.rb	/^def shift_from_argv$/;"	f
+showLatencyReport	benchmark.c	/^static void showLatencyReport(char *title) {$/;"	f	file:
+showPost	doc/TwitterAlikeExample.html	/^function showPost($id) {$/;"	f
+showUserPosts	doc/TwitterAlikeExample.html	/^function showUserPosts($userid,$start,$count) {$/;"	f
+show_usage	client-libraries/ruby/benchmarking/worker.rb	/^def show_usage$/;"	f
+shutdown	client-libraries/cpp/redisclient.cpp	/^  void client::shutdown()$/;"	f	class:redis::client
+shutdown	client-libraries/erlang/src/erldis.erl	/^shutdown(Client) -> client:asend(Client, shutdown).$/;"	f	module:erldis
+shutdownCommand	redis.c	/^static void shutdownCommand(redisClient *c) {$/;"	f	file:
+sinter	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::sinter(const client::string_vector & keys, client::string_set & out)$/;"	f	class:redis::client
+sinter	client-libraries/erlang/src/erldis.erl	/^sinter(Client, Keys) -> sintersect(Client, Keys).$/;"	f	module:erldis
+sinter	client-libraries/php/redis.php	/^    public function sinter($sets) {$/;"	f
+sinter	client-libraries/python/redis.py	/^    def sinter(self, *args):$/;"	m	class:Redis
+sinterCommand	redis.c	/^static void sinterCommand(redisClient *c) {$/;"	f	file:
+sinterGenericCommand	redis.c	/^static void sinterGenericCommand(redisClient *c, robj **setskeys, int setsnum, robj *dstkey) {$/;"	f	file:
+sintersect	client-libraries/erlang/src/erldis.erl	/^sintersect(Client, Keys) -> client:ssend(Client, sinter, Keys).$/;"	f	module:erldis
+sinterstore	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::sinterstore(const client::string_type & dstkey, $/;"	f	class:redis::client
+sinterstore	client-libraries/erlang/src/erldis.erl	/^sinterstore(Client, DstKey, Keys) -> client:ssend(Client, sinterstore, [DstKey|Keys]).$/;"	f	module:erldis
+sinterstore	client-libraries/python/redis.py	/^    def sinterstore(self, dest, *args):$/;"	m	class:Redis
+sinterstoreCommand	redis.c	/^static void sinterstoreCommand(redisClient *c) {$/;"	f	file:
+sismember	client-libraries/cpp/redisclient.cpp	/^  bool client::sismember(const client::string_type & key, $/;"	f	class:redis::client
+sismember	client-libraries/erlang/src/erldis.erl	/^sismember(Client, Key, Value) -> internal_set_like(Client, sismember, Key, Value).$/;"	f	module:erldis
+sismember	client-libraries/php/redis.php	/^    public function sismember($name, $value) {$/;"	f
+sismember	client-libraries/python/redis.py	/^    def sismember(self, name, value):$/;"	m	class:Redis
+sismemberCommand	redis.c	/^static void sismemberCommand(redisClient *c) {$/;"	f	file:
+size	dict.h	/^    unsigned long size;$/;"	m	struct:dict
+sizemask	dict.h	/^    unsigned long sizemask;$/;"	m	struct:dict
+slaveof	client-libraries/erlang/src/erldis.erl	/^slaveof(Client) -> client:ssend(Client, slaveof, ["no one"]).$/;"	f	module:erldis
+slaveof	client-libraries/erlang/src/erldis.erl	/^slaveof(Client, Host, Port) -> client:ssend(Client, slaveof, [Host, Port]).$/;"	f	module:erldis
+slaveofCommand	redis.c	/^static void slaveofCommand(redisClient *c) {$/;"	f	file:
+slaves	redis.c	/^    list *slaves, *monitors;$/;"	m	struct:redisServer	file:
+slaveseldb	redis.c	/^    int slaveseldb;         \/* slave selected db, if this client is a slave *\/$/;"	m	struct:redisClient	file:
+smembers	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::smembers(const client::string_type & key, $/;"	f	class:redis::client
+smembers	client-libraries/erlang/src/erldis.erl	/^smembers(Client, Key) -> client:ssend(Client, smembers, [Key]).$/;"	f	module:erldis
+smembers	client-libraries/php/redis.php	/^    public function smembers($name) {$/;"	f
+smembers	client-libraries/python/redis.py	/^    def smembers(self, name):$/;"	m	class:Redis
+smove	client-libraries/cpp/redisclient.cpp	/^  void client::smove(const client::string_type & srckey, $/;"	f	class:redis::client
+smove	client-libraries/erlang/src/erldis.erl	/^smove(Client, SrcKey, DstKey, Member) -> client:send(Client, smove, [[SrcKey, DstKey, length(Member)],$/;"	f	module:erldis
+smoveCommand	redis.c	/^static void smoveCommand(redisClient *c) {$/;"	f	file:
+socket	client-libraries/python/redis.py	/^import socket$/;"	i
+socket_	client-libraries/cpp/redisclient.h	/^    int socket_;$/;"	m	class:redis::client
+sort	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::sort(const client::string_type & key, $/;"	f	class:redis::client
+sort	client-libraries/erlang/src/erldis.erl	/^sort(Client, Key) -> client:ssend(Client, sort, [Key]).$/;"	f	module:erldis
+sort	client-libraries/erlang/src/erldis.erl	/^sort(Client, Key, Extra) -> client:ssend(Client, sort, [Key, Extra]).    $/;"	f	module:erldis
+sort	client-libraries/php/redis.php	/^    public function sort($name, $query=false) {$/;"	f
+sort	client-libraries/python/redis.py	/^    def sort(self, name, by=None, get=None, start=None, num=None, desc=False, alpha=False):$/;"	m	class:Redis
+sort	client-libraries/ruby/lib/redis.rb	/^  def sort(key, options = {})$/;"	f	class:Redis
+sortCommand	redis.c	/^static void sortCommand(redisClient *c) {$/;"	f	file:
+sortCompare	redis.c	/^static int sortCompare(const void *s1, const void *s2) {$/;"	f	file:
+sort_alpha	redis.c	/^    int sort_alpha;$/;"	m	struct:redisServer	file:
+sort_bypattern	redis.c	/^    int sort_bypattern;$/;"	m	struct:redisServer	file:
+sort_desc	redis.c	/^    int sort_desc;$/;"	m	struct:redisServer	file:
+sort_order	client-libraries/cpp/redisclient.h	/^    enum sort_order$/;"	g	class:redis::client
+sort_order_ascending	client-libraries/cpp/redisclient.h	/^      sort_order_ascending,$/;"	e	enum:redis::client::sort_order
+sort_order_descending	client-libraries/cpp/redisclient.h	/^      sort_order_descending$/;"	e	enum:redis::client::sort_order
+space	redis.c	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *pong, *space,$/;"	m	struct:sharedObjectsStruct	file:
+split	client-libraries/cpp/redisclient.cpp	/^  vector<string>::size_type split(const string & str, char delim, vector<string> & elems)$/;"	f	namespace:__anon3
+split_lines	client-libraries/cpp/redisclient.cpp	/^  inline void split_lines(const string & str, vector<string> & elems) $/;"	f	namespace:__anon3
+spopCommand	redis.c	/^static void spopCommand(redisClient *c) {$/;"	f	file:
+srem	client-libraries/cpp/redisclient.cpp	/^  void client::srem(const client::string_type & key, $/;"	f	class:redis::client
+srem	client-libraries/erlang/src/erldis.erl	/^srem(Client, Key, Value) -> internal_set_like(Client, srem, Key, Value).$/;"	f	module:erldis
+srem	client-libraries/php/redis.php	/^    public function srem($name, $value) {$/;"	f
+srem	client-libraries/python/redis.py	/^    def srem(self, name, value):$/;"	m	class:Redis
+sremCommand	redis.c	/^static void sremCommand(redisClient *c) {$/;"	f	file:
+ssend	client-libraries/erlang/src/client.erl	/^ssend(Client, Cmd) -> ssend(Client, Cmd, []).$/;"	f	module:client
+ssend	client-libraries/erlang/src/client.erl	/^ssend(Client, Cmd, Args) ->$/;"	f	module:client
+start	benchmark.c	/^    long long start;    \/* start time in milliseconds *\/$/;"	m	struct:_client	file:
+start	benchmark.c	/^    long long start;$/;"	m	struct:config	file:
+start	client-libraries/erlang/src/client.erl	/^start(Host) ->$/;"	f	module:client
+start	client-libraries/erlang/src/client.erl	/^start(Host, Port) ->$/;"	f	module:client
+start	client-libraries/ruby/tasks/redis.tasks.rb	/^  def self.start$/;"	F	class:RedisRunner
+stat_numcommands	redis.c	/^    long long stat_numcommands;    \/* number of processed commands *\/$/;"	m	struct:redisServer	file:
+stat_numconnections	redis.c	/^    long long stat_numconnections; \/* number of connections received *\/$/;"	m	struct:redisServer	file:
+stat_starttime	redis.c	/^    time_t stat_starttime;         \/* server start time *\/$/;"	m	struct:redisServer	file:
+state	benchmark.c	/^    int state;$/;"	m	struct:_client	file:
+stop	ae.h	/^    int stop;$/;"	m	struct:aeEventLoop
+stop	client-libraries/ruby/tasks/redis.tasks.rb	/^  def self.stop$/;"	F	class:RedisRunner
+str	client-libraries/erlang/src/client.erl	/^str(X) when is_atom(X) ->$/;"	f	module:client
+str	client-libraries/erlang/src/client.erl	/^str(X) when is_binary(X) ->$/;"	f	module:client
+str	client-libraries/erlang/src/client.erl	/^str(X) when is_float(X) ->$/;"	f	module:client
+str	client-libraries/erlang/src/client.erl	/^str(X) when is_integer(X) ->$/;"	f	module:client
+str	client-libraries/erlang/src/client.erl	/^str(X) when is_list(X) ->$/;"	f	module:client
+stress	test-redis.tcl	/^proc stress {} {$/;"	p
+string_set	client-libraries/cpp/redisclient.h	/^    typedef std::set<string_type> string_set;$/;"	t	class:redis::client
+string_type	client-libraries/cpp/redisclient.h	/^    typedef std::string string_type;$/;"	t	class:redis::client
+string_vector	client-libraries/cpp/redisclient.h	/^    typedef std::vector<string_type> string_vector;$/;"	t	class:redis::client
+stringmatchlen	redis.c	/^int stringmatchlen(const char *pattern, int patternLen,$/;"	f
+sunion	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::sunion(const client::string_vector & keys,$/;"	f	class:redis::client
+sunion	client-libraries/erlang/src/erldis.erl	/^sunion(Client, Keys) -> client:ssend(Client, sunion, Keys).$/;"	f	module:erldis
+sunion	client-libraries/python/redis.py	/^    def sunion(self, *args):$/;"	m	class:Redis
+sunionCommand	redis.c	/^static void sunionCommand(redisClient *c) {$/;"	f	file:
+sunionDiffGenericCommand	redis.c	/^static void sunionDiffGenericCommand(redisClient *c, robj **setskeys, int setsnum, robj *dstkey, int op) {$/;"	f	file:
+sunionstore	client-libraries/cpp/redisclient.cpp	/^  client::int_type client::sunionstore(const client::string_type & dstkey, $/;"	f	class:redis::client
+sunionstore	client-libraries/erlang/src/erldis.erl	/^sunionstore(Client, DstKey, Keys) -> client:ssend(Client, sunionstore, [DstKey|Keys]).$/;"	f	module:erldis
+sunionstore	client-libraries/python/redis.py	/^    def sunionstore(self, dest, *args):$/;"	m	class:Redis
+sunionstoreCommand	redis.c	/^static void sunionstoreCommand(redisClient *c) {$/;"	f	file:
+swap	pqsort.c	88;"	d	file:
+swapcode	pqsort.c	64;"	d	file:
+swapfunc	pqsort.c	/^swapfunc(char *a, char *b, size_t n, int swaptype)$/;"	f	file:
+symsTable	redis.c	/^static struct redisFunctionSym symsTable[] = {$/;"	v	typeref:struct:redisFunctionSym	file:
+syncCommand	redis.c	/^static void syncCommand(redisClient *c) {$/;"	f	file:
+syncRead	redis.c	/^static int syncRead(int fd, char *ptr, ssize_t size, int timeout) {$/;"	f	file:
+syncReadLine	redis.c	/^static int syncReadLine(int fd, char *ptr, ssize_t size, int timeout) {$/;"	f	file:
+syncWithMaster	redis.c	/^static int syncWithMaster(void) {$/;"	f	file:
+syncWrite	redis.c	/^static int syncWrite(int fd, char *ptr, ssize_t size, int timeout) {$/;"	f	file:
+syntaxerr	redis.c	/^    *emptymultibulk, *wrongtypeerr, *nokeyerr, *syntaxerr, *sameobjecterr,$/;"	m	struct:sharedObjectsStruct	file:
+table	dict.h	/^    dictEntry **table;$/;"	m	struct:dict
+tail	adlist.h	/^    listNode *tail;$/;"	m	struct:list
+tail	client-libraries/php/redis.php	/^    public function pop($name, $tail=true) {$/;"	v
+tail	client-libraries/php/redis.php	/^    public function push($name, $value, $tail=true) {$/;"	v
+terminate	client-libraries/erlang/src/client.erl	/^terminate(_Reason, State) ->$/;"	f	module:client
+test	client-libraries/cpp/test_client.cpp	/^void test(const string & name)$/;"	f
+test	test-redis.tcl	/^proc test {name code okpattern} {$/;"	p
+timeEventHead	ae.h	/^    aeTimeEvent *timeEventHead;$/;"	m	struct:aeEventLoop
+timeEventNextId	ae.h	/^    long long timeEventNextId;$/;"	m	struct:aeEventLoop
+timeProc	ae.h	/^    aeTimeProc *timeProc;$/;"	m	struct:aeTimeEvent
+to_s	client-libraries/ruby/lib/redis.rb	/^  def to_s$/;"	f	class:Redis
+total_commands_processed	client-libraries/cpp/redisclient.h	/^    unsigned long total_commands_processed;$/;"	m	struct:redis::server_info
+total_connections_received	client-libraries/cpp/redisclient.h	/^    unsigned long total_connections_received;$/;"	m	struct:redis::server_info
+totlatency	benchmark.c	/^    long long totlatency;$/;"	m	struct:config	file:
+trim2	client-libraries/erlang/src/client.erl	/^trim2(S) ->$/;"	f	module:client
+trim2	client-libraries/erlang/src/client.erl	/^trim2({ok, S}) ->$/;"	f	module:client
+tryObjectSharing	redis.c	/^static robj *tryObjectSharing(robj *o) {$/;"	f	file:
+tryResizeHashTables	redis.c	/^static void tryResizeHashTables(void) {$/;"	f	file:
+ttl	client-libraries/erlang/src/erldis.erl	/^ttl(Client, Key) -> client:ssend(Client, ttl, [Key]).$/;"	f	module:erldis
+ttl	client-libraries/python/redis.py	/^    def ttl(self, name):$/;"	m	class:Redis
+ttlCommand	redis.c	/^static void ttlCommand(redisClient *c) {$/;"	f	file:
+type	client-libraries/cpp/redisclient.cpp	/^  client::datatype client::type(const client::string_type & key)$/;"	f	class:redis::client
+type	client-libraries/erlang/src/erldis.erl	/^type(Client, Key) -> client:ssend(Client, type, [Key]).$/;"	f	module:erldis
+type	client-libraries/ruby/lib/redis.rb	/^  def type(key)$/;"	f	class:Redis
+type	dict.h	/^    dictType *type;$/;"	m	struct:dict
+type	redis.c	/^    int type;$/;"	m	struct:_redisSortOperation	file:
+type	redis.c	/^    int type;$/;"	m	struct:redisObject	file:
+typeCommand	redis.c	/^static void typeCommand(redisClient *c) {$/;"	f	file:
+u	redis.c	/^    } u;$/;"	m	struct:_redisSortObject	typeref:union:_redisSortObject::__anon2	file:
+u16	lzfP.h	/^    typedef unsigned int u16;$/;"	t
+u16	lzfP.h	/^    typedef unsigned short u16;$/;"	t
+u8	lzfP.h	/^typedef unsigned char u8;$/;"	t
+updateSlavesWaitingBgsave	redis.c	/^static void updateSlavesWaitingBgsave(int bgsaveerr) {$/;"	f	file:
+uptime_in_days	client-libraries/cpp/redisclient.h	/^    unsigned long uptime_in_days;$/;"	m	struct:redis::server_info
+uptime_in_seconds	client-libraries/cpp/redisclient.h	/^    unsigned long uptime_in_seconds;$/;"	m	struct:redis::server_info
+used	dict.h	/^    unsigned long used;$/;"	m	struct:dict
+used_memory	client-libraries/cpp/redisclient.h	/^    unsigned long used_memory;$/;"	m	struct:redis::server_info
+used_memory	zmalloc.c	/^static size_t used_memory = 0;$/;"	v	file:
+usedmemory	redis.c	/^    size_t usedmemory;             \/* Used memory in megabytes *\/$/;"	m	struct:redisServer	file:
+utils_test	client-libraries/erlang/test/erldis_tests.erl	/^utils_test() ->$/;"	f	module:erldis_tests
+val	dict.h	/^    void *val;$/;"	m	struct:dictEntry
+valDestructor	dict.h	/^    void (*valDestructor)(void *privdata, void *obj);$/;"	m	struct:dictType
+valDup	dict.h	/^    void *(*valDup)(void *privdata, const void *obj);$/;"	m	struct:dictType
+value	adlist.h	/^    void *value;$/;"	m	struct:listNode
+value_error	client-libraries/cpp/redisclient.cpp	/^  value_error::value_error(const string & err) : redis_error(err)$/;"	f	class:redis::value_error
+value_error	client-libraries/cpp/redisclient.h	/^  class value_error : public redis_error$/;"	c	namespace:redis
+value_from_string	client-libraries/cpp/redisclient.cpp	/^  T value_from_string(const string & data)$/;"	f	namespace:__anon3
+vecswap	pqsort.c	96;"	d	file:
+verbosity	redis.c	/^    int verbosity;$/;"	m	struct:redisServer	file:
+version	client-libraries/cpp/redisclient.h	/^    std::string version;$/;"	m	struct:redis::server_info
+when_ms	ae.h	/^    long when_ms; \/* milliseconds *\/$/;"	m	struct:aeTimeEvent
+when_sec	ae.h	/^    long when_sec; \/* seconds *\/$/;"	m	struct:aeTimeEvent
+with_all_segments	client-libraries/ruby/benchmarking/suite.rb	/^def with_all_segments(&block)$/;"	f
+write	client-libraries/php/redis.php	/^    private function write($s) {$/;"	f
+writeHandler	benchmark.c	/^static void writeHandler(aeEventLoop *el, int fd, void *privdata, int mask)$/;"	f	file:
+written	benchmark.c	/^    unsigned int written;        \/* bytes of 'obuf' already written *\/$/;"	m	struct:_client	file:
+wrongtypeerr	redis.c	/^    *emptymultibulk, *wrongtypeerr, *nokeyerr, *syntaxerr, *sameobjecterr,$/;"	m	struct:sharedObjectsStruct	file:
+yesnotoi	redis.c	/^static int yesnotoi(char *s) {$/;"	f	file:
+zfree	zmalloc.c	/^void zfree(void *ptr) {$/;"	f
+zmalloc	zmalloc.c	/^void *zmalloc(size_t size) {$/;"	f
+zmalloc_used_memory	zmalloc.c	/^size_t zmalloc_used_memory(void) {$/;"	f
+zrealloc	zmalloc.c	/^void *zrealloc(void *ptr, size_t size) {$/;"	f
+zstrdup	zmalloc.c	/^char *zstrdup(const char *s) {$/;"	f
+~client	client-libraries/cpp/redisclient.cpp	/^  client::~client()$/;"	f	class:redis::client
