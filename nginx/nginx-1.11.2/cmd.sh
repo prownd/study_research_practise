@@ -18,20 +18,20 @@ make
 
 
 
-5.将nginx-rtmp-module-master\test的nginx.conf拷贝到nginx的安装路径下的conf目录中，(把原来的ngix.conf备份一下)，我的是/usr/local/nginx/conf。
-6.将新的nginx.conf的下面一段代码改一下。
+#5.将nginx-rtmp-module-master\test的nginx.conf拷贝到nginx的安装路径下的conf目录中，(把原来的ngix.conf备份一下)，我的是/usr/local/nginx/conf。
+#6.将新的nginx.conf的下面一段代码改一下。
 
-location /rtmp-publisher {
-                            root /path/to/nginx-rtmp-module/test;
-}
+#location /rtmp-publisher {
+#                            root /path/to/nginx-rtmp-module/test;
+#}
 
-location / {
-                           root /path/to/nginx-rtmp-module/test/www;
-}
+#location / {
+#                           root /path/to/nginx-rtmp-module/test/www;
+#}
 
 
 #启动上传avi视频
-./ffmpeg
+#./ffmpeg
 
 
 
