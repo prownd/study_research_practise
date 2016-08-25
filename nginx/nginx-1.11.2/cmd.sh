@@ -12,8 +12,8 @@
 
 
 #rtmp
-
-./configure  --add-module=../nginx-rtmp-module/
+#./configure  --add-module=../nginx-rtmp-module/
+./configure  --add-module=./src/helloworld  --add-module=./src/hello  --add-module=../nginx-rtmp-module/
 make
 
 
