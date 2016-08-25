@@ -6,6 +6,7 @@ redis
 nginx    
 webbench    
 tinyhttpd  
-lua  
-
+lua   
+libev  
+  
 
