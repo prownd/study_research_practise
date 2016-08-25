@@ -7,8 +7,12 @@
 #!/bin/bash
 
 
-启动上传avi视频
+#启动上传avi视频
 ./ffmpeg
+
+
+
+#修改nginx.conf配置文件。进行处理，主要是修改path路径 root路径。
 
 #http://localhost:8080/                                                  这个链接访问的是/path/to/nginx-rtmp-module/test/www下的index.html   既有录又有播
 #http://localhost:8080/record.html  
