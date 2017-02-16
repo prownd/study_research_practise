@@ -1,0 +1,12 @@
+[Unit]
+Description= update google host file 
+
+[Service]
+Type=oneshot
+#Type=simple
+ExecStart=/home/han/git_repos_project/hosts/tools/lhosts
+#ExecStart=/home/han/date.sh
+
+[Install]
+WantedBy=multi-user.target
+
