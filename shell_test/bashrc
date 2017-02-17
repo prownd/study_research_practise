@@ -7,6 +7,7 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+#fedora  bash 输错命令 会有很长的错误处理时间，以及提示是否从网络下载  ，很浪费时间。下面就是不处理命令没有找到的情况。
 unset command_not_found_handle
 
 ANDROID_SDK=/home/han/Android/Sdk/platform-tools
