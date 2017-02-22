@@ -1,0 +1,3 @@
+"colorscheme ir_black
+colorscheme desert
+autocmd VimEnter * set nospell
